@@ -25,20 +25,20 @@ Explore Reseam patch sources, supported apps, and community resources.
 ## 📚 Resources
 
 - [Publishing a patch bundle](https://reseam.app/docs/authoring/publishing/)
-- [Write your first patch](https://reseam.app/docs/authoring/start-a-bundle/)
+- [Write your first patch](https://reseam.app/docs/authoring/start/)
 - [Reseam community repositories](https://github.com/Reseam)
 
 ## 🔍 Patch indexes
 
 Browse patch sources and their supported apps:
 
-- [Official Reseam patches](https://api.reseam.app/patches.json)
+- [Official Reseam patches index (JSON)](https://api.reseam.app/patches.json)
 - [MadKarma Reseam patches](https://github.com/madkarmaa/reseam-patches)
 - [Patch Bundle Registry](https://patch-bundles.jmancentral.com/)
 
 ## 🛠️ Tools and projects
 
-- [Reseam CLI](https://reseam.app/docs/cli/)
+- [Reseam CLI](https://reseam.app/docs/cli/overview/)
 - [Official patch bundle template](https://github.com/Reseam/patches-template)
 - [Reseam source and Kotlin SDK](https://github.com/Reseam/reseam)
 
