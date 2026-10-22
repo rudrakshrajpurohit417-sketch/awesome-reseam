@@ -1,0 +1,29 @@
+{
+  "resources": [
+    {
+      "category": "Start here",
+      "items": [
+        { "title": "Reseam Manager", "description": "Choose patches and build modified apps on your Android device.", "url": "https://reseam.app/" },
+        { "title": "Official patch catalog", "description": "Browse official patches by app and feature.", "url": "https://reseam.app/patches/" },
+        { "title": "Documentation", "description": "Guides for using Reseam and writing patches.", "url": "https://reseam.app/docs/" },
+        { "title": "Write your first patch", "description": "Build a patch bundle with the Kotlin SDK.", "url": "https://reseam.app/docs/authoring/start-a-bundle/" }
+      ]
+    },
+    {
+      "category": "Developer tools",
+      "items": [
+        { "title": "Reseam CLI", "description": "Patch APKs, build bundles, and publish releases from a terminal.", "url": "https://reseam.app/docs/cli/" },
+        { "title": "Patch bundle template", "description": "Start a new Kotlin patch bundle from the official template.", "url": "https://github.com/Reseam/patches-template" },
+        { "title": "Reseam source", "description": "Patch engine, CLI, and Kotlin patch SDK.", "url": "https://github.com/Reseam/reseam" }
+      ]
+    },
+    {
+      "category": "Community",
+      "items": [
+        { "title": "Reseam on GitHub", "description": "Repositories and projects maintained by the Reseam organization.", "url": "https://github.com/Reseam" },
+        { "title": "Patch Bundle Registry", "description": "Browse community patch sources and app compatibility across releases.", "url": "https://patch-bundles.jmancentral.com/" },
+        { "title": "Suggest a bundle source", "description": "Ask for a Reseam patch bundle source to be indexed.", "url": "https://github.com/Jman-Github/Patch-Bundle-Registry/issues" }
+      ]
+    }
+  ]
+}
