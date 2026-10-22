@@ -1,0 +1,174 @@
+import React, { useDeferredValue, useEffect, useMemo, useRef, useState } from 'react'
+import { createRoot } from 'react-dom/client'
+import { ArrowLeft, ArrowUpRight, ChevronDown, ExternalLink, Github, Grid2X2, Layers3, ListFilter, PackageOpen, Search, Sparkles } from 'lucide-react'
+import { AppCard } from './AppCard'
+import { AddToReseam } from './AddToReseam'
+import './style.css'
+
+type AppInfo = { packageName: string; name: string; iconUrl: string | null; category: string; patchCount: number; bundleCount: number; versions: string[]; patches: Patch[] }
+type Patch = { id: string; name: string; description: string; bundle: string; sourceName: string; sourceUrl: string; sourceVersion: string; apps: { package: string; versions: string[] }[]; options: { key?: string; title?: string; description?: string; option_type?: string; required?: boolean; default_value?: { value?: string | number | boolean } }[]; official: boolean }
+type Bundle = { name: string; author: string; description: string; homepage: string; indexUrl: string; addUrl: string | null; version: string; updatedAt: string | null; patchCount: number; iconUrl: string | null; isOfficial: boolean; metadataStatus: string }
+type BundleSource = { name: string; indexUrl: string; patches: Omit<Patch, 'official'>[] }
+type Update = { version: string; createdAt: string | null; description: string; prerelease: boolean; sourceName: string; sourceUrl: string; official: boolean }
+type Issue = { name: string; url: string; error: string }
+type CatalogData = { generatedAt: string; registry: { url: string; available: boolean }; official: BundleSource; community: BundleSource[]; apps: AppInfo[]; bundles: Bundle[]; whatsNew: Update[]; staleSources: Issue[] }
+type TabKey = 'apps' | 'bundles' | 'news'
+
+const iconLabel = (name: string) => name.split(/\s+/).filter(Boolean).slice(0, 2).map((word) => word[0]).join('').toUpperCase()
+const formatDate = (value: string | null) => value ? new Date(value).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' }) : '—'
+
+function AppIcon({ src, name }: { src: string | null; name: string }) {
+  const [failed, setFailed] = useState(!src)
+  return <div className="app-icon"><span className="app-fallback">{iconLabel(name)}</span>{src && !failed && <img src={src} alt="" loading="lazy" decoding="async" onError={() => setFailed(true)}/>}</div>
+}
+
+function PatchCard({ patch }: { patch: Patch }) {
+  const appRows = patch.apps.map((app) => `${app.package}${app.versions.length ? ` · ${app.versions.join(', ')}` : ''}`)
+  return <article className="patch-row"><div className="patch-row-heading"><span className="patch-symbol"><Layers3 size={15}/></span><div className="patch-name"><h3>{patch.name}</h3><span>{patch.official ? 'Official' : 'Community'} · {patch.sourceName}</span></div><a className="patch-link" href={patch.sourceUrl} target="_blank" rel="noreferrer" aria-label={`Open ${patch.sourceName}`}><ArrowUpRight size={15}/></a></div><p>{patch.description || 'No description provided.'}</p><div className="patch-row-footer"><span>{appRows.join(' · ') || 'Any app'}</span>{patch.options.length > 0 && <details className="patch-options"><summary>{patch.options.length} {patch.options.length === 1 ? 'option' : 'options'}</summary><div className="options-popover">{patch.options.map((option) => <div key={option.key ?? option.title}><strong>{option.title ?? option.key ?? 'Option'}{option.required ? ' · required' : ''}</strong>{option.description && <p>{option.description}</p>}{option.default_value?.value !== undefined && <small>Default: {String(option.default_value.value)}</small>}</div>)}</div></details>}</div></article>
+}
+
+function BundleCard({ bundle, onOpen }: { bundle: Bundle; onOpen: () => void }) {
+  const addSource = bundle.isOfficial ? bundle.indexUrl : bundle.homepage
+  return <article className="bundle-card"><button className="bundle-open" onClick={onOpen} aria-label={`Browse ${bundle.name} patches`}><div className="bundle-card-head"><AppIcon src={bundle.iconUrl} name={bundle.name}/><span className={bundle.isOfficial ? 'bundle-tag official-tag' : 'bundle-tag'}>{bundle.isOfficial ? 'OFFICIAL' : 'COMMUNITY'}</span></div><h2>{bundle.name}</h2></button><p className="bundle-author">by {bundle.author}</p><p className="bundle-description">{bundle.description || 'A Reseam patch bundle from the community.'}</p><div className="bundle-stats"><span><Layers3 size={13}/>{bundle.patchCount} patches</span><span>v{bundle.version}</span></div><div className="bundle-card-footer"><span>Updated {formatDate(bundle.updatedAt)}</span><div className="bundle-actions"><AddToReseam url={addSource}/><a className="action-button source-button" href={bundle.homepage} target="_blank" rel="noreferrer">Source <ArrowUpRight size={14}/></a></div></div></article>
+}
+
+function releaseSummary(description: string) {
+  const bullets = description.split('\n').map((line) => line.trim()).filter((line) => /^[-*]\s/.test(line)).map((line) => line.replace(/^[-*]\s+/, '').replace(/\*\*/g, '').replace(/`/g, '').replace(/\[([^\]]+)\]\([^)]+\)/g, '$1'))
+  if (bullets.length) return bullets.slice(0, 3)
+  const clean = description.replace(/[#*`]/g, '').trim()
+  return clean ? [clean.slice(0, 180)] : ['Release published.']
+}
+
+function App() {
+  const [catalogData, setCatalogData] = useState<CatalogData | null>(null)
+  const [loadError, setLoadError] = useState(false)
+  const [tab, setTab] = useState<TabKey>('apps')
+  const [query, setQuery] = useState('')
+  const [category, setCategory] = useState('all')
+  const [sort, setSort] = useState('popular')
+  const [selectedApp, setSelectedApp] = useState<AppInfo | null>(null)
+  const [selectedBundle, setSelectedBundle] = useState<Bundle | null>(null)
+  const [filterMenu, setFilterMenu] = useState(false)
+  const [visibleAppCount, setVisibleAppCount] = useState(24)
+  const [visiblePatchCount, setVisiblePatchCount] = useState(24)
+  const [expandedAppBundles, setExpandedAppBundles] = useState<Set<string>>(() => new Set())
+  const loadMoreRef = useRef<HTMLDivElement>(null)
+  const detailLoadMoreRef = useRef<HTMLDivElement>(null)
+  const deferredQuery = useDeferredValue(query.trim().toLowerCase())
+  const switchTab = (next: TabKey) => { setTab(next); setSelectedApp(null); setSelectedBundle(null); setCategory('all'); setQuery(''); setSort('popular') }
+  useEffect(() => {
+    fetch(`${import.meta.env.BASE_URL}catalog.json`).then((response) => { if (!response.ok) throw new Error('Catalog request failed'); return response.json() }).then((value: CatalogData) => setCatalogData(value)).catch(() => import('../data/catalog.json').then((module) => setCatalogData(module.default as CatalogData)).catch(() => setLoadError(true)))
+  }, [])
+  const data = catalogData ?? { generatedAt: '', registry: { url: '', available: false }, official: { name: '', indexUrl: '', patches: [] }, community: [], apps: [], bundles: [], whatsNew: [], staleSources: [] }
+  const categories = useMemo(() => [...new Set(data.apps.map((app) => app.category))].sort(), [data.apps])
+  const indexedApps = useMemo(() => data.apps.map((app) => ({ app, searchText: `${app.name} ${app.packageName} ${app.category} ${app.patches.map((patch) => `${patch.name} ${patch.description}`).join(' ')}`.toLowerCase() })), [data.apps])
+  const indexedBundlePatches = useMemo(() => data.bundles.map((bundle) => {
+    const source = bundle.isOfficial ? data.official : data.community.find((item) => item.indexUrl === bundle.indexUrl)
+    return { bundle, patches: (source?.patches ?? []).map((sourcePatch) => {
+      const patch: Patch = { ...sourcePatch, official: bundle.isOfficial }
+      return { patch, searchText: `${patch.name} ${patch.description} ${patch.sourceName} ${patch.apps.map((app) => `${app.package} ${app.versions.join(' ')}`).join(' ')} ${patch.options.map((option) => `${option.title ?? ''} ${option.key ?? ''} ${option.description ?? ''}`).join(' ')}`.toLowerCase() }
+    }) }
+  }), [data.bundles, data.official, data.community])
+
+  useEffect(() => {
+    const onKeyDown = (event: KeyboardEvent) => {
+      if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === 'k') { event.preventDefault(); document.querySelector<HTMLInputElement>('.search-input')?.focus() }
+      if (event.key === 'Escape') { setSelectedApp(null); setSelectedBundle(null); setQuery('') }
+    }
+    window.addEventListener('keydown', onKeyDown)
+    return () => window.removeEventListener('keydown', onKeyDown)
+  }, [])
+
+  const visibleApps = useMemo(() => {
+    const rows = indexedApps.filter(({ app, searchText }) => (category === 'all' || app.category === category) && searchText.includes(deferredQuery)).map(({ app }) => app)
+    return rows.sort((a, b) => sort === 'name' ? a.name.localeCompare(b.name) : sort === 'patches-asc' ? a.patchCount - b.patchCount : b.patchCount - a.patchCount || a.name.localeCompare(b.name))
+  }, [category, deferredQuery, sort, indexedApps])
+  const visibleBundles = useMemo(() => {
+    const rows = data.bundles.filter((bundle) => `${bundle.name} ${bundle.author} ${bundle.description}`.toLowerCase().includes(query.trim().toLowerCase()))
+    return rows.sort((a, b) => sort === 'name' ? a.name.localeCompare(b.name) : sort === 'patches-asc' ? a.patchCount - b.patchCount : b.patchCount - a.patchCount)
+  }, [query, sort, data.bundles])
+  const appBundleGroups = useMemo(() => {
+    if (!selectedApp) return []
+    const grouped = new Map<string, { bundle: Bundle; patches: Patch[] }>()
+    for (const patch of selectedApp.patches) {
+      const bundle = data.bundles.find((item) => item.name === patch.bundle || item.indexUrl === patch.sourceUrl)
+      const key = bundle?.indexUrl ?? patch.sourceUrl
+      const current = grouped.get(key) ?? { bundle: bundle ?? { name: patch.sourceName, author: patch.sourceName, description: '', homepage: patch.sourceUrl, indexUrl: patch.sourceUrl, addUrl: null, version: patch.sourceVersion, updatedAt: null, patchCount: 0, iconUrl: null, isOfficial: patch.official, metadataStatus: 'unknown' }, patches: [] }
+      current.patches.push(patch)
+      grouped.set(key, current)
+    }
+    return [...grouped.values()].map((group) => ({ ...group, patches: group.patches.sort((a, b) => a.name.localeCompare(b.name)) })).sort((a, b) => Number(b.bundle.isOfficial) - Number(a.bundle.isOfficial) || a.bundle.name.localeCompare(b.bundle.name))
+  }, [selectedApp, data.bundles])
+  const visibleUpdates = useMemo(() => data.whatsNew.filter((item) => `${item.sourceName} ${item.version} ${item.description}`.toLowerCase().includes(query.trim().toLowerCase())).sort((a, b) => sort === 'oldest' ? new Date(a.createdAt ?? 0).getTime() - new Date(b.createdAt ?? 0).getTime() : new Date(b.createdAt ?? 0).getTime() - new Date(a.createdAt ?? 0).getTime()), [query, sort, data.whatsNew])
+  const detailPatches = useMemo(() => {
+    if (selectedBundle) {
+      const indexed = indexedBundlePatches.find(({ bundle }) => bundle.indexUrl === selectedBundle.indexUrl)?.patches ?? []
+      return (deferredQuery ? indexed.filter(({ searchText }) => searchText.includes(deferredQuery)) : indexed).map(({ patch }) => patch).sort((a, b) => a.name.localeCompare(b.name))
+    }
+    const patches = selectedApp?.patches ?? []
+    return deferredQuery ? patches.filter((patch) => `${patch.name} ${patch.description} ${patch.sourceName} ${patch.apps.map((app) => `${app.package} ${app.versions.join(' ')}`).join(' ')} ${patch.options.map((option) => `${option.title ?? ''} ${option.key ?? ''} ${option.description ?? ''}`).join(' ')}`.toLowerCase().includes(deferredQuery)) : patches
+  }, [selectedApp, selectedBundle, indexedBundlePatches, deferredQuery])
+  const visibleAppGroups = useMemo(() => {
+    return appBundleGroups.map((group) => {
+      const matching = group.patches.filter((patch) => detailPatches.includes(patch))
+      return { ...group, patches: matching, matchingCount: matching.length }
+    }).filter((group) => group.matchingCount > 0)
+  }, [appBundleGroups, detailPatches])
+  const activeCount = tab === 'apps' ? (selectedApp ? detailPatches.length : visibleApps.length) : tab === 'bundles' ? (selectedBundle ? detailPatches.length : visibleBundles.length) : visibleUpdates.length
+  const totalPatches = data.bundles.reduce((sum, bundle) => sum + bundle.patchCount, 0)
+  const countLabel = selectedApp || selectedBundle ? 'Patches' : tab === 'apps' ? 'Apps' : tab === 'bundles' ? 'Bundles' : 'Updates'
+  const searchPlaceholder = tab === 'apps' ? selectedApp ? 'Filter this app’s patches…' : 'Search apps or patches…' : tab === 'bundles' ? selectedBundle ? 'Filter this bundle’s patches…' : 'Search bundles…' : 'Search release notes…'
+
+  useEffect(() => { setVisibleAppCount(24) }, [category, deferredQuery, sort, tab])
+  useEffect(() => { setVisiblePatchCount(24) }, [selectedApp, selectedBundle, deferredQuery])
+  useEffect(() => {
+    const sentinel = loadMoreRef.current
+    if (!sentinel || tab !== 'apps' || selectedApp || visibleAppCount >= visibleApps.length) return
+    const observer = new IntersectionObserver((entries) => {
+      if (entries[0]?.isIntersecting) setVisibleAppCount((count) => Math.min(count + 24, visibleApps.length))
+    }, { rootMargin: '400px 0px', threshold: 0 })
+    observer.observe(sentinel)
+    return () => observer.disconnect()
+  }, [tab, selectedApp, visibleAppCount, visibleApps.length])
+  useEffect(() => {
+    const sentinel = detailLoadMoreRef.current
+    if (!sentinel || (!selectedApp && !selectedBundle) || visiblePatchCount >= detailPatches.length) return
+    const observer = new IntersectionObserver((entries) => {
+      if (entries[0]?.isIntersecting) setVisiblePatchCount((count) => Math.min(count + 24, detailPatches.length))
+    }, { rootMargin: '400px 0px', threshold: 0 })
+    observer.observe(sentinel)
+    return () => observer.disconnect()
+  }, [selectedApp, selectedBundle, visiblePatchCount, detailPatches.length])
+
+  if (!catalogData) return <div className="loading-state">{loadError ? 'Catalog data could not be loaded.' : <><span className="loading-dot"/> Loading the Reseam catalog…</>}</div>
+
+  return <div className="site-shell">
+    <header className="site-header"><a href="#catalog" className="brand"><span className="brand-icon"><img src="/reseam.ico" alt=""/></span><span><strong>Awesome</strong> Reseam<small>Explore community patches for Reseam</small></span></a><div className="header-actions"><a href="https://reseam.app/patches/" target="_blank" rel="noreferrer">Official patches <ExternalLink size={13}/></a><a className="github-button" href="https://github.com/Reseam" target="_blank" rel="noreferrer" aria-label="Reseam on GitHub"><Github size={17}/></a></div></header>
+    <main id="catalog" className="catalog-page">
+      <section className="catalog-toolbar" aria-label="Catalog controls"><div className="toolbar-main"><div className="tabs" role="tablist" aria-label="Catalog type"><button role="tab" aria-selected={tab === 'apps'} className={tab === 'apps' ? 'active' : ''} onClick={() => switchTab('apps')}><Grid2X2 size={15}/>Apps</button><button role="tab" aria-selected={tab === 'bundles'} className={tab === 'bundles' ? 'active' : ''} onClick={() => switchTab('bundles')}><Layers3 size={16}/>Bundles</button><button role="tab" aria-selected={tab === 'news'} className={tab === 'news' ? 'active' : ''} onClick={() => switchTab('news')}><Sparkles size={15}/>What’s New</button></div>
+        <label className="select-box sort-select"><ListFilter size={16}/><select value={sort} onChange={(event) => setSort(event.target.value)} aria-label="Sort catalog">{tab === 'news' ? <><option value="popular">Newest releases</option><option value="oldest">Oldest releases</option></> : <><option value="popular">Most patches</option><option value="name">Name A–Z</option><option value="patches-asc">Fewest patches</option></>}</select><ChevronDown size={15}/></label>
+        {tab === 'apps' ? <div className="category-control"><button className="select-box category-button" onClick={() => setFilterMenu(!filterMenu)} aria-expanded={filterMenu}><ListFilter size={16}/>{category === 'all' ? 'All categories' : category}<ChevronDown size={15}/></button>{filterMenu && <div className="category-menu"><button className={category === 'all' ? 'selected' : ''} onClick={() => { setCategory('all'); setFilterMenu(false) }}>All categories <span>{data.apps.length}</span></button>{categories.map((item) => <button key={item} className={category === item ? 'selected' : ''} onClick={() => { setCategory(item); setFilterMenu(false) }}>{item}<span>{data.apps.filter((app) => app.category === item).length}</span></button>)}</div>}</div> : <div className="category-spacer" aria-hidden="true"/>}
+        <label className="search-box"><Search size={17}/><input className="search-input" value={query} onChange={(event) => setQuery(event.target.value)} placeholder={searchPlaceholder}/><kbd>⌘ K</kbd></label><span className="total-count">{activeCount.toLocaleString()} {countLabel}</span></div>
+      </section>
+
+      {data.staleSources.length > 0 && <div className="stale-banner">Some catalog sources could not refresh. Showing the last saved data. <details><summary>Details</summary>{data.staleSources.map((issue) => <span key={issue.url}>{issue.name}: {issue.error}</span>)}</details></div>}
+
+      {tab === 'apps' && !selectedApp && <section className="catalog-results"><div className="result-context"><span>PATCHABLE APPS</span><span>{data.apps.length} apps · {totalPatches} patches in latest bundles</span></div>{visibleApps.length ? <><div className="app-grid">{visibleApps.slice(0, visibleAppCount).map((app) => <AppCard app={app} key={app.packageName} onOpen={() => { setSelectedApp(app); setQuery('') }}/>)}</div>{visibleAppCount < visibleApps.length && <div ref={loadMoreRef} className="load-more-sentinel" aria-label="Loading more apps"/>}</> : <Empty message="No apps match your search."/>}</section>}
+
+      {tab === 'apps' && selectedApp && <section className="detail-view"><button className="back-button" onClick={() => { setSelectedApp(null); setQuery('') }}><ArrowLeft size={15}/> All apps</button><div className="app-detail-head"><AppIcon src={selectedApp.iconUrl} name={selectedApp.name}/><div><h1>{selectedApp.name}</h1><code>{selectedApp.packageName}</code><p>{detailPatches.length} patches · {appBundleGroups.length} {appBundleGroups.length === 1 ? 'bundle' : 'bundles'}{selectedApp.versions.length ? ` · Versions ${selectedApp.versions.join(', ')}` : ''}</p></div><span className="category-chip">{selectedApp.category}</span></div><div className="detail-toolbar"><h2>Bundles and patches</h2></div>{detailPatches.length ? <><div className="app-bundle-list">{visibleAppGroups.map((group) => <section className="app-bundle-group" key={group.bundle.indexUrl}><header className="app-bundle-heading"><div className="app-bundle-title"><AppIcon src={group.bundle.iconUrl} name={group.bundle.name}/><div><h3>{group.bundle.name}</h3><p>{group.bundle.author} · v{group.bundle.version} · {group.matchingCount} patches</p></div></div><div className="app-bundle-actions"><AddToReseam url={group.bundle.isOfficial ? group.bundle.indexUrl : group.bundle.homepage} compact/><a className="patch-link" href={group.bundle.homepage} target="_blank" rel="noreferrer" aria-label={`Open ${group.bundle.name} publisher source`}><ArrowUpRight size={15}/></a></div></header><div className="patch-list">{(deferredQuery || expandedAppBundles.has(group.bundle.indexUrl) ? group.patches : group.patches.slice(0, 2)).map((patch) => <PatchCard patch={patch} key={`${patch.bundle}:${patch.id}`}/>)}</div>{group.matchingCount > 2 && <button className="show-patches-button" onClick={() => setExpandedAppBundles((current) => { const next = new Set(current); if (next.has(group.bundle.indexUrl)) next.delete(group.bundle.indexUrl); else next.add(group.bundle.indexUrl); return next })}>{expandedAppBundles.has(group.bundle.indexUrl) ? 'Show fewer' : `Show all ${group.matchingCount} patches`}</button>}</section>)}</div></> : <Empty message="No patches match your search."/>}</section>}
+
+      {tab === 'bundles' && !selectedBundle && <section className="catalog-results"><div className="result-context"><span>PATCH SOURCES</span><span>{data.bundles.length} active sources</span></div>{visibleBundles.length ? <div className="bundle-grid">{visibleBundles.map((bundle) => <BundleCard bundle={bundle} key={bundle.indexUrl} onOpen={() => { setSelectedBundle(bundle); setQuery('') }}/>)}</div> : <Empty message="No bundles match your search."/>}</section>}
+
+      {tab === 'bundles' && selectedBundle && <section className="detail-view"><button className="back-button" onClick={() => { setSelectedBundle(null); setQuery('') }}><ArrowLeft size={15}/> All bundles</button><div className="app-detail-head"><AppIcon src={selectedBundle.iconUrl} name={selectedBundle.name}/><div><h1>{selectedBundle.name}</h1><code>by {selectedBundle.author}</code><p>{detailPatches.length} patches · version {selectedBundle.version} · {selectedBundle.isOfficial ? 'Official' : 'Community'} source</p></div><div className="detail-actions"><AddToReseam url={selectedBundle.isOfficial ? selectedBundle.indexUrl : selectedBundle.homepage}/><a className="action-button" href={selectedBundle.homepage} target="_blank" rel="noreferrer">Open source <ArrowUpRight size={14}/></a></div></div><div className="detail-toolbar"><h2>Bundle patches</h2></div>{detailPatches.length ? <><div className="patch-list">{detailPatches.slice(0, visiblePatchCount).map((patch) => <PatchCard patch={patch} key={`${patch.bundle}:${patch.id}`}/>)}</div>{visiblePatchCount < detailPatches.length && <div ref={detailLoadMoreRef} className="load-more-sentinel" aria-label="Loading more patches"/>}</> : <Empty message="No patches are available for this bundle."/>}</section>}
+
+      {tab === 'news' && <section className="catalog-results"><div className="result-context"><span>RECENT RELEASES</span><span>Official and community bundle updates</span></div>{visibleUpdates.length ? <div className="updates-list">{visibleUpdates.map((item, index) => <article className="update-card" key={`${item.sourceUrl}:${item.version}:${index}`}><div className="update-date">{formatDate(item.createdAt)}</div><div className="update-main"><div className="update-meta"><span className={item.official ? 'bundle-tag official-tag' : 'bundle-tag'}>{item.official ? 'OFFICIAL' : 'COMMUNITY'}</span><span>{item.sourceName}</span>{item.prerelease && <span className="pre-tag">PRE-RELEASE</span>}</div><h2>Version {item.version}</h2><ul>{releaseSummary(item.description).map((line, lineIndex) => <li key={lineIndex}>{line}</li>)}</ul></div><a href={item.sourceUrl} target="_blank" rel="noreferrer" className="patch-link" aria-label="Open release source"><ArrowUpRight size={16}/></a></article>)}</div> : <Empty message="No release notes match your search."/>}</section>}
+
+      <footer className="site-footer"><div className="footer-brand"><span className="brand-icon"><img src="/reseam.ico" alt=""/></span> Awesome Reseam</div><span>Community maintained · Not affiliated with Reseam</span><div><a href="https://patch-bundles.jmancentral.com/" target="_blank" rel="noreferrer">Catalog data <ArrowUpRight size={12}/></a><a href="https://reseam.app/docs/authoring/publishing/" target="_blank" rel="noreferrer">Publish a bundle <ArrowUpRight size={12}/></a><a href="https://github.com/Reseam" target="_blank" rel="noreferrer">GitHub <ArrowUpRight size={12}/></a></div></footer>
+    </main>
+  </div>
+}
+
+function Empty({ message }: { message: string }) { return <div className="empty-state"><PackageOpen size={23}/><p>{message}</p></div> }
+
+createRoot(document.getElementById('root')!).render(<React.StrictMode><App/></React.StrictMode>)
+
