@@ -50,3 +50,7 @@ Awesome Reseam is an independent community directory. It is not affiliated with 
 The catalog design was inspired by [Awesome Morphe](https://github.com/nvbangg/awesome-morphe). See [`LICENSE.awesome-morphe`](LICENSE.awesome-morphe) for its MIT notice.
 
 For development and contribution instructions, see [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Development and changes
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the development workflow and [the change protocol](docs/CHANGE_PROTOCOL.md) for the required source, stability, build, and deployment checks. Manual sources and app/store overrides live in [config/catalog-config.json](config/catalog-config.json); generated catalog files should not be edited by hand.
