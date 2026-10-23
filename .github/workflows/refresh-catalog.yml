@@ -8,6 +8,7 @@ on:
     paths:
       - ".github/workflows/refresh-catalog.yml"
       - "scripts/update-catalog.mjs"
+      - "config/catalog-config.json"
       - "package.json"
       - "package-lock.json"
 
@@ -59,6 +60,9 @@ jobs:
           }
           console.log(`Validated ${catalog.bundles.length} bundles, ${catalog.apps.length} apps, ${catalog.official.patches.length} official patches and ${catalog.community.reduce((n, source) => n + source.patches.length, 0)} community patches.`);
           NODE
+
+      - name: Validate catalog structure and configuration
+        run: npm run validate:catalog
 
       - name: Avoid timestamp-only commits
         run: |
