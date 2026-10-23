@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T07:15:38.529Z",
+  "generatedAt": "2026-10-23T07:18:07.657Z",
   "registry": {
     "url": "https://patch-bundles.api.jmancentral.com",
     "generation": null,
@@ -5872,7 +5872,7 @@
       "version": "0.1.0",
       "updatedAt": "2026-10-23T06:10:02.768210625Z",
       "patchCount": 29,
-      "iconUrl": "https://img.utdstc.com/icon/c73/77d/c7377d76316b5d34edfa1171c5e8f144f0ddc954822e7cec720bd5cf2bed4e54",
+      "iconUrl": "https://avatars.githubusercontent.com/u/1288587?v=4",
       "metadataStatus": "verified",
       "releases": [
         {
@@ -6658,7 +6658,7 @@
       "version": "0.1.0",
       "updatedAt": "2026-10-23T06:10:02.768210625Z",
       "patchCount": 29,
-      "iconUrl": "https://img.utdstc.com/icon/c73/77d/c7377d76316b5d34edfa1171c5e8f144f0ddc954822e7cec720bd5cf2bed4e54",
+      "iconUrl": "https://avatars.githubusercontent.com/u/1288587?v=4",
       "isOfficial": false,
       "metadataStatus": "verified"
     }
