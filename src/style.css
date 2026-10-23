@@ -374,8 +374,4 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .app-version{display:block;margin-top:1px;color:#a9adaa;font:10px/1.5 var(--mono);overflow-wrap:anywhere}
 
 /* Reseam-inspired header branding */
-.site-header{border-bottom-color:#2f4a3b;background:#0d120f}
-.brand-icon{background:#a2ebbd;color:#10251a;box-shadow:inset 0 0 0 3px #d8f8e4}
 .brand strong{color:#a2ebbd}
-.header-actions>a{border-color:#355443;color:#d0e8d8}
-.header-actions>a:hover{background:#1b2c22;color:#a2ebbd;border-color:#a2ebbd}
