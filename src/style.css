@@ -351,3 +351,14 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .sort-menu button.selected{background:#343739;color:var(--mint)}
 @media(max-width:1120px){.sort-control{grid-column:2}}
 @media(max-width:680px){.sort-control{grid-column:1}.sort-button{height:45px;min-height:45px;padding:0 12px;gap:8px;font-size:11px}.sort-menu{min-width:0;top:49px}}
+
+
+/* The search field itself owns the focus state; avoid a second inner focus ring. */
+.search-box input:focus,
+.search-box input:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+.search-box:focus-within {
+  outline: none;
+}
