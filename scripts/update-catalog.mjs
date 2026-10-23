@@ -9,7 +9,7 @@ const manualSources = [
     author: 'JoanComasFdz',
     sourceUrl: 'https://github.com/JoanComasFdz/baconreader-reseam-patches',
     indexJsonUrl: 'https://github.com/JoanComasFdz/baconreader-reseam-patches/releases/latest/download/patches.json',
-    iconUrl: 'https://img.utdstc.com/icon/c73/77d/c7377d76316b5d34edfa1171c5e8f144f0ddc954822e7cec720bd5cf2bed4e54',
+    iconUrl: 'https://avatars.githubusercontent.com/u/1288587?v=4',
   },
 ]
 const previous = JSON.parse(await readFile(outputPath, 'utf8'))
