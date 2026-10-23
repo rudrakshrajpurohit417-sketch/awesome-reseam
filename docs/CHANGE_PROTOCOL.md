@@ -14,7 +14,17 @@ npm run validate:catalog
 
 If a local machine cannot reach production, use the Vercel deployment metadata and GitHub Actions logs as partial evidence, **not** as a replacement for the smoke test. Explicitly mark the site as partially verified and list what could not be checked. If the current site has a broken asset, invalid catalog, failed build, missing alias, or client error, stop unrelated feature work and establish a known-good baseline first. Never describe the site as fully stable until the checks actually pass.
 
-## 2. When adding a source or bundle
+## 2. Central configuration (preferred for routine changes)
+
+Routine source additions and app-specific overrides live in `config/catalog-config.json`, not inside the catalog engine:
+
+- Add one entry to `manualSources` with the verified repository/homepage, published index URL, author, and correct bundle icon fallback.
+- Add package-specific name/icon/store-status overrides to `curatedAppMetadata`. Manual Google Play status must include an evidence URL.
+- Change `googlePlayMarkets` or `googlePlayCacheHours` only deliberately.
+- Keep fetch/transform logic in `scripts/update-catalog.mjs`; avoid hard-coding one-off source data there.
+- For source or app metadata edits, run `npm run catalog:update`, then `npm run validate:catalog` and inspect both generated catalog files.
+
+## 3. When adding a source or bundle
 
 1. Open the original repository and identify the owner, project name, license, maintenance state, canonical homepage, release page, and the documented Reseam index URL. Never guess a release file path: inspect the repository, workflow, and latest release asset first.
 2. Download the published index and validate its real schema. Check the latest stable release before prereleases; count and inspect patches, IDs, descriptions, compatibility packages/versions, hidden flags, options, required fields, and release metadata. Confirm that each patch is attributed to the source it actually came from. Do not invent patch data or silently convert missing fields into plausible values.
@@ -24,28 +34,27 @@ If a local machine cannot reach production, use the Vercel deployment metadata a
 6. Check for duplicate source URLs, duplicate patch IDs within each source, duplicate package IDs, invalid compatibility arrays, empty releases, wrong add-to-Reseam URL, and stale/failed sources. A failed source refresh must not silently replace valid catalog data with an empty/partial source.
 7. Regenerate `data/catalog.json` and `public/catalog.json` through the script. Do not hand-edit generated copies. Run validation and inspect the actual generated records before publishing.
 
-## 3. For UI, logic, styling, or refactors
+## 4. For UI, logic, styling, or refactors
 
 1. Identify connected data types, producers, consumers, styles, route state, accessibility attributes, and mobile/desktop breakpoints before changing a component.
 2. Preserve established visual hierarchy and non-target behavior. Keep unknown/unavailable states explicit, and do not use a success color for unverified states.
 3. Check keyboard operation, focus, semantic labels, reduced-motion preferences, loading/error/empty states, external-link behavior, and console/network errors. Test both the card/grid surface and any detail view affected by the change.
 4. Do not bundle unrelated cleanup into a bug fix unless required. Explain any unavoidable scope expansion.
 
-## 4. Required pre-publish checks
+## 5. Required pre-publish checks
 
-Run all of these after the change:
+Run these after every code/configuration change:
 
 ```sh
 npm ci
-npm run catalog:update
 npm run validate:catalog
 npm run typecheck
 npm run build
 ```
 
-The build includes catalog generation, structural validation, TypeScript compilation, and Vite production compilation. Review the diff to ensure generated catalogs match and no unrelated files changed. The `App checks` workflow provides a clean-run build gate.
+Only run `npm run catalog:update` when source metadata or upstream catalog data must be refreshed. The production build is intentionally deterministic and does not need live upstream APIs to be reachable. The catalog refresh has its own scheduled workflow. Review the diff to ensure generated catalogs match and no unrelated files changed. The `App checks` workflow provides a clean-run build gate.
 
-## 5. Required post-deploy checks
+## 6. Required post-deploy checks
 
 1. Wait for the deployment system to report READY, then verify the production alias is assigned to the new commit.
 2. Run `npm run smoke:production` and confirm the home page, JS/CSS assets, and `catalog.json` return HTTP 200 with valid content.
@@ -53,7 +62,7 @@ The build includes catalog generation, structural validation, TypeScript compila
 4. Verify important source counts and status labels against the generated catalog. Check that available Google Play actions are green and that unavailable/unknown actions are not green.
 5. Only call the task finished when automated checks and required visual checks passed. If live browser access or network access is unavailable, state that limitation and leave the status as partially verified rather than claiming complete stability.
 
-## 6. Failure and rollback rules
+## 7. Failure and rollback rules
 
 - Never overwrite a known-good catalog with an empty or malformed refresh.
 - If a required build or smoke check fails, inspect logs and fix the cause before adding more changes.
