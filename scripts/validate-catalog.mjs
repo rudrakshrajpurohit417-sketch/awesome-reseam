@@ -3,6 +3,30 @@ import { readFile } from 'node:fs/promises'
 
 const dataCatalog = JSON.parse(await readFile(new URL('../data/catalog.json', import.meta.url), 'utf8'))
 const publicCatalog = JSON.parse(await readFile(new URL('../public/catalog.json', import.meta.url), 'utf8'))
+const config = JSON.parse(await readFile(new URL('../config/catalog-config.json', import.meta.url), 'utf8'))
+
+assert.ok(Array.isArray(config.manualSources), 'config.manualSources must be an array')
+assert.ok(config.curatedAppMetadata && typeof config.curatedAppMetadata === 'object' && !Array.isArray(config.curatedAppMetadata), 'config.curatedAppMetadata must be an object')
+assert.ok(Array.isArray(config.googlePlayMarkets) && config.googlePlayMarkets.length > 0, 'config.googlePlayMarkets must be a non-empty array')
+assert.ok(Number.isFinite(config.googlePlayCacheHours) && config.googlePlayCacheHours > 0, 'config.googlePlayCacheHours must be positive')
+
+const configuredSourceUrls = new Set()
+for (const source of config.manualSources) {
+  assert.ok(source.name && source.author, 'Every manual source needs a name and author')
+  for (const field of ['sourceUrl', 'indexJsonUrl']) assert.ok(/^https:\/\//.test(source[field] ?? ''), `${source.name}: ${field} must be HTTPS`)
+  if (source.iconUrl) assert.ok(/^https:\/\//.test(source.iconUrl), `${source.name}: iconUrl must be HTTPS`)
+  assert.ok(!configuredSourceUrls.has(source.sourceUrl), `Duplicate configured source: ${source.sourceUrl}`)
+  configuredSourceUrls.add(source.sourceUrl)
+}
+for (const [packageName, metadata] of Object.entries(config.curatedAppMetadata)) {
+  assert.ok(packageName.includes('.'), `Curated app key must look like a package ID: ${packageName}`)
+  assert.ok(metadata && typeof metadata === 'object', `${packageName}: metadata must be an object`)
+  if (metadata.iconUrl) assert.ok(/^https:\/\//.test(metadata.iconUrl), `${packageName}: iconUrl must be HTTPS`)
+  if (metadata.googlePlayStatus) assert.ok(['available', 'unavailable', 'unknown'].includes(metadata.googlePlayStatus), `${packageName}: invalid configured Google Play status`)
+  if (metadata.googlePlayStatusSource === 'manual' && metadata.googlePlayStatus === 'unavailable') {
+    assert.ok(/^https:\/\//.test(metadata.googlePlayEvidenceUrl ?? ''), `${packageName}: manual unavailable status needs evidence`)
+  }
+}
 
 assert.deepEqual(publicCatalog, dataCatalog, 'public/catalog.json must match data/catalog.json')
 assert.ok(dataCatalog.registry && typeof dataCatalog.registry.available === 'boolean', 'Catalog registry availability must be explicit')
