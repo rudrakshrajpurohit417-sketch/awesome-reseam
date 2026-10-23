@@ -375,3 +375,5 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 
 /* Reseam-inspired header branding */
 .brand strong{color:#a2ebbd}
+
+.request-bundle-button{color:var(--mint)!important;border-color:#426a53!important}.request-bundle-button:hover{background:#1b2c22!important;color:#a2ebbd!important;border-color:#a2ebbd!important}
