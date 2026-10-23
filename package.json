@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "node scripts/update-catalog.mjs && node scripts/validate-catalog.mjs && tsc -b && vite build",
+    "build": "npm run validate:catalog && npm run typecheck && vite build",
     "preview": "vite preview",
     "catalog:update": "node scripts/update-catalog.mjs",
     "typecheck": "tsc -b",
