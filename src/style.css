@@ -422,3 +422,8 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
     padding:8px 11px;
   }
 }
+
+/* Store availability states: only a confirmed listing uses the mint/green action style. */
+.app-card .action-button.store-unavailable{background:#303336;border:1px solid #555b5e;color:#d6dad7;cursor:default}
+.app-card .action-button.store-unknown{background:#303034;border:1px solid #665b42;color:#e3d1a5}
+.app-card .action-button.store-unavailable:hover,.app-card .action-button.store-unknown:hover{filter:none}

@@ -5,7 +5,7 @@ import { AppCard } from './AppCard'
 import { AddToReseam } from './AddToReseam'
 import './style.css'
 
-type AppInfo = { packageName: string; name: string; iconUrl: string | null; category: string; patchCount: number; bundleCount: number; versions: string[]; patches: Patch[] }
+type AppInfo = { packageName: string; name: string; iconUrl: string | null; category: string; patchCount: number; bundleCount: number; versions: string[]; googlePlayStatus?: 'available' | 'unavailable' | 'unknown'; googlePlayStatusSource?: string; googlePlayCheckedAt?: string | null; googlePlayEvidenceUrl?: string | null; googlePlayMarketsChecked?: string[]; patches: Patch[] }
 type Patch = { id: string; name: string; description: string; bundle: string; sourceName: string; sourceUrl: string; sourceVersion: string; apps: { package: string; versions: string[] }[]; options: { key?: string; title?: string; description?: string; option_type?: string; required?: boolean; default_value?: { value?: string | number | boolean } }[]; official: boolean }
 type Bundle = { name: string; author: string; description: string; homepage: string; indexUrl: string; addUrl: string | null; version: string; updatedAt: string | null; patchCount: number; iconUrl: string | null; isOfficial: boolean; metadataStatus: string }
 type BundleSource = { name: string; indexUrl: string; patches: Omit<Patch, 'official'>[] }

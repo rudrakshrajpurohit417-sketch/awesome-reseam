@@ -218,9 +218,121 @@ for (const source of sources) for (const patch of source.patches) for (const app
 
 const appMetadata = new Map(apiApps.map((app) => [app.package_name, app]))
 const curatedAppMetadata = new Map([
-  ['com.onelouder.baconreader', { name: 'BaconReader', iconUrl: 'https://img.utdstc.com/icon/c73/77d/c7377d76316b5d34edfa1171c5e8f144f0ddc954822e7cec720bd5cf2bed4e54' }],
-  ['com.onelouder.baconreader.premium', { name: 'BaconReader Premium', iconUrl: 'https://img.utdstc.com/icon/c73/77d/c7377d76316b5d34edfa1171c5e8f144f0ddc954822e7cec720bd5cf2bed4e54' }],
+  ['com.onelouder.baconreader', {
+    name: 'BaconReader',
+    iconUrl: 'https://img.utdstc.com/icon/c73/77d/c7377d76316b5d34edfa1171c5e8f144f0ddc954822e7cec720bd5cf2bed4e54',
+    googlePlayStatus: 'unavailable',
+    googlePlayStatusSource: 'manual',
+    googlePlayEvidenceUrl: 'https://www.appbrain.com/app/baconreader-for-reddit/com.onelouder.baconreader',
+  }],
+  ['com.onelouder.baconreader.premium', {
+    name: 'BaconReader Premium',
+    iconUrl: 'https://img.utdstc.com/icon/c73/77d/c7377d76316b5d34edfa1171c5e8f144f0ddc954822e7cec720bd5cf2bed4e54',
+    googlePlayStatus: 'unavailable',
+    googlePlayStatusSource: 'manual',
+    googlePlayEvidenceUrl: 'https://www.appbrain.com/app/baconreader-premium-for-reddit/com.onelouder.baconreader.premium',
+  }],
 ])
+
+const googlePlayMarkets = ['US', 'IN']
+const googlePlayCacheMs = 24 * 60 * 60 * 1000
+const previousAppByPackage = new Map((previous.apps ?? []).map((app) => [app.packageName, app]))
+const googlePlayMetadataByPackage = new Map()
+const marketResults = new Map()
+const playCheckAt = new Date().toISOString()
+
+function classifyGooglePlayPage(response, html) {
+  const page = html.replace(/&quot;/g, '"').replace(/&#39;|&#x27;/g, "'")
+  if (response.status === 404 || /we(?:'|’)?re sorry, the requested url was not found on this server/i.test(page)) {
+    return 'unavailable'
+  }
+  if (/this item isn't available in your country|this item is not available in your country|not available in your country/i.test(page)) {
+    return 'unavailable'
+  }
+  if (!response.ok) return 'unknown'
+  const hasListing = /"@type"\s*:\s*"SoftwareApplication"/i.test(page)
+    || /itemtype=["']https?:\/\/schema\.org\/SoftwareApplication/i.test(page)
+    || /property=["']og:title["'][^>]*content=["'][^"']+\s+-\s*Apps on Google Play/i.test(page)
+    || /content=["'][^"']+\s+-\s*Apps on Google Play["'][^>]*property=["']og:title["']/i.test(page)
+  return hasListing ? 'available' : 'unknown'
+}
+
+async function checkGooglePlayListing(packageName, market) {
+  const url = new URL('https://play.google.com/store/apps/details')
+  url.searchParams.set('id', packageName)
+  url.searchParams.set('hl', 'en')
+  url.searchParams.set('gl', market)
+  try {
+    const response = await fetch(url, {
+      headers: {
+        accept: 'text/html,application/xhtml+xml',
+        'accept-language': 'en-US,en;q=0.9',
+        'user-agent': 'Mozilla/5.0 (compatible; AwesomeReseamCatalog/1.0)',
+      },
+      signal: AbortSignal.timeout(10000),
+    })
+    const html = await response.text()
+    return classifyGooglePlayPage(response, html)
+  } catch {
+    return 'unknown'
+  }
+}
+
+async function mapWithLimit(items, limit, callback) {
+  let next = 0
+  const workers = Array.from({ length: Math.min(limit, items.length) }, async () => {
+    while (next < items.length) {
+      const index = next++
+      await callback(items[index])
+    }
+  })
+  await Promise.all(workers)
+}
+
+const packagesToCheck = []
+for (const packageName of patchByApp.keys()) {
+  const curated = curatedAppMetadata.get(packageName)
+  if (curated?.googlePlayStatus) {
+    googlePlayMetadataByPackage.set(packageName, {
+      status: curated.googlePlayStatus,
+      source: curated.googlePlayStatusSource ?? 'manual',
+      checkedAt: playCheckAt,
+      evidenceUrl: curated.googlePlayEvidenceUrl ?? null,
+      markets: googlePlayMarkets,
+    })
+    continue
+  }
+  const old = previousAppByPackage.get(packageName)
+  const age = Date.now() - Date.parse(old?.googlePlayCheckedAt ?? '')
+  if (old && ['available', 'unavailable'].includes(old.googlePlayStatus) && Number.isFinite(age) && age >= 0 && age < googlePlayCacheMs) {
+    googlePlayMetadataByPackage.set(packageName, {
+      status: old.googlePlayStatus,
+      source: old.googlePlayStatusSource ?? 'google-play',
+      checkedAt: old.googlePlayCheckedAt,
+      evidenceUrl: old.googlePlayEvidenceUrl ?? null,
+      markets: old.googlePlayMarketsChecked ?? googlePlayMarkets,
+    })
+  } else {
+    packagesToCheck.push(packageName)
+  }
+}
+
+const checksToRun = packagesToCheck.flatMap((packageName) => googlePlayMarkets.map((market) => ({ packageName, market })))
+await mapWithLimit(checksToRun, 6, async ({ packageName, market }) => {
+  marketResults.set(`${packageName}:${market}`, await checkGooglePlayListing(packageName, market))
+})
+
+for (const packageName of packagesToCheck) {
+  const statuses = googlePlayMarkets.map((market) => marketResults.get(`${packageName}:${market}`) ?? 'unknown')
+  const status = statuses.includes('available') ? 'available' : statuses.every((item) => item === 'unavailable') ? 'unavailable' : 'unknown'
+  googlePlayMetadataByPackage.set(packageName, {
+    status,
+    source: status === 'unknown' ? 'unknown' : 'google-play',
+    checkedAt: playCheckAt,
+    evidenceUrl: null,
+    markets: googlePlayMarkets,
+  })
+}
 const appCategory = (name, packageName) => {
   const text = `${name} ${packageName}`.toLowerCase()
   if (/youtube|video|tiktok|picsart|vlog|photo/.test(text)) return 'Video & Photography'
@@ -239,7 +351,22 @@ const apps = [...patchByApp.entries()].map(([packageName, patches]) => {
   const name = curatedMetadata?.name ?? (metadata?.app_name && metadata.app_name !== packageName ? metadata.app_name : packageName)
   const uniquePatches = [...new Map(patches.map((patch) => [`${patch.bundle}:${patch.id}`, patch])).values()]
   const versions = [...new Set(patches.flatMap((patch) => patch.apps.find((app) => app.package === packageName)?.versions ?? []))]
-  return { packageName, name, iconUrl: curatedMetadata?.iconUrl ?? metadata?.icon_url ?? null, category: appCategory(name, packageName), patchCount: uniquePatches.length, bundleCount: new Set(uniquePatches.map((patch) => patch.bundle)).size, versions, patches: uniquePatches }
+  const playStatus = googlePlayMetadataByPackage.get(packageName)
+  return {
+    packageName,
+    name,
+    iconUrl: curatedMetadata?.iconUrl ?? metadata?.icon_url ?? null,
+    googlePlayStatus: playStatus?.status ?? 'unknown',
+    googlePlayStatusSource: playStatus?.source ?? 'unknown',
+    googlePlayCheckedAt: playStatus?.checkedAt ?? null,
+    googlePlayEvidenceUrl: playStatus?.evidenceUrl ?? null,
+    googlePlayMarketsChecked: playStatus?.markets ?? [],
+    category: appCategory(name, packageName),
+    patchCount: uniquePatches.length,
+    bundleCount: new Set(uniquePatches.map((patch) => patch.bundle)).size,
+    versions,
+    patches: uniquePatches,
+  }
 }).sort((a, b) => a.name.localeCompare(b.name))
 
 const whatsNew = sources.flatMap((source) => source.releases.map((release) => ({ ...release, sourceName: source.name, sourceUrl: source.indexUrl, official: source.isOfficial }))).sort((a, b) => new Date(b.createdAt ?? 0) - new Date(a.createdAt ?? 0)).slice(0, 30)

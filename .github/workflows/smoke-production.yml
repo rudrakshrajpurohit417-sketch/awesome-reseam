@@ -1,0 +1,24 @@
+name: Production smoke check
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '41 */6 * * *'
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    name: Home page, assets and catalog
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Smoke test production
+        run: npm run smoke:production

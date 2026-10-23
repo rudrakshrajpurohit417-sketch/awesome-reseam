@@ -13,6 +13,7 @@ export type AppCardData = {
   category: string
   patchCount: number
   versions: string[]
+  googlePlayStatus?: 'available' | 'unavailable' | 'unknown'
 }
 
 function latestVersion(versions: string[]) {
@@ -52,6 +53,6 @@ export const AppCard = memo(function AppCard({ app, onOpen }: { app: AppCardData
     </button>
     <button className="package-id" onClick={copyPackage} title="Copy package name"><span>{copied ? <Check size={13} /> : <Copy size={13} />}</span><code>{app.packageName}</code>{copied && <em>Copied</em>}</button>
     <p className="app-description">Browse community patches for {app.name} and compare supported versions.</p>
-    <div className="app-card-footer"><span className="category-chip">{app.category}</span><a className="action-button" href={`https://play.google.com/store/apps/details?id=${encodeURIComponent(app.packageName)}`} target="_blank" rel="noreferrer" onClick={(event) => event.stopPropagation()}>Google Play <ArrowUpRight size={14} /></a></div>
+    <div className="app-card-footer"><span className="category-chip">{app.category}</span>{(app.googlePlayStatus ?? 'unknown') === 'available' ? <a className="action-button" href={`https://play.google.com/store/apps/details?id=${encodeURIComponent(app.packageName)}`} target="_blank" rel="noreferrer" onClick={(event) => event.stopPropagation()}>Google Play <ArrowUpRight size={14} /></a> : (app.googlePlayStatus ?? 'unknown') === 'unavailable' ? <span className="action-button store-unavailable" role="status" aria-disabled="true" title="The listing was checked and was not found on Google Play">Not on Google Play</span> : <a className="action-button store-unknown" href={`https://play.google.com/store/apps/details?id=${encodeURIComponent(app.packageName)}`} target="_blank" rel="noreferrer" onClick={(event) => event.stopPropagation()} title="Automated Google Play status check was inconclusive">Check Google Play <ArrowUpRight size={14} /></a>}</div>
   </article>
 })

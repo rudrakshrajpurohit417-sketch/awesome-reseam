@@ -5,9 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "node scripts/update-catalog.mjs && tsc -b && vite build",
+    "build": "node scripts/update-catalog.mjs && node scripts/validate-catalog.mjs && tsc -b && vite build",
     "preview": "vite preview",
-    "catalog:update": "node scripts/update-catalog.mjs"
+    "catalog:update": "node scripts/update-catalog.mjs",
+    "typecheck": "tsc -b",
+    "validate:catalog": "node scripts/validate-catalog.mjs",
+    "smoke:production": "node scripts/smoke-production.mjs"
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",
