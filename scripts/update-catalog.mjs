@@ -247,7 +247,8 @@ function classifyGooglePlayPage(response, html) {
     return 'unavailable'
   }
   if (/this item isn't available in your country|this item is not available in your country|not available in your country/i.test(page)) {
-    return 'unavailable'
+    // A region restriction is not proof that the app has been delisted globally.
+    return 'region-restricted'
   }
   if (!response.ok) return 'unknown'
   const hasListing = /"@type"\s*:\s*"SoftwareApplication"/i.test(page)
