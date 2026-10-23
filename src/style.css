@@ -183,3 +183,44 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
     transition-duration: .01ms !important;
   }
 }
+
+
+/* Sliding indicator for the Apps / Bundles / What's New navigation. */
+.tabs {
+  position: relative;
+  isolation: isolate;
+}
+.tabs::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 4px;
+  bottom: 4px;
+  left: 4px;
+  width: calc((100% - 8px) / 3);
+  border: 1px solid rgba(143,224,176,.34);
+  border-radius: 8px;
+  background: linear-gradient(135deg, rgba(143,224,176,.18), rgba(143,224,176,.07));
+  box-shadow: 0 2px 12px rgba(143,224,176,.07);
+  transition: transform .28s cubic-bezier(.22,.8,.25,1), background-color .2s ease;
+  pointer-events: none;
+}
+.tabs:has(button:nth-child(1).active)::before,
+.tabs:has(button:nth-child(1)[aria-selected="true"])::before { transform: translateX(0); }
+.tabs:has(button:nth-child(2).active)::before,
+.tabs:has(button:nth-child(2)[aria-selected="true"])::before { transform: translateX(100%); }
+.tabs:has(button:nth-child(3).active)::before,
+.tabs:has(button:nth-child(3)[aria-selected="true"])::before { transform: translateX(200%); }
+.tabs button {
+  position: relative;
+  z-index: 1;
+  background: transparent;
+  transition: color .2s ease, transform .16s ease;
+}
+.tabs button.active,
+.tabs button[aria-selected="true"] {
+  color: var(--mint, #8fe0b0);
+}
+@media (prefers-reduced-motion: reduce) {
+  .tabs::before { transition: none; }
+}
