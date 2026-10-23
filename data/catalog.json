@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T03:03:48.335Z",
+  "generatedAt": "2026-10-23T07:11:55.850Z",
   "registry": {
     "url": "https://patch-bundles.api.jmancentral.com",
     "generation": null,
@@ -5861,6 +5861,762 @@
           "options": []
         }
       ]
+    },
+    {
+      "name": "baconreader-patches",
+      "author": "JoanComasFdz",
+      "description": "Patches for BaconReader, ported from ReVanced",
+      "homepage": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+      "indexUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+      "addUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+      "version": "0.1.0",
+      "updatedAt": "2026-10-23T06:10:02.768210625Z",
+      "patchCount": 29,
+      "iconUrl": null,
+      "metadataStatus": "verified",
+      "releases": [
+        {
+          "version": "0.1.0",
+          "createdAt": "2026-10-23T06:10:02.768210625Z",
+          "description": "- fix: run the publish script on Ubuntu 24.04, since the reseam CLI needs glibc 2.39\n- chore: add a script that sets up the signing key and publishes a release from a container\n- docs: make the README about the patches and how to install them, and move the details to docs/DEVELOPMENT.md\n- feat(baconreader): show Reddit chat in place of the post list, under BaconReader's toolbar and drawer\n- feat(baconreader): check for new Reddit chat messages, with their count next to Chat and a notification\n- feat(baconreader): add Reddit chat, which opens Reddit's chat from the menu, next to the inbox\n- feat(baconreader): add Disable final release announcement, which stops the goodbye popup when the app starts\n- feat(baconreader): show every error that escapes a patch in the error dialog, and keep the app open\n- docs: require extensions to use only public app classes and members\n- docs: order the README by the patches and group their settings\n- feat(baconreader): add Save videos with sound, which adds the sound to Reddit videos saved to the device\n- feat(baconreader): add Hide formatted spoilers, which hides spoilers with formatting, links or code behind the spoiler box\n- feat(baconreader): add Markdown editor, which makes text boxes big and adds a bar of Reddit's formats with live formatting\n- feat(baconreader): add Inbox comment reply screen, which replies from the inbox on the comment reply screen\n- feat(baconreader): add Fix unread messages, which turns the inbox envelope back to normal once every message is read\n- feat(baconreader): add Load more comments, which loads up to 500 comments when a post opens and the small \"load more comments\" automatically\n- feat(baconreader): add Search comments, which finds, highlights and jumps between the comments of a post with a text or user name\n- feat(baconreader): add Show user avatars, which shows the author's avatar before the name in comments and the inbox\n- feat(baconreader): add Flair filter, which shows only the posts of a subreddit with the chosen flairs\n- feat(baconreader): add Disable feedback popup, which stops the popup asking for feedback about BaconReader\n- feat(baconreader): add Remove Random feeds, which removes the Random feeds that no longer load from the feed list\n- feat(baconreader): add Show request errors, which shows the actual error when a Reddit request fails\n- feat(baconreader): add Disable unavailable sidebar, which greys out \"View Sidebar\" on feeds that have no sidebar\n- feat(baconreader): add Remove awards, which removes the award icons and actions that no longer work\n- feat(baconreader): add Fix empty saved files, which stops saving media from also creating an empty file\n- feat(baconreader): add Fix meme templates, which makes the meme templates of the drawing screen load again\n- feat(baconreader): add Fix lost post votes, which keeps votes made on a post while its comments load\n- feat(baconreader): add Prompt to open Reddit links, which asks once to set up Reddit links to open in BaconReader\n- feat(baconreader): add Improve post media loading, which shows a still preview and the download progress while post media loads\n- feat(baconreader): add Embed comment images, which shows images, GIFs, emotes, Imgur albums, videos, YouTube titles and X and Bluesky posts in comments and posts\n- feat(baconreader): add Fix Imgur API, which makes Imgur albums, galleries and image uploads work again\n- feat(baconreader): add Text post icon, which shows a page icon instead of a play button on text posts\n- feat(baconreader): add Show tables, which draws Reddit tables as a grid\n- feat(baconreader): add Fix list thumbnails, which fixes empty thumbnails in the post list and blurs NSFW and spoiler ones\n- docs: say that ReVanced parent settings only grey out the settings screen\n- docs: describe the settings screen, the error dialog and the shared extension code\n- feat(baconreader): add the error dialog and the extension code several patches share\n- feat(baconreader): add the settings screen and Patches entry in settings, which opens it\n- docs: add the coding guidelines learned from porting ReVanced patches\n- feat(baconreader): add Fix Redgifs API, which makes Redgifs videos play again\n- feat(baconreader): add Spoof client, which makes logging in to Reddit work again\n- chore: replace the example patches with the BaconReader bundle\n- Initial commit\n",
+          "prerelease": false
+        }
+      ],
+      "patches": [
+        {
+          "id": "com.joancomasfdz.patches.baconreader.account.spoofClient",
+          "name": "Spoof client",
+          "description": "Makes logging in to Reddit work again by using another Reddit app's client ID.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [
+            {
+              "key": "clientId",
+              "title": "Application client ID",
+              "description": "The client ID of an \"Installed app\" from https://www.reddit.com/prefs/apps.",
+              "option_type": "string",
+              "default_value": {
+                "type": "string",
+                "value": "yH0aTnJEt6qUgGn835B4vg"
+              },
+              "valid_values": null,
+              "required": true
+            },
+            {
+              "key": "redirectUri",
+              "title": "Application redirect URI",
+              "description": "The redirect URI of that Reddit app. Empty keeps BaconReader's own, http://baconreader.com/auth.",
+              "option_type": "string",
+              "default_value": {
+                "type": "string",
+                "value": "redreader://rr_oauth_redir"
+              },
+              "valid_values": null,
+              "required": false
+            },
+            {
+              "key": "userAgent",
+              "title": "Application user agent",
+              "description": "The user agent of that Reddit app, ideally. Empty keeps BaconReader's own.",
+              "option_type": "string",
+              "default_value": {
+                "type": "string",
+                "value": "org.quantumbadger.redreader/1.25.1"
+              },
+              "valid_values": null,
+              "required": false
+            }
+          ]
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.comments.commentSearch",
+          "name": "Search comments",
+          "description": "Adds a search button to the sort bar of posts, to find, highlight and jump between the comments with a text or user name, or show only those comments.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.comments.embedCommentImages",
+          "name": "Embed comment images",
+          "description": "Shows images, GIFs, emotes, Imgur albums and videos in comments and posts, YouTube links with their title and thumbnail, and X and Bluesky links as the post.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.comments.hideFormattedSpoilers",
+          "name": "Hide formatted spoilers",
+          "description": "Hides spoilers that contain formatting, links or code, like other spoilers.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.comments.loadMoreComments",
+          "name": "Load more comments",
+          "description": "Adds options to load up to 500 comments when opening a post instead of about 200, and to load the \"load more comments\" with few replies automatically.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.comments.showTables",
+          "name": "Show tables",
+          "description": "Shows tables in comments and posts as a grid, with wide tables that expand and scroll sideways.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.comments.userAvatars",
+          "name": "Show user avatars",
+          "description": "Adds an option to show the author's avatar before the name in comments, as on Reddit's website.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.core.settingsEntry",
+          "name": "Patches entry in settings",
+          "description": "Adds a Patches entry at the end of BaconReader's settings, which opens the patches' settings.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.editor.markdownEditor",
+          "name": "Markdown editor",
+          "description": "Makes the text box of comments, replies, edits, messages and text posts as big as possible, with a bar of Reddit's formats and a character counter, and shows the formatting while typing.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.inbox.fixUnreadMessages",
+          "name": "Fix unread messages",
+          "description": "Turns the orange inbox envelope back to normal when the last unread message is marked as read, and removes \"Mark unread\", which Reddit no longer supports.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.inbox.inboxCommentReply",
+          "name": "Inbox comment reply screen",
+          "description": "Opens the comment reply screen, with the replied comment or message, when replying from the inbox, instead of the plain \"Send message\" form.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.inbox.redditChat",
+          "name": "Reddit chat",
+          "description": "Adds Chat to the menu, next to the Inbox, which shows Reddit's chat from its mobile website on the main screen, and notifies of new chat messages.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.links.promptToOpenRedditLinks",
+          "name": "Prompt to open Reddit links",
+          "description": "Asks once to set up Reddit links to open in BaconReader, which Android doesn't let the app do by itself.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.media.fixEmptySavedFiles",
+          "name": "Fix empty saved files",
+          "description": "Fixes saving media to the device also creating an empty file.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.media.fixImgurApi",
+          "name": "Fix Imgur API",
+          "description": "Makes Imgur albums and galleries load again, and image uploads in comments and posts work.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.media.fixListThumbnails",
+          "name": "Fix list thumbnails",
+          "description": "Fixes empty thumbnails in the post list, shows a preview as thumbnail for link posts and crossposted galleries, and blurs the thumbnails of NSFW and spoiler posts.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.media.fixMemeTemplates",
+          "name": "Fix meme templates",
+          "description": "Makes the meme templates of the drawing screen load again, with Imgflip's most used templates.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.media.fixRedgifsApi",
+          "name": "Fix Redgifs API",
+          "description": "Makes Redgifs videos play again.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.media.improvePostMediaLoading",
+          "name": "Improve post media loading",
+          "description": "Shows a still preview with a progress bar and the downloaded size while post media and gallery images load, uses small previews for the thumbnails of galleries, shows a message instead of a broken page when a RedGIFs video was deleted, and adds settings for which link post pages run JavaScript.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.media.saveVideosWithSound",
+          "name": "Save videos with sound",
+          "description": "Adds the sound to Reddit videos saved with \"Save to device\", which were saved without it.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.misc.disableFeedbackPopup",
+          "name": "Disable feedback popup",
+          "description": "Disables the \"Please take a few moments to provide feedback about BaconReader\" popup.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.misc.disableFinalReleaseAnnouncement",
+          "name": "Disable final release announcement",
+          "description": "Disables the \"FINAL RELEASE ANNOUNCEMENT!\" popup that says goodbye when the app starts.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.misc.showRequestErrors",
+          "name": "Show request errors",
+          "description": "Shows the actual error when a Reddit request fails, instead of the message saying that BaconReader stopped working in July 2023.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.posts.disableUnavailableSidebar",
+          "name": "Disable unavailable sidebar",
+          "description": "Disables \"View Sidebar\" on Front Page, All, Popular, Friends and multireddits, which have no sidebar.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.posts.fixLostVotes",
+          "name": "Fix lost post votes",
+          "description": "Keeps votes on a post in the post list when they're made while its comments load.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.posts.flairFilter",
+          "name": "Flair filter",
+          "description": "Adds a Flair button to the sort bar of subreddits, to show only the posts with the chosen flairs.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.posts.removeAwards",
+          "name": "Remove awards",
+          "description": "Removes the award icons and the \"Give Award\" and \"View Award Details\" actions, which no longer work.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.posts.removeRandomFeeds",
+          "name": "Remove Random feeds",
+          "description": "Removes Random and My Random, which no longer load, from the feed list.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.posts.textPostIcon",
+          "name": "Text post icon",
+          "description": "Shows the button that opens a text post's text in the post list as a page with a chevron, instead of a play button.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": []
+        }
+      ]
     }
   ],
   "bundles": [
@@ -5889,6 +6645,20 @@
       "updatedAt": "2026-10-21T09:16:25Z",
       "patchCount": 32,
       "iconUrl": "https://avatars.githubusercontent.com/u/100418457?v=4",
+      "isOfficial": false,
+      "metadataStatus": "verified"
+    },
+    {
+      "name": "baconreader-patches",
+      "author": "JoanComasFdz",
+      "description": "Patches for BaconReader, ported from ReVanced",
+      "homepage": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+      "indexUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+      "addUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+      "version": "0.1.0",
+      "updatedAt": "2026-10-23T06:10:02.768210625Z",
+      "patchCount": 29,
+      "iconUrl": null,
       "isOfficial": false,
       "metadataStatus": "verified"
     }
@@ -6108,6 +6878,1556 @@
               "required": false
             }
           ],
+          "official": false
+        }
+      ]
+    },
+    {
+      "packageName": "com.onelouder.baconreader",
+      "name": "com.onelouder.baconreader",
+      "iconUrl": null,
+      "category": "Other",
+      "patchCount": 29,
+      "bundleCount": 1,
+      "versions": [
+        "6.1.4"
+      ],
+      "patches": [
+        {
+          "id": "com.joancomasfdz.patches.baconreader.account.spoofClient",
+          "name": "Spoof client",
+          "description": "Makes logging in to Reddit work again by using another Reddit app's client ID.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [
+            {
+              "key": "clientId",
+              "title": "Application client ID",
+              "description": "The client ID of an \"Installed app\" from https://www.reddit.com/prefs/apps.",
+              "option_type": "string",
+              "default_value": {
+                "type": "string",
+                "value": "yH0aTnJEt6qUgGn835B4vg"
+              },
+              "valid_values": null,
+              "required": true
+            },
+            {
+              "key": "redirectUri",
+              "title": "Application redirect URI",
+              "description": "The redirect URI of that Reddit app. Empty keeps BaconReader's own, http://baconreader.com/auth.",
+              "option_type": "string",
+              "default_value": {
+                "type": "string",
+                "value": "redreader://rr_oauth_redir"
+              },
+              "valid_values": null,
+              "required": false
+            },
+            {
+              "key": "userAgent",
+              "title": "Application user agent",
+              "description": "The user agent of that Reddit app, ideally. Empty keeps BaconReader's own.",
+              "option_type": "string",
+              "default_value": {
+                "type": "string",
+                "value": "org.quantumbadger.redreader/1.25.1"
+              },
+              "valid_values": null,
+              "required": false
+            }
+          ],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.comments.commentSearch",
+          "name": "Search comments",
+          "description": "Adds a search button to the sort bar of posts, to find, highlight and jump between the comments with a text or user name, or show only those comments.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.comments.embedCommentImages",
+          "name": "Embed comment images",
+          "description": "Shows images, GIFs, emotes, Imgur albums and videos in comments and posts, YouTube links with their title and thumbnail, and X and Bluesky links as the post.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.comments.hideFormattedSpoilers",
+          "name": "Hide formatted spoilers",
+          "description": "Hides spoilers that contain formatting, links or code, like other spoilers.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.comments.loadMoreComments",
+          "name": "Load more comments",
+          "description": "Adds options to load up to 500 comments when opening a post instead of about 200, and to load the \"load more comments\" with few replies automatically.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.comments.showTables",
+          "name": "Show tables",
+          "description": "Shows tables in comments and posts as a grid, with wide tables that expand and scroll sideways.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.comments.userAvatars",
+          "name": "Show user avatars",
+          "description": "Adds an option to show the author's avatar before the name in comments, as on Reddit's website.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.core.settingsEntry",
+          "name": "Patches entry in settings",
+          "description": "Adds a Patches entry at the end of BaconReader's settings, which opens the patches' settings.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.editor.markdownEditor",
+          "name": "Markdown editor",
+          "description": "Makes the text box of comments, replies, edits, messages and text posts as big as possible, with a bar of Reddit's formats and a character counter, and shows the formatting while typing.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.inbox.fixUnreadMessages",
+          "name": "Fix unread messages",
+          "description": "Turns the orange inbox envelope back to normal when the last unread message is marked as read, and removes \"Mark unread\", which Reddit no longer supports.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.inbox.inboxCommentReply",
+          "name": "Inbox comment reply screen",
+          "description": "Opens the comment reply screen, with the replied comment or message, when replying from the inbox, instead of the plain \"Send message\" form.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.inbox.redditChat",
+          "name": "Reddit chat",
+          "description": "Adds Chat to the menu, next to the Inbox, which shows Reddit's chat from its mobile website on the main screen, and notifies of new chat messages.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.links.promptToOpenRedditLinks",
+          "name": "Prompt to open Reddit links",
+          "description": "Asks once to set up Reddit links to open in BaconReader, which Android doesn't let the app do by itself.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.media.fixEmptySavedFiles",
+          "name": "Fix empty saved files",
+          "description": "Fixes saving media to the device also creating an empty file.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.media.fixImgurApi",
+          "name": "Fix Imgur API",
+          "description": "Makes Imgur albums and galleries load again, and image uploads in comments and posts work.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.media.fixListThumbnails",
+          "name": "Fix list thumbnails",
+          "description": "Fixes empty thumbnails in the post list, shows a preview as thumbnail for link posts and crossposted galleries, and blurs the thumbnails of NSFW and spoiler posts.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.media.fixMemeTemplates",
+          "name": "Fix meme templates",
+          "description": "Makes the meme templates of the drawing screen load again, with Imgflip's most used templates.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.media.fixRedgifsApi",
+          "name": "Fix Redgifs API",
+          "description": "Makes Redgifs videos play again.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.media.improvePostMediaLoading",
+          "name": "Improve post media loading",
+          "description": "Shows a still preview with a progress bar and the downloaded size while post media and gallery images load, uses small previews for the thumbnails of galleries, shows a message instead of a broken page when a RedGIFs video was deleted, and adds settings for which link post pages run JavaScript.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.media.saveVideosWithSound",
+          "name": "Save videos with sound",
+          "description": "Adds the sound to Reddit videos saved with \"Save to device\", which were saved without it.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.misc.disableFeedbackPopup",
+          "name": "Disable feedback popup",
+          "description": "Disables the \"Please take a few moments to provide feedback about BaconReader\" popup.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.misc.disableFinalReleaseAnnouncement",
+          "name": "Disable final release announcement",
+          "description": "Disables the \"FINAL RELEASE ANNOUNCEMENT!\" popup that says goodbye when the app starts.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.misc.showRequestErrors",
+          "name": "Show request errors",
+          "description": "Shows the actual error when a Reddit request fails, instead of the message saying that BaconReader stopped working in July 2023.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.posts.disableUnavailableSidebar",
+          "name": "Disable unavailable sidebar",
+          "description": "Disables \"View Sidebar\" on Front Page, All, Popular, Friends and multireddits, which have no sidebar.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.posts.fixLostVotes",
+          "name": "Fix lost post votes",
+          "description": "Keeps votes on a post in the post list when they're made while its comments load.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.posts.flairFilter",
+          "name": "Flair filter",
+          "description": "Adds a Flair button to the sort bar of subreddits, to show only the posts with the chosen flairs.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.posts.removeAwards",
+          "name": "Remove awards",
+          "description": "Removes the award icons and the \"Give Award\" and \"View Award Details\" actions, which no longer work.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.posts.removeRandomFeeds",
+          "name": "Remove Random feeds",
+          "description": "Removes Random and My Random, which no longer load, from the feed list.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.posts.textPostIcon",
+          "name": "Text post icon",
+          "description": "Shows the button that opens a text post's text in the post list as a page with a chevron, instead of a play button.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        }
+      ]
+    },
+    {
+      "packageName": "com.onelouder.baconreader.premium",
+      "name": "com.onelouder.baconreader.premium",
+      "iconUrl": null,
+      "category": "Other",
+      "patchCount": 29,
+      "bundleCount": 1,
+      "versions": [
+        "6.1.4"
+      ],
+      "patches": [
+        {
+          "id": "com.joancomasfdz.patches.baconreader.account.spoofClient",
+          "name": "Spoof client",
+          "description": "Makes logging in to Reddit work again by using another Reddit app's client ID.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [
+            {
+              "key": "clientId",
+              "title": "Application client ID",
+              "description": "The client ID of an \"Installed app\" from https://www.reddit.com/prefs/apps.",
+              "option_type": "string",
+              "default_value": {
+                "type": "string",
+                "value": "yH0aTnJEt6qUgGn835B4vg"
+              },
+              "valid_values": null,
+              "required": true
+            },
+            {
+              "key": "redirectUri",
+              "title": "Application redirect URI",
+              "description": "The redirect URI of that Reddit app. Empty keeps BaconReader's own, http://baconreader.com/auth.",
+              "option_type": "string",
+              "default_value": {
+                "type": "string",
+                "value": "redreader://rr_oauth_redir"
+              },
+              "valid_values": null,
+              "required": false
+            },
+            {
+              "key": "userAgent",
+              "title": "Application user agent",
+              "description": "The user agent of that Reddit app, ideally. Empty keeps BaconReader's own.",
+              "option_type": "string",
+              "default_value": {
+                "type": "string",
+                "value": "org.quantumbadger.redreader/1.25.1"
+              },
+              "valid_values": null,
+              "required": false
+            }
+          ],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.comments.commentSearch",
+          "name": "Search comments",
+          "description": "Adds a search button to the sort bar of posts, to find, highlight and jump between the comments with a text or user name, or show only those comments.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.comments.embedCommentImages",
+          "name": "Embed comment images",
+          "description": "Shows images, GIFs, emotes, Imgur albums and videos in comments and posts, YouTube links with their title and thumbnail, and X and Bluesky links as the post.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.comments.hideFormattedSpoilers",
+          "name": "Hide formatted spoilers",
+          "description": "Hides spoilers that contain formatting, links or code, like other spoilers.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.comments.loadMoreComments",
+          "name": "Load more comments",
+          "description": "Adds options to load up to 500 comments when opening a post instead of about 200, and to load the \"load more comments\" with few replies automatically.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.comments.showTables",
+          "name": "Show tables",
+          "description": "Shows tables in comments and posts as a grid, with wide tables that expand and scroll sideways.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.comments.userAvatars",
+          "name": "Show user avatars",
+          "description": "Adds an option to show the author's avatar before the name in comments, as on Reddit's website.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.core.settingsEntry",
+          "name": "Patches entry in settings",
+          "description": "Adds a Patches entry at the end of BaconReader's settings, which opens the patches' settings.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.editor.markdownEditor",
+          "name": "Markdown editor",
+          "description": "Makes the text box of comments, replies, edits, messages and text posts as big as possible, with a bar of Reddit's formats and a character counter, and shows the formatting while typing.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.inbox.fixUnreadMessages",
+          "name": "Fix unread messages",
+          "description": "Turns the orange inbox envelope back to normal when the last unread message is marked as read, and removes \"Mark unread\", which Reddit no longer supports.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.inbox.inboxCommentReply",
+          "name": "Inbox comment reply screen",
+          "description": "Opens the comment reply screen, with the replied comment or message, when replying from the inbox, instead of the plain \"Send message\" form.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.inbox.redditChat",
+          "name": "Reddit chat",
+          "description": "Adds Chat to the menu, next to the Inbox, which shows Reddit's chat from its mobile website on the main screen, and notifies of new chat messages.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.links.promptToOpenRedditLinks",
+          "name": "Prompt to open Reddit links",
+          "description": "Asks once to set up Reddit links to open in BaconReader, which Android doesn't let the app do by itself.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.media.fixEmptySavedFiles",
+          "name": "Fix empty saved files",
+          "description": "Fixes saving media to the device also creating an empty file.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.media.fixImgurApi",
+          "name": "Fix Imgur API",
+          "description": "Makes Imgur albums and galleries load again, and image uploads in comments and posts work.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.media.fixListThumbnails",
+          "name": "Fix list thumbnails",
+          "description": "Fixes empty thumbnails in the post list, shows a preview as thumbnail for link posts and crossposted galleries, and blurs the thumbnails of NSFW and spoiler posts.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.media.fixMemeTemplates",
+          "name": "Fix meme templates",
+          "description": "Makes the meme templates of the drawing screen load again, with Imgflip's most used templates.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.media.fixRedgifsApi",
+          "name": "Fix Redgifs API",
+          "description": "Makes Redgifs videos play again.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.media.improvePostMediaLoading",
+          "name": "Improve post media loading",
+          "description": "Shows a still preview with a progress bar and the downloaded size while post media and gallery images load, uses small previews for the thumbnails of galleries, shows a message instead of a broken page when a RedGIFs video was deleted, and adds settings for which link post pages run JavaScript.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.media.saveVideosWithSound",
+          "name": "Save videos with sound",
+          "description": "Adds the sound to Reddit videos saved with \"Save to device\", which were saved without it.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.misc.disableFeedbackPopup",
+          "name": "Disable feedback popup",
+          "description": "Disables the \"Please take a few moments to provide feedback about BaconReader\" popup.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.misc.disableFinalReleaseAnnouncement",
+          "name": "Disable final release announcement",
+          "description": "Disables the \"FINAL RELEASE ANNOUNCEMENT!\" popup that says goodbye when the app starts.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.misc.showRequestErrors",
+          "name": "Show request errors",
+          "description": "Shows the actual error when a Reddit request fails, instead of the message saying that BaconReader stopped working in July 2023.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.posts.disableUnavailableSidebar",
+          "name": "Disable unavailable sidebar",
+          "description": "Disables \"View Sidebar\" on Front Page, All, Popular, Friends and multireddits, which have no sidebar.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.posts.fixLostVotes",
+          "name": "Fix lost post votes",
+          "description": "Keeps votes on a post in the post list when they're made while its comments load.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.posts.flairFilter",
+          "name": "Flair filter",
+          "description": "Adds a Flair button to the sort bar of subreddits, to show only the posts with the chosen flairs.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.posts.removeAwards",
+          "name": "Remove awards",
+          "description": "Removes the award icons and the \"Give Award\" and \"View Award Details\" actions, which no longer work.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.posts.removeRandomFeeds",
+          "name": "Remove Random feeds",
+          "description": "Removes Random and My Random, which no longer load, from the feed list.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "com.joancomasfdz.patches.baconreader.posts.textPostIcon",
+          "name": "Text post icon",
+          "description": "Shows the button that opens a text post's text in the post list as a page with a chevron, instead of a play button.",
+          "bundle": "baconreader-patches",
+          "sourceName": "baconreader-patches",
+          "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.onelouder.baconreader",
+              "versions": [
+                "6.1.4"
+              ]
+            },
+            {
+              "package": "com.onelouder.baconreader.premium",
+              "versions": [
+                "6.1.4"
+              ]
+            }
+          ],
+          "options": [],
           "official": false
         }
       ]
@@ -11912,6 +14232,15 @@
     }
   ],
   "whatsNew": [
+    {
+      "version": "0.1.0",
+      "createdAt": "2026-10-23T06:10:02.768210625Z",
+      "description": "- fix: run the publish script on Ubuntu 24.04, since the reseam CLI needs glibc 2.39\n- chore: add a script that sets up the signing key and publishes a release from a container\n- docs: make the README about the patches and how to install them, and move the details to docs/DEVELOPMENT.md\n- feat(baconreader): show Reddit chat in place of the post list, under BaconReader's toolbar and drawer\n- feat(baconreader): check for new Reddit chat messages, with their count next to Chat and a notification\n- feat(baconreader): add Reddit chat, which opens Reddit's chat from the menu, next to the inbox\n- feat(baconreader): add Disable final release announcement, which stops the goodbye popup when the app starts\n- feat(baconreader): show every error that escapes a patch in the error dialog, and keep the app open\n- docs: require extensions to use only public app classes and members\n- docs: order the README by the patches and group their settings\n- feat(baconreader): add Save videos with sound, which adds the sound to Reddit videos saved to the device\n- feat(baconreader): add Hide formatted spoilers, which hides spoilers with formatting, links or code behind the spoiler box\n- feat(baconreader): add Markdown editor, which makes text boxes big and adds a bar of Reddit's formats with live formatting\n- feat(baconreader): add Inbox comment reply screen, which replies from the inbox on the comment reply screen\n- feat(baconreader): add Fix unread messages, which turns the inbox envelope back to normal once every message is read\n- feat(baconreader): add Load more comments, which loads up to 500 comments when a post opens and the small \"load more comments\" automatically\n- feat(baconreader): add Search comments, which finds, highlights and jumps between the comments of a post with a text or user name\n- feat(baconreader): add Show user avatars, which shows the author's avatar before the name in comments and the inbox\n- feat(baconreader): add Flair filter, which shows only the posts of a subreddit with the chosen flairs\n- feat(baconreader): add Disable feedback popup, which stops the popup asking for feedback about BaconReader\n- feat(baconreader): add Remove Random feeds, which removes the Random feeds that no longer load from the feed list\n- feat(baconreader): add Show request errors, which shows the actual error when a Reddit request fails\n- feat(baconreader): add Disable unavailable sidebar, which greys out \"View Sidebar\" on feeds that have no sidebar\n- feat(baconreader): add Remove awards, which removes the award icons and actions that no longer work\n- feat(baconreader): add Fix empty saved files, which stops saving media from also creating an empty file\n- feat(baconreader): add Fix meme templates, which makes the meme templates of the drawing screen load again\n- feat(baconreader): add Fix lost post votes, which keeps votes made on a post while its comments load\n- feat(baconreader): add Prompt to open Reddit links, which asks once to set up Reddit links to open in BaconReader\n- feat(baconreader): add Improve post media loading, which shows a still preview and the download progress while post media loads\n- feat(baconreader): add Embed comment images, which shows images, GIFs, emotes, Imgur albums, videos, YouTube titles and X and Bluesky posts in comments and posts\n- feat(baconreader): add Fix Imgur API, which makes Imgur albums, galleries and image uploads work again\n- feat(baconreader): add Text post icon, which shows a page icon instead of a play button on text posts\n- feat(baconreader): add Show tables, which draws Reddit tables as a grid\n- feat(baconreader): add Fix list thumbnails, which fixes empty thumbnails in the post list and blurs NSFW and spoiler ones\n- docs: say that ReVanced parent settings only grey out the settings screen\n- docs: describe the settings screen, the error dialog and the shared extension code\n- feat(baconreader): add the error dialog and the extension code several patches share\n- feat(baconreader): add the settings screen and Patches entry in settings, which opens it\n- docs: add the coding guidelines learned from porting ReVanced patches\n- feat(baconreader): add Fix Redgifs API, which makes Redgifs videos play again\n- feat(baconreader): add Spoof client, which makes logging in to Reddit work again\n- chore: replace the example patches with the BaconReader bundle\n- Initial commit\n",
+      "prerelease": false,
+      "sourceName": "baconreader-patches",
+      "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+      "official": false
+    },
     {
       "version": "0.44.0",
       "createdAt": "2026-10-22T12:46:58.994545853Z",
