@@ -34,6 +34,7 @@ Browse patch sources and their supported apps:
 
 - [Official Reseam patches index (JSON)](https://api.reseam.app/patches.json)
 - [MadKarma Reseam patches](https://github.com/madkarmaa/reseam-patches)
+- [BaconReader Patches](https://github.com/JoanComasFdz/baconreader-reseam-patches)
 - [Patch Bundle Registry](https://patch-bundles.jmancentral.com/)
 
 ## 🛠️ Tools and projects
