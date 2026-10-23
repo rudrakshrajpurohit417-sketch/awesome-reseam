@@ -96,5 +96,9 @@ jobs:
             echo "All sources are already current; no catalog commit needed."
           else
             git commit -m "chore: refresh patch source catalog"
-            git push
+            # Code/config changes can land while this workflow is fetching sources.
+            # Rebase the generated catalog commit onto the newest main before pushing.
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
           fi
