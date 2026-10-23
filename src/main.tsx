@@ -27,6 +27,30 @@ const latestVersion = (versions: string[]) => {
   })[0]
 }
 
+const withAllAppVersions = (data: CatalogData): CatalogData => {
+  const versionsByPackage = new Map<string, Set<string>>()
+  const allPatches = [data.official, ...data.community].flatMap((source) => source.patches)
+  for (const patch of allPatches) {
+    for (const app of patch.apps ?? []) {
+      if (!app.package) continue
+      const versions = versionsByPackage.get(app.package) ?? new Set<string>()
+      for (const version of app.versions ?? []) {
+        const cleaned = version.trim()
+        if (cleaned) versions.add(cleaned)
+      }
+      versionsByPackage.set(app.package, versions)
+    }
+  }
+  return {
+    ...data,
+    apps: data.apps.map((app) => {
+      const versions = new Set(app.versions ?? [])
+      for (const version of versionsByPackage.get(app.packageName) ?? []) versions.add(version)
+      return { ...app, versions: [...versions].sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' })) }
+    }),
+  }
+}
+
 const iconLabel = (name: string) => name.split(/\s+/).filter(Boolean).slice(0, 2).map((word) => word[0]).join('').toUpperCase()
 const formatDate = (value: string | null) => value ? new Date(value).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' }) : '—'
 const bundleIcon = (bundle: Pick<Bundle, 'iconUrl' | 'isOfficial'>) => bundle.iconUrl ?? (bundle.isOfficial ? '/reseam.ico' : null)
@@ -90,7 +114,7 @@ function App() {
     else switchTab(nextTab)
   }
   useEffect(() => {
-    fetch(`${import.meta.env.BASE_URL}catalog.json`).then((response) => { if (!response.ok) throw new Error('Catalog request failed'); return response.json() }).then((value: CatalogData) => setCatalogData(value)).catch(() => import('../data/catalog.json').then((module) => setCatalogData(module.default as CatalogData)).catch(() => setLoadError(true)))
+    fetch(`${import.meta.env.BASE_URL}catalog.json`).then((response) => { if (!response.ok) throw new Error('Catalog request failed'); return response.json() }).then((value: CatalogData) => setCatalogData(withAllAppVersions(value))).catch(() => import('../data/catalog.json').then((module) => setCatalogData(withAllAppVersions(module.default as CatalogData))).catch(() => setLoadError(true)))
   }, [])
   useEffect(() => {
     if (!catalogData) return
@@ -210,7 +234,7 @@ function App() {
 
       {tab === 'apps' && !selectedApp && <section className="catalog-results"><div className="result-context"><span>PATCHABLE APPS</span><span>{data.apps.length} apps · {totalPatches} patches in latest bundles</span></div>{visibleApps.length ? <><div className="app-grid">{visibleApps.slice(0, visibleAppCount).map((app) => <AppCard app={app} key={app.packageName} onOpen={() => openApp(app)}/>)}</div>{visibleAppCount < visibleApps.length && <div ref={loadMoreRef} className="load-more-sentinel" aria-label="Loading more apps"/>}</> : <Empty message="No apps match your search."/>}</section>}
 
-      {tab === 'apps' && selectedApp && <section className="detail-view"><button className="back-button" onClick={() => backFromDetail('apps')}><ArrowLeft size={15}/> All apps</button><div className="app-detail-head"><AppIcon src={selectedApp.iconUrl} name={selectedApp.name}/><div><h1>{selectedApp.name}</h1><code>{selectedApp.packageName}</code><p>{detailPatches.length} patches · {appBundleGroups.length} {appBundleGroups.length === 1 ? 'bundle' : 'bundles'}{latestVersion(selectedApp.versions) ? ` · Version ${latestVersion(selectedApp.versions)}` : ''}</p></div><span className="category-chip">{selectedApp.category}</span></div><div className="detail-toolbar"><h2>Bundles and patches</h2></div>{detailPatches.length ? <><div className="app-bundle-list">{visibleAppGroups.map((group) => <section className="app-bundle-group" key={group.bundle.indexUrl}><header className="app-bundle-heading"><div className="app-bundle-title"><AppIcon src={bundleIcon(group.bundle)} name={group.bundle.name}/><div><h3>{group.bundle.name}</h3><p>{group.bundle.author} · v{group.bundle.version} · {group.matchingCount} patches</p></div></div><div className="app-bundle-actions"><AddToReseam url={group.bundle.isOfficial ? group.bundle.indexUrl : group.bundle.homepage} compact/><a className="patch-link" href={group.bundle.homepage} target="_blank" rel="noreferrer" aria-label={`Open ${group.bundle.name} publisher source`}><ArrowUpRight size={15}/></a></div></header><div className="patch-list">{(deferredQuery || expandedAppBundles.has(group.bundle.indexUrl) ? group.patches : group.patches.slice(0, 2)).map((patch) => <PatchCard patch={patch} key={`${patch.bundle}:${patch.id}`}/>)}</div>{group.matchingCount > 2 && <button className="show-patches-button" onClick={() => setExpandedAppBundles((current) => { const next = new Set(current); if (next.has(group.bundle.indexUrl)) next.delete(group.bundle.indexUrl); else next.add(group.bundle.indexUrl); return next })}>{expandedAppBundles.has(group.bundle.indexUrl) ? 'Show fewer' : `Show all ${group.matchingCount} patches`}</button>}</section>)}</div></> : <Empty message="No patches match your search."/>}</section>}
+      {tab === 'apps' && selectedApp && <section className="detail-view"><button className="back-button" onClick={() => backFromDetail('apps')}><ArrowLeft size={15}/> All apps</button><div className="app-detail-head"><AppIcon src={selectedApp.iconUrl} name={selectedApp.name}/><div><h1>{selectedApp.name}</h1><code>{selectedApp.packageName}</code><p>{detailPatches.length} patches · {appBundleGroups.length} {appBundleGroups.length === 1 ? 'bundle' : 'bundles'}{latestVersion(selectedApp.versions) ? ` · Versions ${selectedApp.versions.join(', ')}` : ''}</p></div><span className="category-chip">{selectedApp.category}</span></div><div className="detail-toolbar"><h2>Bundles and patches</h2></div>{detailPatches.length ? <><div className="app-bundle-list">{visibleAppGroups.map((group) => <section className="app-bundle-group" key={group.bundle.indexUrl}><header className="app-bundle-heading"><div className="app-bundle-title"><AppIcon src={bundleIcon(group.bundle)} name={group.bundle.name}/><div><h3>{group.bundle.name}</h3><p>{group.bundle.author} · v{group.bundle.version} · {group.matchingCount} patches</p></div></div><div className="app-bundle-actions"><AddToReseam url={group.bundle.isOfficial ? group.bundle.indexUrl : group.bundle.homepage} compact/><a className="patch-link" href={group.bundle.homepage} target="_blank" rel="noreferrer" aria-label={`Open ${group.bundle.name} publisher source`}><ArrowUpRight size={15}/></a></div></header><div className="patch-list">{(deferredQuery || expandedAppBundles.has(group.bundle.indexUrl) ? group.patches : group.patches.slice(0, 2)).map((patch) => <PatchCard patch={patch} key={`${patch.bundle}:${patch.id}`}/>)}</div>{group.matchingCount > 2 && <button className="show-patches-button" onClick={() => setExpandedAppBundles((current) => { const next = new Set(current); if (next.has(group.bundle.indexUrl)) next.delete(group.bundle.indexUrl); else next.add(group.bundle.indexUrl); return next })}>{expandedAppBundles.has(group.bundle.indexUrl) ? 'Show fewer' : `Show all ${group.matchingCount} patches`}</button>}</section>)}</div></> : <Empty message="No patches match your search."/>}</section>}
 
       {tab === 'bundles' && !selectedBundle && <section className="catalog-results"><div className="result-context"><span>PATCH SOURCES</span><span>{data.bundles.length} active sources</span></div>{visibleBundles.length ? <div className="bundle-grid">{visibleBundles.map((bundle) => <BundleCard bundle={bundle} key={bundle.indexUrl} onOpen={() => openBundle(bundle)}/>)}</div> : <Empty message="No bundles match your search."/>}</section>}
 
