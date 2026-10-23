@@ -318,3 +318,22 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 @media (prefers-reduced-motion: reduce) {
   .tabs-indicator { transition: none; }
 }
+
+
+/* Remove browser-default blue tap/active highlights; keep the site's own feedback. */
+:where(a, button, input, select, textarea, [role="button"], [role="tab"]) {
+  -webkit-tap-highlight-color: transparent;
+}
+:where(a, a:visited, a:hover, a:active) {
+  color: inherit;
+}
+:where(button, [role="button"], [role="tab"]) {
+  -webkit-appearance: none;
+  appearance: none;
+}
+:where(button, [role="button"], [role="tab"]):focus:not(:focus-visible) {
+  outline: none;
+}
+:where(a, button, [role="button"], [role="tab"]) {
+  -webkit-touch-callout: none;
+}
