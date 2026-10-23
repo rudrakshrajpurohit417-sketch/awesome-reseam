@@ -379,26 +379,30 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .request-bundle-button{color:var(--mint)!important;border-color:#426a53!important}.request-bundle-button:hover{background:#1b2c22!important;color:#a2ebbd!important;border-color:#a2ebbd!important}
 
 
-/* Lift cards on hover, with a subtle glow like the reference catalog. */
+/* Give app and bundle cards a subtle raised 3D-plate feel on hover. */
 .app-card{
-  transform:translateY(0);
-  transition:transform .22s cubic-bezier(.2,.75,.25,1),border-color .22s ease,background .22s ease,box-shadow .22s ease;
+  transform:perspective(900px) translateY(0) scale(1);
+  transform-origin:center center;
+  transition:transform .24s cubic-bezier(.2,.75,.25,1),border-color .24s ease,background .24s ease,box-shadow .24s ease;
   will-change:transform;
 }
 .app-card:hover{
-  transform:translateY(-6px);
+  transform:perspective(900px) translateY(-5px) scale(1.018);
   border-color:#668d78;
   background:#292d2e;
-  box-shadow:0 12px 28px rgba(0,0,0,.28),0 3px 10px rgba(156,233,189,.06);
+  box-shadow:0 16px 30px rgba(0,0,0,.34),0 5px 12px rgba(156,233,189,.08);
 }
 .bundle-card{
-  transition:transform .22s cubic-bezier(.2,.75,.25,1),border-color .22s ease,background .22s ease,box-shadow .22s ease;
+  transform:perspective(900px) translateY(0) scale(1);
+  transform-origin:center center;
+  transition:transform .24s cubic-bezier(.2,.75,.25,1),border-color .24s ease,background .24s ease,box-shadow .24s ease;
+  will-change:transform;
 }
 .bundle-card:hover{
-  transform:translateY(-5px);
+  transform:perspective(900px) translateY(-4px) scale(1.012);
   border-color:#668d78;
   background:#292d2e;
-  box-shadow:0 12px 28px rgba(0,0,0,.26),0 3px 10px rgba(156,233,189,.05);
+  box-shadow:0 14px 26px rgba(0,0,0,.32),0 4px 10px rgba(156,233,189,.07);
 }
 @media (prefers-reduced-motion:reduce){
   .app-card,.bundle-card{transition:none}
