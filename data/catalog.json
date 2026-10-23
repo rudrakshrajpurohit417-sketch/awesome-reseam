@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T07:18:07.657Z",
+  "generatedAt": "2026-10-23T07:32:06.068Z",
   "registry": {
     "url": "https://patch-bundles.api.jmancentral.com",
     "generation": null,
@@ -6668,6 +6668,14 @@
       "packageName": "com.cloudflare.onedotonedotonedotone",
       "name": "1.1.1.1 + WARP: Safer Internet",
       "iconUrl": "https://play-lh.googleusercontent.com/PDwXxcvulfxi2bH4UjcMGJ7i0CQ7_QNypYohkhhg02zE7FdNTNRyF21-ikrLM5kyvcmNxtr77Va-7sS3NLbpNg",
+      "googlePlayStatus": "available",
+      "googlePlayStatusSource": "google-play",
+      "googlePlayCheckedAt": "2026-10-23T07:32:01.748Z",
+      "googlePlayEvidenceUrl": null,
+      "googlePlayMarketsChecked": [
+        "US",
+        "IN"
+      ],
       "category": "Tools",
       "patchCount": 1,
       "bundleCount": 1,
@@ -6696,6 +6704,14 @@
       "packageName": "com.accuweather.android",
       "name": "AccuWeather: Weather Radar",
       "iconUrl": "https://play-lh.googleusercontent.com/wdQXBFb3I1NgNpRzJo9tMHJuV9P069NR5GJ2J7w8eX_SVarWLRarca-6MiemrDbnSqDQflFzvzjSG2smlwe39TQ",
+      "googlePlayStatus": "available",
+      "googlePlayStatusSource": "google-play",
+      "googlePlayCheckedAt": "2026-10-23T07:32:01.748Z",
+      "googlePlayEvidenceUrl": null,
+      "googlePlayMarketsChecked": [
+        "US",
+        "IN"
+      ],
       "category": "Weather",
       "patchCount": 1,
       "bundleCount": 1,
@@ -6724,6 +6740,14 @@
       "packageName": "com.alltrails.alltrails",
       "name": "AllTrails: Hike, Bike & Run",
       "iconUrl": "https://play-lh.googleusercontent.com/VGEJRpXhcohBLp64CcZkufSHI97tfN1LQBJsvcNojlHZZTy6bQRFxr6xogqlEv-f5RwkLIcvVLiBAEfkZqrXqA",
+      "googlePlayStatus": "available",
+      "googlePlayStatusSource": "google-play",
+      "googlePlayCheckedAt": "2026-10-23T07:32:01.748Z",
+      "googlePlayEvidenceUrl": null,
+      "googlePlayMarketsChecked": [
+        "US",
+        "IN"
+      ],
       "category": "Travel & Local",
       "patchCount": 1,
       "bundleCount": 1,
@@ -6752,6 +6776,14 @@
       "packageName": "com.onelouder.baconreader",
       "name": "BaconReader",
       "iconUrl": "https://img.utdstc.com/icon/c73/77d/c7377d76316b5d34edfa1171c5e8f144f0ddc954822e7cec720bd5cf2bed4e54",
+      "googlePlayStatus": "unavailable",
+      "googlePlayStatusSource": "manual",
+      "googlePlayCheckedAt": "2026-10-23T07:32:01.748Z",
+      "googlePlayEvidenceUrl": "https://www.appbrain.com/app/baconreader-for-reddit/com.onelouder.baconreader",
+      "googlePlayMarketsChecked": [
+        "US",
+        "IN"
+      ],
       "category": "Other",
       "patchCount": 29,
       "bundleCount": 1,
@@ -7527,6 +7559,14 @@
       "packageName": "com.onelouder.baconreader.premium",
       "name": "BaconReader Premium",
       "iconUrl": "https://img.utdstc.com/icon/c73/77d/c7377d76316b5d34edfa1171c5e8f144f0ddc954822e7cec720bd5cf2bed4e54",
+      "googlePlayStatus": "unavailable",
+      "googlePlayStatusSource": "manual",
+      "googlePlayCheckedAt": "2026-10-23T07:32:01.748Z",
+      "googlePlayEvidenceUrl": "https://www.appbrain.com/app/baconreader-premium-for-reddit/com.onelouder.baconreader.premium",
+      "googlePlayMarketsChecked": [
+        "US",
+        "IN"
+      ],
       "category": "Other",
       "patchCount": 29,
       "bundleCount": 1,
@@ -8302,6 +8342,14 @@
       "packageName": "com.adguard.android",
       "name": "com.adguard.android",
       "iconUrl": null,
+      "googlePlayStatus": "unavailable",
+      "googlePlayStatusSource": "google-play",
+      "googlePlayCheckedAt": "2026-10-23T07:32:01.748Z",
+      "googlePlayEvidenceUrl": null,
+      "googlePlayMarketsChecked": [
+        "US",
+        "IN"
+      ],
       "category": "Tools",
       "patchCount": 2,
       "bundleCount": 1,
@@ -8436,6 +8484,14 @@
       "packageName": "com.discord",
       "name": "Discord - Talk, Play, Hang Out",
       "iconUrl": "https://play-lh.googleusercontent.com/w2DdjDHGSj3DQElQQM0_J3PsNsALS-WD3CBeH0aXOYceR-F3aT02gFonhoFzz-Tc9ec8Dx9cLqh48-tzIFcP",
+      "googlePlayStatus": "available",
+      "googlePlayStatusSource": "google-play",
+      "googlePlayCheckedAt": "2026-10-23T07:32:01.748Z",
+      "googlePlayEvidenceUrl": null,
+      "googlePlayMarketsChecked": [
+        "US",
+        "IN"
+      ],
       "category": "Social",
       "patchCount": 47,
       "bundleCount": 1,
@@ -9342,6 +9398,14 @@
       "packageName": "com.shahzaman.pricetracker",
       "name": "Droplert: Price Drop Alerts",
       "iconUrl": "https://play-lh.googleusercontent.com/mOkZmzMxyMGhGG2UJZ6q5gQOcRLl-DdhbODIWugu6JIXDkYwyVvrTQkSZYdfTFP9R6Hu7d2p1GJ35umLmuRgcg",
+      "googlePlayStatus": "available",
+      "googlePlayStatusSource": "google-play",
+      "googlePlayCheckedAt": "2026-10-23T07:32:01.748Z",
+      "googlePlayEvidenceUrl": null,
+      "googlePlayMarketsChecked": [
+        "US",
+        "IN"
+      ],
       "category": "Finance & Shopping",
       "patchCount": 3,
       "bundleCount": 1,
@@ -9440,6 +9504,14 @@
       "packageName": "com.google.android.apps.photos",
       "name": "Gcam Services Provider (Photos)",
       "iconUrl": "https://apt.izzysoft.de/fdroid/repo/com.google.android.apps.photos/en-US/icon.png",
+      "googlePlayStatus": "available",
+      "googlePlayStatusSource": "google-play",
+      "googlePlayCheckedAt": "2026-10-23T07:32:01.748Z",
+      "googlePlayEvidenceUrl": null,
+      "googlePlayMarketsChecked": [
+        "US",
+        "IN"
+      ],
       "category": "Video & Photography",
       "patchCount": 2,
       "bundleCount": 1,
@@ -9510,6 +9582,14 @@
       "packageName": "com.instagram.android",
       "name": "Instagram",
       "iconUrl": "https://play-lh.googleusercontent.com/yHi59jmO_lVamcyJ1i3rM1_E8bAiAspShnGjjURq05ipQQSUksO3QVEsXTegRSqul038-4YNA7O644XAcx251Q",
+      "googlePlayStatus": "available",
+      "googlePlayStatusSource": "google-play",
+      "googlePlayCheckedAt": "2026-10-23T07:32:01.748Z",
+      "googlePlayEvidenceUrl": null,
+      "googlePlayMarketsChecked": [
+        "US",
+        "IN"
+      ],
       "category": "Social",
       "patchCount": 21,
       "bundleCount": 1,
@@ -9969,6 +10049,14 @@
       "packageName": "org.kustom.widget",
       "name": "KWGT Kustom Widget Maker",
       "iconUrl": "https://play-lh.googleusercontent.com/Sv2JZZ87kHDHr_NOTK-5vY9b9U4BClbqat0Gf3tEPewOAyeskcMOTCIUK7rkUa0o6FJzQh6ST3vwvojrgwX1-Q",
+      "googlePlayStatus": "available",
+      "googlePlayStatusSource": "google-play",
+      "googlePlayCheckedAt": "2026-10-23T07:32:01.748Z",
+      "googlePlayEvidenceUrl": null,
+      "googlePlayMarketsChecked": [
+        "US",
+        "IN"
+      ],
       "category": "Tools",
       "patchCount": 2,
       "bundleCount": 1,
@@ -10014,6 +10102,14 @@
       "packageName": "com.gymbros.app",
       "name": "Liftoff - Ranked Gym Workouts",
       "iconUrl": "https://play-lh.googleusercontent.com/z7MMxIDLH90jSkThpbEPoG13DwDUq6Qnl8lS5DUR1ZD7R-Yqw9eDVJnouqRA4GO2xPsv3mkxT5KhsD1Ei9Ip-w",
+      "googlePlayStatus": "available",
+      "googlePlayStatusSource": "google-play",
+      "googlePlayCheckedAt": "2026-10-23T07:32:01.748Z",
+      "googlePlayEvidenceUrl": null,
+      "googlePlayMarketsChecked": [
+        "US",
+        "IN"
+      ],
       "category": "Health & Fitness",
       "patchCount": 1,
       "bundleCount": 1,
@@ -10042,6 +10138,14 @@
       "packageName": "cz.seznam.mapy",
       "name": "Mapy.com: Offline Outdoor Maps",
       "iconUrl": "https://play-lh.googleusercontent.com/HDxpj_c6Nhf7wDAErKy6JknknJQLthDi4HKx1PRQno2RD28iuBv0b2eRcm1ZEdy_2r4FindeqVsdCU_5m1Bcbwc",
+      "googlePlayStatus": "available",
+      "googlePlayStatusSource": "google-play",
+      "googlePlayCheckedAt": "2026-10-23T07:32:01.748Z",
+      "googlePlayEvidenceUrl": null,
+      "googlePlayMarketsChecked": [
+        "US",
+        "IN"
+      ],
       "category": "Travel & Local",
       "patchCount": 1,
       "bundleCount": 1,
@@ -10070,6 +10174,14 @@
       "packageName": "bitpit.launcher",
       "name": "Niagara Launcher ‧ Home Screen",
       "iconUrl": "https://play-lh.googleusercontent.com/ICu0sx5FFQHp03c1DS8L48ULnXDUDDyqSWwi62VktysMO4ZFwVaGSqFKjZ9Iv-1Mu1plJVSB2CvIrdygkKtRFg",
+      "googlePlayStatus": "available",
+      "googlePlayStatusSource": "google-play",
+      "googlePlayCheckedAt": "2026-10-23T07:32:01.748Z",
+      "googlePlayEvidenceUrl": null,
+      "googlePlayMarketsChecked": [
+        "US",
+        "IN"
+      ],
       "category": "Tools",
       "patchCount": 5,
       "bundleCount": 1,
@@ -10191,6 +10303,14 @@
       "packageName": "com.arn.scrobble",
       "name": "Pano Scrobbler",
       "iconUrl": "https://apt.izzysoft.de/fdroid/repo/com.arn.scrobble/en-US/icon.png",
+      "googlePlayStatus": "available",
+      "googlePlayStatusSource": "google-play",
+      "googlePlayCheckedAt": "2026-10-23T07:32:01.748Z",
+      "googlePlayEvidenceUrl": null,
+      "googlePlayMarketsChecked": [
+        "US",
+        "IN"
+      ],
       "category": "Music & Audio",
       "patchCount": 1,
       "bundleCount": 1,
@@ -10219,6 +10339,14 @@
       "packageName": "com.paypal.android.p2pmobile",
       "name": "PayPal - Pay, Send, Save",
       "iconUrl": "https://play-lh.googleusercontent.com/9SeHb3IaNFm7sXRQmWZaL5MHqVn4qcBGz12sPgjBisZCFMyZPOCXUFOZIttUu-CiTqQz3alXL7jxxGW1Y4fn",
+      "googlePlayStatus": "available",
+      "googlePlayStatusSource": "google-play",
+      "googlePlayCheckedAt": "2026-10-23T07:32:01.748Z",
+      "googlePlayEvidenceUrl": null,
+      "googlePlayMarketsChecked": [
+        "US",
+        "IN"
+      ],
       "category": "Finance & Shopping",
       "patchCount": 1,
       "bundleCount": 1,
@@ -10247,6 +10375,14 @@
       "packageName": "com.picsart.studio",
       "name": "Picsart AI Photo Editor, Video",
       "iconUrl": "https://play-lh.googleusercontent.com/wXk_X0uT6AeWv5TFfheHP8NrOmtz17BX-2uEZ7H4naTIzuFpSIfohvQTA4pKOCF71TmeUF3DfMAGq1SlK2hH7Qk",
+      "googlePlayStatus": "available",
+      "googlePlayStatusSource": "google-play",
+      "googlePlayCheckedAt": "2026-10-23T07:32:01.748Z",
+      "googlePlayEvidenceUrl": null,
+      "googlePlayMarketsChecked": [
+        "US",
+        "IN"
+      ],
       "category": "Video & Photography",
       "patchCount": 2,
       "bundleCount": 1,
@@ -10292,6 +10428,14 @@
       "packageName": "com.reddit.frontpage",
       "name": "Reddit",
       "iconUrl": "https://play-lh.googleusercontent.com/8FVS0kvM60JwqZWRNzBIlwrZZxJa8vpli8IWaaTo8QXRe1PHmCNJ8UpWoXkGPV3jKEaTY2OVAeYoisOnGJXY",
+      "googlePlayStatus": "available",
+      "googlePlayStatusSource": "google-play",
+      "googlePlayCheckedAt": "2026-10-23T07:32:01.748Z",
+      "googlePlayEvidenceUrl": null,
+      "googlePlayMarketsChecked": [
+        "US",
+        "IN"
+      ],
       "category": "Social",
       "patchCount": 19,
       "bundleCount": 1,
@@ -10686,6 +10830,14 @@
       "packageName": "ginlemon.flowerfree",
       "name": "Smart Launcher 6 ‧ Home Screen",
       "iconUrl": "https://play-lh.googleusercontent.com/AM7MidChVOk5Uj7Vf7xM0ZaOYnGBea4PZBH5O5wlllmksRKCdMgRzPnPSgg-K7bQ0DXv2Bb7F9-kfyCVyG3JNtQ",
+      "googlePlayStatus": "available",
+      "googlePlayStatusSource": "google-play",
+      "googlePlayCheckedAt": "2026-10-23T07:32:01.748Z",
+      "googlePlayEvidenceUrl": null,
+      "googlePlayMarketsChecked": [
+        "US",
+        "IN"
+      ],
       "category": "Tools",
       "patchCount": 1,
       "bundleCount": 1,
@@ -10714,6 +10866,14 @@
       "packageName": "org.telegram.messenger",
       "name": "Telegram",
       "iconUrl": "https://play-lh.googleusercontent.com/PyZ3akMGXPV0tKKirKNwfO--PSQW3FHR6rD_H9mAaukZ8LiHyYFuBLeU8UZ2ok6r5SP79-3prkfybWKh98AZAD0",
+      "googlePlayStatus": "available",
+      "googlePlayStatusSource": "google-play",
+      "googlePlayCheckedAt": "2026-10-23T07:32:01.748Z",
+      "googlePlayEvidenceUrl": null,
+      "googlePlayMarketsChecked": [
+        "US",
+        "IN"
+      ],
       "category": "Social",
       "patchCount": 12,
       "bundleCount": 1,
@@ -10955,6 +11115,14 @@
       "packageName": "com.zhiliaoapp.musically",
       "name": "TikTok - Videos, Shop & LIVE",
       "iconUrl": "https://play-lh.googleusercontent.com/2o7iuqPe-0msP3DvNhzoOgNo4eZ6GkL_RtGVeKyBn5UBQAW5cw-GW5V3wDOHB1yTQuqWzrFLFOv2u4_5ea1uhg",
+      "googlePlayStatus": "available",
+      "googlePlayStatusSource": "google-play",
+      "googlePlayCheckedAt": "2026-10-23T07:32:01.748Z",
+      "googlePlayEvidenceUrl": null,
+      "googlePlayMarketsChecked": [
+        "US",
+        "IN"
+      ],
       "category": "Video & Photography",
       "patchCount": 34,
       "bundleCount": 1,
@@ -11660,6 +11828,14 @@
       "packageName": "pe.tumicro.android",
       "name": "TuRuta :❩",
       "iconUrl": "https://play-lh.googleusercontent.com/pDubLUpHIYveJb1z9LYVfdK2m7sbLLr-sCxPv0kNE3H2L5hH0zEwCzrbBn5htVN46NkJeTAw1l_HLhDgYJOjoQ",
+      "googlePlayStatus": "available",
+      "googlePlayStatusSource": "google-play",
+      "googlePlayCheckedAt": "2026-10-23T07:32:01.748Z",
+      "googlePlayEvidenceUrl": null,
+      "googlePlayMarketsChecked": [
+        "US",
+        "IN"
+      ],
       "category": "Other",
       "patchCount": 2,
       "bundleCount": 1,
@@ -11718,6 +11894,14 @@
       "packageName": "com.frontrow.vlog",
       "name": "VN: Photo & Video Editor",
       "iconUrl": "https://play-lh.googleusercontent.com/AdmVEf1YsnbcTx7OFNNbJkqLbLewomf6xR4wWnazycJJC4llEXjmBOixxcgGt3TFa_IZszY9gw-4UOGYKlaKMw",
+      "googlePlayStatus": "available",
+      "googlePlayStatusSource": "google-play",
+      "googlePlayCheckedAt": "2026-10-23T07:32:01.748Z",
+      "googlePlayEvidenceUrl": null,
+      "googlePlayMarketsChecked": [
+        "US",
+        "IN"
+      ],
       "category": "Video & Photography",
       "patchCount": 1,
       "bundleCount": 1,
@@ -11746,6 +11930,14 @@
       "packageName": "com.twitter.android",
       "name": "X",
       "iconUrl": "https://play-lh.googleusercontent.com/IsLsCD4eLC2CYvlkgTI6Z5TROj0BJIBgUF7BZ5eliTzyyTjqG_mbofeG4kw2s7oG_JZMSi5ErLz_qsDi169C8w",
+      "googlePlayStatus": "available",
+      "googlePlayStatusSource": "google-play",
+      "googlePlayCheckedAt": "2026-10-23T07:32:01.748Z",
+      "googlePlayEvidenceUrl": null,
+      "googlePlayMarketsChecked": [
+        "US",
+        "IN"
+      ],
       "category": "Social",
       "patchCount": 14,
       "bundleCount": 1,
@@ -12040,6 +12232,14 @@
       "packageName": "com.yazio.android",
       "name": "Yazio: AI Calorie Tracker",
       "iconUrl": "https://play-lh.googleusercontent.com/D5Xef316DD02-J9YflzymVi_XHbhfObY26ReHI3GB2OzcrrDTpXLMlEAcRksGAVqpNxR2zDibzXw1rlyT0dXMg",
+      "googlePlayStatus": "available",
+      "googlePlayStatusSource": "google-play",
+      "googlePlayCheckedAt": "2026-10-23T07:32:01.748Z",
+      "googlePlayEvidenceUrl": null,
+      "googlePlayMarketsChecked": [
+        "US",
+        "IN"
+      ],
       "category": "Health & Fitness",
       "patchCount": 1,
       "bundleCount": 1,
@@ -12068,6 +12268,14 @@
       "packageName": "com.google.android.youtube",
       "name": "YouTube",
       "iconUrl": "https://play-lh.googleusercontent.com/QNmuZQc9I6Zbe3mWnSr0hycnENqGFCI5p3yE29Hkxtf22T0IWS6zTrpxULLyyjWpB7ONAXDsDQXnXcVWokl3eg",
+      "googlePlayStatus": "available",
+      "googlePlayStatusSource": "google-play",
+      "googlePlayCheckedAt": "2026-10-23T07:32:01.748Z",
+      "googlePlayEvidenceUrl": null,
+      "googlePlayMarketsChecked": [
+        "US",
+        "IN"
+      ],
       "category": "Video & Photography",
       "patchCount": 76,
       "bundleCount": 1,
@@ -13708,6 +13916,14 @@
       "packageName": "com.google.android.apps.youtube.music",
       "name": "YouTube Music",
       "iconUrl": "https://play-lh.googleusercontent.com/MyptZXmcCyF59phIWPsNCfHq6zSO_ojEdw_4rMYYWPOGdikSjqeOXcoszBZ053VYpINe5K7ZR9KV1nkFWgxdOw",
+      "googlePlayStatus": "available",
+      "googlePlayStatusSource": "google-play",
+      "googlePlayCheckedAt": "2026-10-23T07:32:01.748Z",
+      "googlePlayEvidenceUrl": null,
+      "googlePlayMarketsChecked": [
+        "US",
+        "IN"
+      ],
       "category": "Video & Photography",
       "patchCount": 24,
       "bundleCount": 1,
