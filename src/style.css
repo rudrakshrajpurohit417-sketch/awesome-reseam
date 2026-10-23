@@ -224,3 +224,97 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 @media (prefers-reduced-motion: reduce) {
   .tabs::before { transition: none; }
 }
+
+
+/* Refined segmented navigation: a real sliding pill in three equal slots. */
+.toolbar-main > .tabs {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 0;
+  width: max-content;
+  min-width: 330px;
+  padding: 4px;
+  overflow: hidden;
+  isolation: isolate;
+  border: 1px solid #303633;
+  border-radius: 12px;
+  background: #151816;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, .25);
+}
+.tabs::before {
+  content: none !important;
+  display: none !important;
+}
+.tabs-indicator {
+  position: absolute;
+  z-index: 0;
+  top: 4px;
+  bottom: 4px;
+  left: 4px;
+  width: calc((100% - 8px) / 3);
+  border: 1px solid rgba(143, 224, 176, .46);
+  border-radius: 8px;
+  background: linear-gradient(180deg, #a0ecc0 0%, #83dca8 100%);
+  box-shadow: 0 2px 8px rgba(91, 202, 139, .16), inset 0 1px 0 rgba(255, 255, 255, .24);
+  transform: translateX(0);
+  transition: transform 320ms cubic-bezier(.22, .78, .22, 1);
+  pointer-events: none;
+}
+.tabs[data-active-tab="bundles"] .tabs-indicator { transform: translateX(100%); }
+.tabs[data-active-tab="news"] .tabs-indicator { transform: translateX(200%); }
+.toolbar-main > .tabs button,
+.toolbar-main > .tabs button + button {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  width: 100%;
+  min-width: 0;
+  min-height: 42px;
+  height: 42px;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  box-shadow: none;
+  color: #aeb8b1;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  transform: none;
+  transition: color 180ms ease, opacity 180ms ease;
+}
+.toolbar-main > .tabs button svg { flex: 0 0 auto; }
+.toolbar-main > .tabs button.active {
+  color: #102017;
+  background: transparent;
+  box-shadow: none;
+}
+.toolbar-main > .tabs button.active svg { color: #102017; }
+.toolbar-main > .tabs button:hover { color: #e4f6ea; }
+.toolbar-main > .tabs button.active:hover { color: #102017; }
+.toolbar-main > .tabs button:active { transform: scale(.98); }
+@media (max-width: 1120px) {
+  .toolbar-main > .tabs {
+    width: 100%;
+    min-width: 0;
+  }
+}
+@media (max-width: 680px) {
+  .toolbar-main > .tabs { min-height: 0; }
+  .toolbar-main > .tabs button,
+  .toolbar-main > .tabs button + button {
+    min-height: 40px;
+    height: 40px;
+    gap: 6px;
+    padding: 0 6px;
+    font-size: 11px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .tabs-indicator { transition: none; }
+}
