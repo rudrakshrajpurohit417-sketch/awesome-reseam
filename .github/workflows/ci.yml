@@ -8,6 +8,7 @@ on:
     paths:
       - 'src/**'
       - 'scripts/**'
+      - 'config/**'
       - 'data/catalog.json'
       - 'public/catalog.json'
       - 'package.json'
