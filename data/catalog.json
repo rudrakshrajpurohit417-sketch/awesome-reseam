@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T07:43:26.372Z",
+  "generatedAt": "2026-10-23T11:51:21.614Z",
   "registry": {
     "url": "https://patch-bundles.api.jmancentral.com",
     "generation": null,
@@ -5869,12 +5869,18 @@
       "homepage": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
       "indexUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
       "addUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-      "version": "0.1.0",
-      "updatedAt": "2026-10-23T06:10:02.768210625Z",
+      "version": "0.1.1",
+      "updatedAt": "2026-10-23T09:54:12.098088435Z",
       "patchCount": 29,
       "iconUrl": "https://avatars.githubusercontent.com/u/1288587?v=4",
       "metadataStatus": "verified",
       "releases": [
+        {
+          "version": "0.1.1",
+          "createdAt": "2026-10-23T09:54:12.098088435Z",
+          "description": "- ci: start a release from GitHub with \"Run workflow\"\n- feat: show the patches' version at the bottom of the drawer\n- feat(chat): count the chat messages Reddit sends to the inbox\n- feat(chat): keep a chat login for each account\n- docs: add an AI disclosure to the README\n- docs: publish the bundle signing key in the README\n",
+          "prerelease": false
+        },
         {
           "version": "0.1.0",
           "createdAt": "2026-10-23T06:10:02.768210625Z",
@@ -5890,7 +5896,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -5951,7 +5957,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -5975,7 +5981,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -5999,7 +6005,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6023,7 +6029,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6047,7 +6053,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6071,7 +6077,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6091,11 +6097,11 @@
         {
           "id": "com.joancomasfdz.patches.baconreader.core.settingsEntry",
           "name": "Patches entry in settings",
-          "description": "Adds a Patches entry at the end of BaconReader's settings, which opens the patches' settings.",
+          "description": "Adds a Patches entry at the end of BaconReader's settings, which opens the patches' settings, and shows the patches' version at the bottom of the menu.",
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6119,7 +6125,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6143,7 +6149,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6167,7 +6173,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6187,11 +6193,11 @@
         {
           "id": "com.joancomasfdz.patches.baconreader.inbox.redditChat",
           "name": "Reddit chat",
-          "description": "Adds Chat to the menu, next to the Inbox, which shows Reddit's chat from its mobile website on the main screen, and notifies of new chat messages.",
+          "description": "Adds Chat to the menu, next to the Inbox, which shows Reddit's chat from its mobile website on the main screen. The chat messages Reddit also sends to the inbox are counted next to Chat and notified as chat messages instead.",
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6215,7 +6221,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6239,7 +6245,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6263,7 +6269,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6287,7 +6293,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6311,7 +6317,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6335,7 +6341,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6359,7 +6365,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6383,7 +6389,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6407,7 +6413,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6431,7 +6437,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6455,7 +6461,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6479,7 +6485,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6503,7 +6509,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6527,7 +6533,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6551,7 +6557,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6575,7 +6581,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6599,7 +6605,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6655,8 +6661,8 @@
       "homepage": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
       "indexUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
       "addUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-      "version": "0.1.0",
-      "updatedAt": "2026-10-23T06:10:02.768210625Z",
+      "version": "0.1.1",
+      "updatedAt": "2026-10-23T09:54:12.098088435Z",
       "patchCount": 29,
       "iconUrl": "https://avatars.githubusercontent.com/u/1288587?v=4",
       "isOfficial": false,
@@ -6778,7 +6784,7 @@
       "iconUrl": "https://img.utdstc.com/icon/c73/77d/c7377d76316b5d34edfa1171c5e8f144f0ddc954822e7cec720bd5cf2bed4e54",
       "googlePlayStatus": "unavailable",
       "googlePlayStatusSource": "manual",
-      "googlePlayCheckedAt": "2026-10-23T07:43:26.366Z",
+      "googlePlayCheckedAt": "2026-10-23T11:51:21.606Z",
       "googlePlayEvidenceUrl": "https://www.appbrain.com/app/baconreader-for-reddit/com.onelouder.baconreader",
       "googlePlayMarketsChecked": [
         "US",
@@ -6798,7 +6804,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6860,7 +6866,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6885,7 +6891,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6910,7 +6916,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6935,7 +6941,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6960,7 +6966,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6985,7 +6991,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7006,11 +7012,11 @@
         {
           "id": "com.joancomasfdz.patches.baconreader.core.settingsEntry",
           "name": "Patches entry in settings",
-          "description": "Adds a Patches entry at the end of BaconReader's settings, which opens the patches' settings.",
+          "description": "Adds a Patches entry at the end of BaconReader's settings, which opens the patches' settings, and shows the patches' version at the bottom of the menu.",
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7035,7 +7041,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7060,7 +7066,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7085,7 +7091,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7106,11 +7112,11 @@
         {
           "id": "com.joancomasfdz.patches.baconreader.inbox.redditChat",
           "name": "Reddit chat",
-          "description": "Adds Chat to the menu, next to the Inbox, which shows Reddit's chat from its mobile website on the main screen, and notifies of new chat messages.",
+          "description": "Adds Chat to the menu, next to the Inbox, which shows Reddit's chat from its mobile website on the main screen. The chat messages Reddit also sends to the inbox are counted next to Chat and notified as chat messages instead.",
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7135,7 +7141,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7160,7 +7166,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7185,7 +7191,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7210,7 +7216,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7235,7 +7241,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7260,7 +7266,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7285,7 +7291,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7310,7 +7316,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7335,7 +7341,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7360,7 +7366,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7385,7 +7391,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7410,7 +7416,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7435,7 +7441,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7460,7 +7466,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7485,7 +7491,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7510,7 +7516,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7535,7 +7541,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7561,7 +7567,7 @@
       "iconUrl": "https://img.utdstc.com/icon/c73/77d/c7377d76316b5d34edfa1171c5e8f144f0ddc954822e7cec720bd5cf2bed4e54",
       "googlePlayStatus": "unavailable",
       "googlePlayStatusSource": "manual",
-      "googlePlayCheckedAt": "2026-10-23T07:43:26.366Z",
+      "googlePlayCheckedAt": "2026-10-23T11:51:21.606Z",
       "googlePlayEvidenceUrl": "https://www.appbrain.com/app/baconreader-premium-for-reddit/com.onelouder.baconreader.premium",
       "googlePlayMarketsChecked": [
         "US",
@@ -7581,7 +7587,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7643,7 +7649,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7668,7 +7674,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7693,7 +7699,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7718,7 +7724,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7743,7 +7749,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7768,7 +7774,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7789,11 +7795,11 @@
         {
           "id": "com.joancomasfdz.patches.baconreader.core.settingsEntry",
           "name": "Patches entry in settings",
-          "description": "Adds a Patches entry at the end of BaconReader's settings, which opens the patches' settings.",
+          "description": "Adds a Patches entry at the end of BaconReader's settings, which opens the patches' settings, and shows the patches' version at the bottom of the menu.",
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7818,7 +7824,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7843,7 +7849,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7868,7 +7874,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7889,11 +7895,11 @@
         {
           "id": "com.joancomasfdz.patches.baconreader.inbox.redditChat",
           "name": "Reddit chat",
-          "description": "Adds Chat to the menu, next to the Inbox, which shows Reddit's chat from its mobile website on the main screen, and notifies of new chat messages.",
+          "description": "Adds Chat to the menu, next to the Inbox, which shows Reddit's chat from its mobile website on the main screen. The chat messages Reddit also sends to the inbox are counted next to Chat and notified as chat messages instead.",
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7918,7 +7924,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7943,7 +7949,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7968,7 +7974,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7993,7 +7999,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -8018,7 +8024,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -8043,7 +8049,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -8068,7 +8074,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -8093,7 +8099,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -8118,7 +8124,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -8143,7 +8149,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -8168,7 +8174,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -8193,7 +8199,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -8218,7 +8224,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -8243,7 +8249,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -8268,7 +8274,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -8293,7 +8299,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -8318,7 +8324,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.0",
+          "sourceVersion": "0.1.1",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -14449,6 +14455,15 @@
   ],
   "whatsNew": [
     {
+      "version": "0.1.1",
+      "createdAt": "2026-10-23T09:54:12.098088435Z",
+      "description": "- ci: start a release from GitHub with \"Run workflow\"\n- feat: show the patches' version at the bottom of the drawer\n- feat(chat): count the chat messages Reddit sends to the inbox\n- feat(chat): keep a chat login for each account\n- docs: add an AI disclosure to the README\n- docs: publish the bundle signing key in the README\n",
+      "prerelease": false,
+      "sourceName": "baconreader-patches",
+      "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+      "official": false
+    },
+    {
       "version": "0.1.0",
       "createdAt": "2026-10-23T06:10:02.768210625Z",
       "description": "- fix: run the publish script on Ubuntu 24.04, since the reseam CLI needs glibc 2.39\n- chore: add a script that sets up the signing key and publishes a release from a container\n- docs: make the README about the patches and how to install them, and move the details to docs/DEVELOPMENT.md\n- feat(baconreader): show Reddit chat in place of the post list, under BaconReader's toolbar and drawer\n- feat(baconreader): check for new Reddit chat messages, with their count next to Chat and a notification\n- feat(baconreader): add Reddit chat, which opens Reddit's chat from the menu, next to the inbox\n- feat(baconreader): add Disable final release announcement, which stops the goodbye popup when the app starts\n- feat(baconreader): show every error that escapes a patch in the error dialog, and keep the app open\n- docs: require extensions to use only public app classes and members\n- docs: order the README by the patches and group their settings\n- feat(baconreader): add Save videos with sound, which adds the sound to Reddit videos saved to the device\n- feat(baconreader): add Hide formatted spoilers, which hides spoilers with formatting, links or code behind the spoiler box\n- feat(baconreader): add Markdown editor, which makes text boxes big and adds a bar of Reddit's formats with live formatting\n- feat(baconreader): add Inbox comment reply screen, which replies from the inbox on the comment reply screen\n- feat(baconreader): add Fix unread messages, which turns the inbox envelope back to normal once every message is read\n- feat(baconreader): add Load more comments, which loads up to 500 comments when a post opens and the small \"load more comments\" automatically\n- feat(baconreader): add Search comments, which finds, highlights and jumps between the comments of a post with a text or user name\n- feat(baconreader): add Show user avatars, which shows the author's avatar before the name in comments and the inbox\n- feat(baconreader): add Flair filter, which shows only the posts of a subreddit with the chosen flairs\n- feat(baconreader): add Disable feedback popup, which stops the popup asking for feedback about BaconReader\n- feat(baconreader): add Remove Random feeds, which removes the Random feeds that no longer load from the feed list\n- feat(baconreader): add Show request errors, which shows the actual error when a Reddit request fails\n- feat(baconreader): add Disable unavailable sidebar, which greys out \"View Sidebar\" on feeds that have no sidebar\n- feat(baconreader): add Remove awards, which removes the award icons and actions that no longer work\n- feat(baconreader): add Fix empty saved files, which stops saving media from also creating an empty file\n- feat(baconreader): add Fix meme templates, which makes the meme templates of the drawing screen load again\n- feat(baconreader): add Fix lost post votes, which keeps votes made on a post while its comments load\n- feat(baconreader): add Prompt to open Reddit links, which asks once to set up Reddit links to open in BaconReader\n- feat(baconreader): add Improve post media loading, which shows a still preview and the download progress while post media loads\n- feat(baconreader): add Embed comment images, which shows images, GIFs, emotes, Imgur albums, videos, YouTube titles and X and Bluesky posts in comments and posts\n- feat(baconreader): add Fix Imgur API, which makes Imgur albums, galleries and image uploads work again\n- feat(baconreader): add Text post icon, which shows a page icon instead of a play button on text posts\n- feat(baconreader): add Show tables, which draws Reddit tables as a grid\n- feat(baconreader): add Fix list thumbnails, which fixes empty thumbnails in the post list and blurs NSFW and spoiler ones\n- docs: say that ReVanced parent settings only grey out the settings screen\n- docs: describe the settings screen, the error dialog and the shared extension code\n- feat(baconreader): add the error dialog and the extension code several patches share\n- feat(baconreader): add the settings screen and Patches entry in settings, which opens it\n- docs: add the coding guidelines learned from porting ReVanced patches\n- feat(baconreader): add Fix Redgifs API, which makes Redgifs videos play again\n- feat(baconreader): add Spoof client, which makes logging in to Reddit work again\n- chore: replace the example patches with the BaconReader bundle\n- Initial commit\n",
@@ -14704,15 +14719,6 @@
       "version": "0.28.0",
       "createdAt": "2026-10-12T18:46:18.885077159Z",
       "description": "- fix(youtube): hide product stickers in Shorts\n- feat(youtube): hide the toolbar messages button\n- refactor(youtube): rename the Downloads patch to External downloader\n- fix(youtube): answer refused downloads with spoofing off, so they work on mounted installs\n",
-      "prerelease": false,
-      "sourceName": "reseam-patches",
-      "sourceUrl": "https://api.reseam.app/patches.json",
-      "official": true
-    },
-    {
-      "version": "0.27.0",
-      "createdAt": "2026-10-12T15:03:20.424730277Z",
-      "description": "- feat: brand every app's settings screen as Reseam on the engine's app runtime, with icons\n",
       "prerelease": false,
       "sourceName": "reseam-patches",
       "sourceUrl": "https://api.reseam.app/patches.json",
