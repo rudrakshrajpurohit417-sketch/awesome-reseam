@@ -1,17 +1,11 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 
 const outputPath = new URL('../data/catalog.json', import.meta.url)
+const configPath = new URL('../config/catalog-config.json', import.meta.url)
+const catalogConfig = JSON.parse(await readFile(configPath, 'utf8'))
 const registryApi = 'https://patch-bundles.api.jmancentral.com'
 const officialUrl = 'https://api.reseam.app/patches.json'
-const manualSources = [
-  {
-    name: 'BaconReader Patches',
-    author: 'JoanComasFdz',
-    sourceUrl: 'https://github.com/JoanComasFdz/baconreader-reseam-patches',
-    indexJsonUrl: 'https://github.com/JoanComasFdz/baconreader-reseam-patches/releases/latest/download/patches.json',
-    iconUrl: 'https://avatars.githubusercontent.com/u/1288587?v=4',
-  },
-]
+const manualSources = catalogConfig.manualSources ?? []
 const previous = JSON.parse(await readFile(outputPath, 'utf8'))
 const staleSources = []
 
@@ -217,25 +211,10 @@ for (const source of sources) for (const patch of source.patches) for (const app
 }
 
 const appMetadata = new Map(apiApps.map((app) => [app.package_name, app]))
-const curatedAppMetadata = new Map([
-  ['com.onelouder.baconreader', {
-    name: 'BaconReader',
-    iconUrl: 'https://img.utdstc.com/icon/c73/77d/c7377d76316b5d34edfa1171c5e8f144f0ddc954822e7cec720bd5cf2bed4e54',
-    googlePlayStatus: 'unavailable',
-    googlePlayStatusSource: 'manual',
-    googlePlayEvidenceUrl: 'https://www.appbrain.com/app/baconreader-for-reddit/com.onelouder.baconreader',
-  }],
-  ['com.onelouder.baconreader.premium', {
-    name: 'BaconReader Premium',
-    iconUrl: 'https://img.utdstc.com/icon/c73/77d/c7377d76316b5d34edfa1171c5e8f144f0ddc954822e7cec720bd5cf2bed4e54',
-    googlePlayStatus: 'unavailable',
-    googlePlayStatusSource: 'manual',
-    googlePlayEvidenceUrl: 'https://www.appbrain.com/app/baconreader-premium-for-reddit/com.onelouder.baconreader.premium',
-  }],
-])
+const curatedAppMetadata = new Map(Object.entries(catalogConfig.curatedAppMetadata ?? {}))
 
-const googlePlayMarkets = ['US', 'IN']
-const googlePlayCacheMs = 24 * 60 * 60 * 1000
+const googlePlayMarkets = catalogConfig.googlePlayMarkets ?? ['US', 'IN']
+const googlePlayCacheMs = (catalogConfig.googlePlayCacheHours ?? 24) * 60 * 60 * 1000
 const previousAppByPackage = new Map((previous.apps ?? []).map((app) => [app.packageName, app]))
 const googlePlayMetadataByPackage = new Map()
 const marketResults = new Map()
