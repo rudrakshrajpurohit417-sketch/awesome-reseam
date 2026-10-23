@@ -377,3 +377,30 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .brand strong{color:#a2ebbd}
 
 .request-bundle-button{color:var(--mint)!important;border-color:#426a53!important}.request-bundle-button:hover{background:#1b2c22!important;color:#a2ebbd!important;border-color:#a2ebbd!important}
+
+
+/* Lift cards on hover, with a subtle glow like the reference catalog. */
+.app-card{
+  transform:translateY(0);
+  transition:transform .22s cubic-bezier(.2,.75,.25,1),border-color .22s ease,background .22s ease,box-shadow .22s ease;
+  will-change:transform;
+}
+.app-card:hover{
+  transform:translateY(-6px);
+  border-color:#668d78;
+  background:#292d2e;
+  box-shadow:0 12px 28px rgba(0,0,0,.28),0 3px 10px rgba(156,233,189,.06);
+}
+.bundle-card{
+  transition:transform .22s cubic-bezier(.2,.75,.25,1),border-color .22s ease,background .22s ease,box-shadow .22s ease;
+}
+.bundle-card:hover{
+  transform:translateY(-5px);
+  border-color:#668d78;
+  background:#292d2e;
+  box-shadow:0 12px 28px rgba(0,0,0,.26),0 3px 10px rgba(156,233,189,.05);
+}
+@media (prefers-reduced-motion:reduce){
+  .app-card,.bundle-card{transition:none}
+  .app-card:hover,.bundle-card:hover{transform:none}
+}
