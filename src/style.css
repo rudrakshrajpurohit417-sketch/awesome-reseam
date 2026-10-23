@@ -393,3 +393,33 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
   .app-card,.bundle-card{transition:none}
   .app-card:hover,.bundle-card:hover{transform:none}
 }
+
+
+/* Stabilize header layout and prevent action labels from clipping on narrow screens. */
+.site-header{gap:18px;min-width:0}
+.brand{flex:1 1 auto}
+.brand>span:last-child{min-width:0;line-height:1.2}
+.brand small{white-space:normal;overflow-wrap:anywhere}
+.header-actions{flex:0 1 auto;min-width:0;flex-wrap:wrap;justify-content:flex-end}
+.header-actions>a{white-space:nowrap;flex:none}
+@media(max-width:760px){
+  .site-header{height:auto;min-height:70px;padding:12px 16px;align-items:flex-start;flex-direction:column;gap:12px}
+  .brand{width:100%;flex:none}
+  .brand>span:last-child{font-size:18px}
+  .brand small{font-size:10px;line-height:1.35}
+  .header-actions{width:100%;justify-content:flex-start;gap:7px}
+  .header-actions>a{font-size:10px;padding:8px 9px;gap:6px}
+  .header-actions .github-button{padding:8px}
+  .header-actions>a:first-child{font-size:10px;gap:6px}
+}
+@media(max-width:380px){
+  .site-header{padding:11px 12px}
+  .brand{gap:8px}
+  .brand-icon{width:34px;height:34px}
+  .brand>span:last-child{font-size:16px}
+  .brand small{max-width:100%;font-size:9px}
+  .header-actions{gap:6px}
+  .header-actions>a{font-size:9px;padding:7px}
+  .header-actions>a:first-child{font-size:9px;padding:7px}
+  .header-actions .github-button{padding:7px}
+}
