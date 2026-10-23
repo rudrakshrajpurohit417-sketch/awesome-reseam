@@ -14,19 +14,6 @@ type Issue = { name: string; url: string; error: string }
 type CatalogData = { generatedAt: string; registry: { url: string; available: boolean }; official: BundleSource; community: BundleSource[]; apps: AppInfo[]; bundles: Bundle[]; whatsNew: Update[]; staleSources: Issue[] }
 type TabKey = 'apps' | 'bundles' | 'news'
 
-const latestVersion = (versions: string[]) => {
-  if (!versions.length) return null
-  return [...versions].sort((a, b) => {
-    const aParts = a.match(/\d+/g)?.map(Number) ?? []
-    const bParts = b.match(/\d+/g)?.map(Number) ?? []
-    for (let i = 0; i < Math.max(aParts.length, bParts.length); i++) {
-      const difference = (bParts[i] ?? 0) - (aParts[i] ?? 0)
-      if (difference) return difference
-    }
-    return a.localeCompare(b)
-  })[0]
-}
-
 const withAllAppVersions = (data: CatalogData): CatalogData => {
   const versionsByPackage = new Map<string, Set<string>>()
   const allPatches = [data.official, ...data.community].flatMap((source) => source.patches)
