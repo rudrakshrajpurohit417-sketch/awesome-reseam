@@ -7,6 +7,7 @@
     <meta name="description" content="A community directory of patches, bundles, tools, and resources for Reseam." />
     <title>Awesome Reseam — Community directory</title>
     <link rel="icon" href="/reseam.ico" sizes="any" />
+    <link rel="preload" href="/catalog.json" as="fetch" crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,7 +21,15 @@
     </noscript>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div class="startup-shell" role="status" aria-label="Loading Awesome Reseam">
+        <div class="startup-header"><span class="startup-logo"></span><span class="startup-brand"><i></i><b></b></span></div>
+        <div class="startup-content"><span class="startup-tabs"></span><span class="startup-search"></span><div class="startup-grid"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+      </div>
+    </div>
+    <style>
+      .startup-shell{min-height:100vh;background:#0a0a0a;color:#f2f4f2;font-family:system-ui,sans-serif}.startup-header{height:81px;max-width:1384px;margin:auto;padding:0 28px;display:flex;align-items:center;gap:13px;border-bottom:1px solid #292c2d}.startup-logo{width:42px;height:42px;border-radius:50%;background:#202b25;box-shadow:inset 0 0 0 1px #365544}.startup-brand{display:grid;gap:8px}.startup-brand i,.startup-brand b{display:block;height:9px;border-radius:5px;background:#292e2b}.startup-brand i{width:130px}.startup-brand b{width:180px;height:6px;background:#1c201e}.startup-content{max-width:1384px;margin:auto;padding:24px 28px}.startup-tabs,.startup-search,.startup-grid i{display:block;border:1px solid #292d2f;background:#17191a;border-radius:11px}.startup-tabs{height:48px;width:300px;margin-bottom:14px}.startup-search{height:45px;width:100%;margin-bottom:22px}.startup-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.startup-grid i{height:200px;border-radius:17px;background:linear-gradient(110deg,#17191a 20%,#202322 40%,#17191a 60%);background-size:200% 100%;animation:startup-shimmer 1.5s ease-in-out infinite}@keyframes startup-shimmer{to{background-position:-200% 0}}@media(max-width:620px){.startup-header{height:70px;padding:0 15px}.startup-content{padding:18px 15px}.startup-tabs{width:100%;height:46px}.startup-grid{grid-template-columns:1fr;gap:10px}.startup-grid i{height:145px}}@media(prefers-reduced-motion:reduce){.startup-grid i{animation:none}}
+    </style>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
