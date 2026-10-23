@@ -15,19 +15,6 @@ export type AppCardData = {
   versions: string[]
 }
 
-function latestVersion(versions: string[]) {
-  if (!versions.length) return null
-  return [...versions].sort((a, b) => {
-    const aParts = a.match(/\d+/g)?.map(Number) ?? []
-    const bParts = b.match(/\d+/g)?.map(Number) ?? []
-    for (let i = 0; i < Math.max(aParts.length, bParts.length); i++) {
-      const difference = (bParts[i] ?? 0) - (aParts[i] ?? 0)
-      if (difference) return difference
-    }
-    return a.localeCompare(b)
-  })[0]
-}
-
 function AppIcon({ src, name }: { src: string | null; name: string }) {
   const [failed, setFailed] = useState(!src)
   const initials = name.split(/\s+/).filter(Boolean).slice(0, 2).map((word) => word[0]).join('').toUpperCase()
@@ -48,7 +35,7 @@ export const AppCard = memo(function AppCard({ app, onOpen }: { app: AppCardData
     <button className="app-card-overlay" onClick={onOpen} aria-label={`Open ${app.name} patch bundles`} />
     <button className="app-open" onClick={onOpen} aria-label={`Browse ${app.name} patches`}>
       <AppIcon src={app.iconUrl} name={app.name} />
-      <div className="app-title-block"><h2>{app.name}</h2><span className="patch-count"><Layers3 size={12} />{app.patchCount} {app.patchCount === 1 ? 'patch' : 'patches'}</span>{app.versions.length > 0 && <span className="app-version">Versions: {app.versions.join(', ')}</span>}</div>
+      <div className="app-title-block"><h2>{app.name}</h2><span className="patch-count"><Layers3 size={12} />{app.patchCount} {app.patchCount === 1 ? 'patch' : 'patches'}</span><span className="app-version">{app.versions.length > 0 ? `Versions: ${app.versions.join(', ')}` : 'Version info unavailable'}</span></div>
     </button>
     <button className="package-id" onClick={copyPackage} title="Copy package name"><span>{copied ? <Check size={13} /> : <Copy size={13} />}</span><code>{app.packageName}</code>{copied && <em>Copied</em>}</button>
     <p className="app-description">Browse community patches for {app.name} and compare supported versions.</p>
