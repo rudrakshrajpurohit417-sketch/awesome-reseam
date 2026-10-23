@@ -3,6 +3,14 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises'
 const outputPath = new URL('../data/catalog.json', import.meta.url)
 const registryApi = 'https://patch-bundles.api.jmancentral.com'
 const officialUrl = 'https://api.reseam.app/patches.json'
+const manualSources = [
+  {
+    name: 'BaconReader Patches',
+    author: 'JoanComasFdz',
+    sourceUrl: 'https://github.com/JoanComasFdz/baconreader-reseam-patches',
+    indexJsonUrl: 'https://github.com/JoanComasFdz/baconreader-reseam-patches/releases/latest/download/patches.json',
+  },
+]
 const previous = JSON.parse(await readFile(outputPath, 'utf8'))
 const staleSources = []
 
@@ -128,6 +136,67 @@ for (const bundle of newestStableBySource.values()) {
     const old = (previous.community ?? []).find((item) => item.indexUrl === sourceUrl)
     if (old) community.push(old)
     staleSources.push({ name: bundle.reseam_bundle?.name ?? sourceUrl, url: sourceUrl, error: error.message })
+  }
+}
+
+
+/*
+ * Sources listed here are fetched directly from their published patches.json.
+ * This keeps useful bundles visible even before the community registry indexes them.
+ */
+function normalizeSourceUrl(value) {
+  try {
+    const url = new URL(value)
+    if (url.hostname.toLowerCase() === 'github.com') {
+      const [owner, repo] = url.pathname.split('/').filter(Boolean)
+      if (owner && repo) return `https://github.com/${owner}/${repo.replace(/\\.git$/i, '')}`.toLowerCase()
+    }
+    return url.href.replace(/\\/$/, '').toLowerCase()
+  } catch {
+    return String(value ?? '').replace(/\\/$/, '').toLowerCase()
+  }
+}
+
+for (const manualSource of manualSources) {
+  try {
+    const index = await fetchJson(manualSource.indexJsonUrl)
+    const release = index?.releases?.find((item) => !item.prerelease && Array.isArray(item.patches))
+      ?? index?.releases?.find((item) => Array.isArray(item.patches))
+    if (!release || !Array.isArray(release.patches)) throw new Error('No release with patch metadata was found')
+
+    const sourceName = index.bundle?.name ?? manualSource.name
+    const sourceIndex = community.findIndex((item) => normalizeSourceUrl(item.indexUrl) === normalizeSourceUrl(manualSource.sourceUrl))
+    if (sourceIndex >= 0) community.splice(sourceIndex, 1)
+
+    community.push({
+      name: sourceName,
+      author: index.bundle?.author ?? manualSource.author,
+      description: index.bundle?.description ?? 'Patches that restore and improve BaconReader for current Reddit.',
+      homepage: index.bundle?.homepage ?? manualSource.sourceUrl,
+      indexUrl: manualSource.sourceUrl,
+      addUrl: manualSource.sourceUrl,
+      version: release.version ?? 'unknown',
+      updatedAt: release.created_at ?? null,
+      patchCount: release.patches.filter((patch) => !patch.hidden).length,
+      iconUrl: index.bundle?.icon_url ?? index.bundle?.iconUrl ?? null,
+      metadataStatus: 'verified',
+      releases: (index.releases ?? []).slice(0, 20).map(({ version, created_at, description, prerelease }) => ({
+        version, createdAt: created_at, description: description ?? '', prerelease: Boolean(prerelease),
+      })),
+      patches: patchesFromIndex({ releases: [release] }, sourceName, sourceName, manualSource.sourceUrl),
+    })
+
+    // A successful direct fetch supersedes any stale registry-fetch warning for this same source.
+    for (let i = staleSources.length - 1; i >= 0; i--) {
+      if (normalizeSourceUrl(staleSources[i].url) === normalizeSourceUrl(manualSource.sourceUrl)) staleSources.splice(i, 1)
+    }
+  } catch (error) {
+    const alreadyLoaded = community.some((item) => normalizeSourceUrl(item.indexUrl) === normalizeSourceUrl(manualSource.sourceUrl))
+    if (!alreadyLoaded) {
+      const old = (previous.community ?? []).find((item) => normalizeSourceUrl(item.indexUrl) === normalizeSourceUrl(manualSource.sourceUrl))
+      if (old) community.push(old)
+      staleSources.push({ name: manualSource.name, url: manualSource.sourceUrl, error: error.message })
+    }
   }
 }
 
