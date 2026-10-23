@@ -88,3 +88,98 @@
   .category-menu{top:49px;padding:6px}
   .category-menu button{min-height:44px;padding:12px;font-size:12px}
 }
+
+
+/* Motion system: subtle, quick, and consistent across the whole directory. */
+@keyframes reseam-enter {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes reseam-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes reseam-pop {
+  0% { opacity: 0; transform: scale(.97); }
+  100% { opacity: 1; transform: scale(1); }
+}
+@keyframes reseam-menu-in {
+  from { opacity: 0; transform: translateY(-5px) scale(.985); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes reseam-shimmer {
+  from { background-position: 150% 0; }
+  to { background-position: -150% 0; }
+}
+
+/* Page content arrives gently instead of appearing all at once. */
+.site-header, header, .hero, .page-heading {
+  animation: reseam-fade-in .45s ease-out both;
+}
+.toolbar-main {
+  animation: reseam-enter .42s cubic-bezier(.2,.7,.2,1) both;
+}
+.app-card, .bundle-card, .update-card, .patch-row {
+  animation: reseam-enter .42s cubic-bezier(.2,.7,.2,1) both;
+  animation-delay: var(--motion-delay, 0ms);
+}
+.app-card:nth-child(2), .bundle-card:nth-child(2), .update-card:nth-child(2), .patch-row:nth-child(2) { --motion-delay: 35ms; }
+.app-card:nth-child(3), .bundle-card:nth-child(3), .update-card:nth-child(3), .patch-row:nth-child(3) { --motion-delay: 70ms; }
+.app-card:nth-child(4), .bundle-card:nth-child(4), .update-card:nth-child(4), .patch-row:nth-child(4) { --motion-delay: 105ms; }
+.app-card:nth-child(5), .bundle-card:nth-child(5), .update-card:nth-child(5), .patch-row:nth-child(5) { --motion-delay: 140ms; }
+.app-card:nth-child(n+6), .bundle-card:nth-child(n+6), .update-card:nth-child(n+6), .patch-row:nth-child(n+6) { --motion-delay: 0ms; }
+
+/* Card feedback: lift slightly, brighten the border, and keep movement restrained. */
+.app-card, .bundle-card, .update-card, .patch-row {
+  transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease, background-color .2s ease;
+}
+.app-card:hover, .bundle-card:hover, .update-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 9px 24px rgba(0,0,0,.18);
+}
+.patch-row:hover {
+  transform: translateX(3px);
+}
+.brand-icon, .app-icon, .app-card img {
+  transition: transform .22s ease, filter .22s ease;
+}
+.app-card:hover .brand-icon, .app-card:hover .app-icon, .app-card:hover img {
+  filter: brightness(1.08);
+}
+
+/* Buttons and filters give immediate, tactile feedback. */
+button, .action-button, .add-reseam-button, .source-button, .back-button, .github-button, .category-button {
+  transition: transform .16s ease, background-color .18s ease, border-color .18s ease, color .18s ease, box-shadow .18s ease;
+}
+button:hover, .action-button:hover, .add-reseam-button:hover, .source-button:hover, .back-button:hover, .github-button:hover, .category-button:hover {
+  transform: translateY(-1px);
+}
+button:active, .action-button:active, .add-reseam-button:active, .source-button:active, .back-button:active, .github-button:active, .category-button:active {
+  transform: scale(.97);
+}
+button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible {
+  outline: 2px solid var(--mint, #8fe0b0);
+  outline-offset: 3px;
+}
+
+/* Menus and detail overlays use short entrance transitions. */
+.category-menu {
+  transform-origin: top center;
+  animation: reseam-menu-in .16s ease-out both;
+}
+.app-card-overlay {
+  animation: reseam-fade-in .18s ease-out both;
+}
+[role="dialog"], .modal, .app-detail, .detail-panel {
+  animation: reseam-pop .2s cubic-bezier(.2,.7,.2,1) both;
+}
+
+/* Make keyboard navigation and reduced-motion preferences first-class. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+  }
+}
