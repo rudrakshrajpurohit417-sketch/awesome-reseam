@@ -56,6 +56,9 @@ function App() {
   const [expandedAppBundles, setExpandedAppBundles] = useState<Set<string>>(() => new Set())
   const loadMoreRef = useRef<HTMLDivElement>(null)
   const detailLoadMoreRef = useRef<HTMLDivElement>(null)
+  useEffect(() => {
+    if (selectedApp || selectedBundle) window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
+  }, [selectedApp, selectedBundle])
   const deferredQuery = useDeferredValue(query.trim().toLowerCase())
   const writeRoute = (nextTab: TabKey, params: Record<string, string> = {}, detail = false, replace = false) => {
     const url = new URL(window.location.href)
