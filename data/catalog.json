@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T04:23:50.712Z",
+  "generatedAt": "2026-10-23T03:03:48.335Z",
   "registry": {
     "url": "https://patch-bundles.api.jmancentral.com",
     "generation": null,
@@ -13,9 +13,15 @@
     "url": "https://reseam.app/patches/",
     "indexUrl": "https://api.reseam.app/patches.json",
     "addUrl": "https://api.reseam.app/patches.json",
-    "version": "0.43.1",
-    "updatedAt": "2026-10-21T23:19:33.893795999Z",
+    "version": "0.44.0",
+    "updatedAt": "2026-10-22T12:46:58.994545853Z",
     "releases": [
+      {
+        "version": "0.44.0",
+        "createdAt": "2026-10-22T12:46:58.994545853Z",
+        "description": "- feat(reddit): add Color comment thread lines and Hide community drawer items\n- fix(x): add the Reseam Settings row to the legacy settings screen too\n",
+        "prerelease": false
+      },
       {
         "version": "0.43.1",
         "createdAt": "2026-10-21T23:19:33.893795999Z",
@@ -129,12 +135,6 @@
         "createdAt": "2026-10-12T15:03:20.424730277Z",
         "description": "- feat: brand every app's settings screen as Reseam on the engine's app runtime, with icons\n",
         "prerelease": false
-      },
-      {
-        "version": "0.26.1",
-        "createdAt": "2026-10-11T22:08:27.649348334Z",
-        "description": "- fix(youtube): make Unlock queue work on the first launch\n",
-        "prerelease": false
       }
     ],
     "patches": [
@@ -145,7 +145,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.discord",
@@ -163,7 +163,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.discord",
@@ -181,7 +181,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.discord",
@@ -199,7 +199,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.discord",
@@ -217,7 +217,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.discord",
@@ -235,7 +235,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.discord",
@@ -253,7 +253,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.discord",
@@ -271,7 +271,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.discord",
@@ -289,7 +289,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.discord",
@@ -307,7 +307,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.discord",
@@ -325,7 +325,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.discord",
@@ -343,7 +343,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.discord",
@@ -361,7 +361,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.discord",
@@ -379,7 +379,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.discord",
@@ -397,7 +397,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.discord",
@@ -415,7 +415,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.discord",
@@ -433,7 +433,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.discord",
@@ -451,7 +451,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.discord",
@@ -469,7 +469,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.discord",
@@ -487,7 +487,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.discord",
@@ -505,7 +505,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.discord",
@@ -523,7 +523,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.discord",
@@ -541,7 +541,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.discord",
@@ -559,7 +559,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.discord",
@@ -577,7 +577,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.discord",
@@ -595,7 +595,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.discord",
@@ -613,7 +613,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.discord",
@@ -631,7 +631,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.discord",
@@ -649,7 +649,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.discord",
@@ -667,7 +667,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.discord",
@@ -685,7 +685,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.discord",
@@ -703,7 +703,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.discord",
@@ -721,7 +721,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.discord",
@@ -739,7 +739,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.discord",
@@ -757,7 +757,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.discord",
@@ -775,7 +775,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.discord",
@@ -793,7 +793,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.discord",
@@ -811,7 +811,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.discord",
@@ -829,7 +829,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.discord",
@@ -847,7 +847,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.discord",
@@ -865,7 +865,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.discord",
@@ -883,7 +883,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.discord",
@@ -901,7 +901,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.discord",
@@ -919,7 +919,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.discord",
@@ -937,7 +937,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.discord",
@@ -955,7 +955,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.discord",
@@ -973,7 +973,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.discord",
@@ -991,7 +991,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.instagram.android",
@@ -1010,7 +1010,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.instagram.android",
@@ -1029,7 +1029,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.instagram.android",
@@ -1073,7 +1073,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.instagram.android",
@@ -1092,7 +1092,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.instagram.android",
@@ -1111,7 +1111,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.instagram.android",
@@ -1130,7 +1130,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.instagram.android",
@@ -1149,7 +1149,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.instagram.android",
@@ -1168,7 +1168,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.instagram.android",
@@ -1187,7 +1187,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.instagram.android",
@@ -1206,7 +1206,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.instagram.android",
@@ -1225,7 +1225,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.instagram.android",
@@ -1244,7 +1244,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.instagram.android",
@@ -1263,7 +1263,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.instagram.android",
@@ -1282,7 +1282,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.instagram.android",
@@ -1301,7 +1301,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.instagram.android",
@@ -1320,7 +1320,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.instagram.android",
@@ -1339,7 +1339,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.instagram.android",
@@ -1358,7 +1358,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.instagram.android",
@@ -1377,7 +1377,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.instagram.android",
@@ -1396,7 +1396,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.instagram.android",
@@ -1415,7 +1415,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.reddit.frontpage",
@@ -1434,7 +1434,26 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
+        "apps": [
+          {
+            "package": "com.reddit.frontpage",
+            "versions": [
+              "2026.39.0",
+              "2026.41.0"
+            ]
+          }
+        ],
+        "options": []
+      },
+      {
+        "id": "app.reseam.patches.reddit.comments.colorThreadLines",
+        "name": "Color comment thread lines",
+        "description": "Gives each reply depth its own thread line color.",
+        "bundle": "reseam-patches",
+        "sourceName": "reseam-patches",
+        "sourceUrl": "https://reseam.app/patches/",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.reddit.frontpage",
@@ -1453,7 +1472,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.reddit.frontpage",
@@ -1472,7 +1491,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.reddit.frontpage",
@@ -1491,7 +1510,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.reddit.frontpage",
@@ -1510,7 +1529,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.reddit.frontpage",
@@ -1529,7 +1548,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.reddit.frontpage",
@@ -1548,7 +1567,26 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
+        "apps": [
+          {
+            "package": "com.reddit.frontpage",
+            "versions": [
+              "2026.39.0",
+              "2026.41.0"
+            ]
+          }
+        ],
+        "options": []
+      },
+      {
+        "id": "app.reseam.patches.reddit.navigation.hideDrawerItems",
+        "name": "Hide community drawer items",
+        "description": "Removes Popular, News, Latest, Reddit Pro or Resources from the community drawer.",
+        "bundle": "reseam-patches",
+        "sourceName": "reseam-patches",
+        "sourceUrl": "https://reseam.app/patches/",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.reddit.frontpage",
@@ -1567,7 +1605,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.reddit.frontpage",
@@ -1586,7 +1624,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.reddit.frontpage",
@@ -1605,7 +1643,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.reddit.frontpage",
@@ -1624,7 +1662,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.reddit.frontpage",
@@ -1643,7 +1681,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.reddit.frontpage",
@@ -1662,7 +1700,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.reddit.frontpage",
@@ -1681,7 +1719,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.reddit.frontpage",
@@ -1700,7 +1738,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.reddit.frontpage",
@@ -1719,7 +1757,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.reddit.frontpage",
@@ -1738,7 +1776,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "org.telegram.messenger",
@@ -1756,7 +1794,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "org.telegram.messenger",
@@ -1774,7 +1812,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "org.telegram.messenger",
@@ -1792,7 +1830,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "org.telegram.messenger",
@@ -1810,7 +1848,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "org.telegram.messenger",
@@ -1828,7 +1866,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "org.telegram.messenger",
@@ -1846,7 +1884,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "org.telegram.messenger",
@@ -1864,7 +1902,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "org.telegram.messenger",
@@ -1882,7 +1920,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "org.telegram.messenger",
@@ -1900,7 +1938,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "org.telegram.messenger",
@@ -1918,7 +1956,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "org.telegram.messenger",
@@ -1936,7 +1974,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "org.telegram.messenger",
@@ -1954,7 +1992,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.zhiliaoapp.musically",
@@ -1972,7 +2010,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.zhiliaoapp.musically",
@@ -1990,7 +2028,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.zhiliaoapp.musically",
@@ -2008,7 +2046,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.zhiliaoapp.musically",
@@ -2026,7 +2064,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.zhiliaoapp.musically",
@@ -2044,7 +2082,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.zhiliaoapp.musically",
@@ -2062,7 +2100,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.zhiliaoapp.musically",
@@ -2080,7 +2118,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.zhiliaoapp.musically",
@@ -2098,7 +2136,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.zhiliaoapp.musically",
@@ -2116,7 +2154,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.zhiliaoapp.musically",
@@ -2134,7 +2172,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.zhiliaoapp.musically",
@@ -2152,7 +2190,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.zhiliaoapp.musically",
@@ -2170,7 +2208,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.zhiliaoapp.musically",
@@ -2188,7 +2226,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.zhiliaoapp.musically",
@@ -2206,7 +2244,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.zhiliaoapp.musically",
@@ -2224,7 +2262,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.zhiliaoapp.musically",
@@ -2242,7 +2280,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.zhiliaoapp.musically",
@@ -2260,7 +2298,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.zhiliaoapp.musically",
@@ -2278,7 +2316,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.zhiliaoapp.musically",
@@ -2296,7 +2334,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.zhiliaoapp.musically",
@@ -2314,7 +2352,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.zhiliaoapp.musically",
@@ -2332,7 +2370,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.zhiliaoapp.musically",
@@ -2350,7 +2388,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.zhiliaoapp.musically",
@@ -2368,7 +2406,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.zhiliaoapp.musically",
@@ -2386,7 +2424,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.zhiliaoapp.musically",
@@ -2404,7 +2442,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.zhiliaoapp.musically",
@@ -2422,7 +2460,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.zhiliaoapp.musically",
@@ -2440,7 +2478,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.zhiliaoapp.musically",
@@ -2458,7 +2496,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.zhiliaoapp.musically",
@@ -2476,7 +2514,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.zhiliaoapp.musically",
@@ -2540,7 +2578,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.zhiliaoapp.musically",
@@ -2558,7 +2596,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.zhiliaoapp.musically",
@@ -2576,7 +2614,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.zhiliaoapp.musically",
@@ -2594,7 +2632,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.zhiliaoapp.musically",
@@ -2612,7 +2650,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [],
         "options": []
       },
@@ -2623,7 +2661,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [],
         "options": [
           {
@@ -2644,7 +2682,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [],
         "options": []
       },
@@ -2655,7 +2693,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [],
         "options": []
       },
@@ -2666,7 +2704,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [],
         "options": []
       },
@@ -2677,7 +2715,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [],
         "options": []
       },
@@ -2688,7 +2726,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [],
         "options": [
           {
@@ -2724,7 +2762,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [],
         "options": []
       },
@@ -2735,7 +2773,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [],
         "options": []
       },
@@ -2746,7 +2784,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.twitter.android",
@@ -2765,7 +2803,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.twitter.android",
@@ -2784,7 +2822,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.twitter.android",
@@ -2803,7 +2841,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.twitter.android",
@@ -2822,7 +2860,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.twitter.android",
@@ -2841,7 +2879,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.twitter.android",
@@ -2860,7 +2898,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.twitter.android",
@@ -2879,7 +2917,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.twitter.android",
@@ -2898,7 +2936,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.twitter.android",
@@ -2917,7 +2955,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.twitter.android",
@@ -2936,7 +2974,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.twitter.android",
@@ -2955,7 +2993,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.twitter.android",
@@ -2974,7 +3012,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.twitter.android",
@@ -2993,7 +3031,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.twitter.android",
@@ -3012,7 +3050,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -3031,7 +3069,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -3050,7 +3088,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -3069,7 +3107,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -3113,7 +3151,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -3132,7 +3170,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -3151,7 +3189,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -3195,7 +3233,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -3214,7 +3252,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -3233,7 +3271,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -3252,7 +3290,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -3271,7 +3309,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -3290,7 +3328,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -3309,7 +3347,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -3328,7 +3366,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -3347,7 +3385,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -3366,7 +3404,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -3385,7 +3423,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -3404,7 +3442,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -3423,7 +3461,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -3442,7 +3480,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -3461,7 +3499,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -3480,7 +3518,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -3499,7 +3537,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -3518,7 +3556,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -3537,7 +3575,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -3575,7 +3613,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -3594,7 +3632,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -3613,7 +3651,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -3632,7 +3670,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -3651,7 +3689,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -3670,7 +3708,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -3689,7 +3727,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -3708,7 +3746,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -3727,7 +3765,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -3783,7 +3821,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -3802,7 +3840,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -3821,7 +3859,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -3840,7 +3878,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -3859,7 +3897,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -3878,7 +3916,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -3897,7 +3935,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -3916,7 +3954,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -3935,7 +3973,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -3954,7 +3992,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -3973,7 +4011,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -3992,7 +4030,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -4011,7 +4049,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -4030,7 +4068,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -4049,7 +4087,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -4068,7 +4106,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -4087,7 +4125,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -4106,7 +4144,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -4125,7 +4163,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -4144,7 +4182,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -4163,7 +4201,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -4182,7 +4220,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -4201,7 +4239,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -4220,7 +4258,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -4239,7 +4277,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -4258,7 +4296,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -4277,7 +4315,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -4296,7 +4334,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -4315,7 +4353,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -4334,7 +4372,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -4353,7 +4391,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -4372,7 +4410,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -4391,7 +4429,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -4410,7 +4448,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -4429,7 +4467,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -4448,7 +4486,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -4467,7 +4505,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -4486,7 +4524,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -4505,7 +4543,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -4524,7 +4562,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -4543,7 +4581,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.youtube",
@@ -4562,7 +4600,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.apps.youtube.music",
@@ -4580,7 +4618,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.apps.youtube.music",
@@ -4598,7 +4636,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.apps.youtube.music",
@@ -4616,7 +4654,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.apps.youtube.music",
@@ -4659,7 +4697,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.apps.youtube.music",
@@ -4677,7 +4715,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.apps.youtube.music",
@@ -4695,7 +4733,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.apps.youtube.music",
@@ -4732,7 +4770,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.apps.youtube.music",
@@ -4750,7 +4788,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.apps.youtube.music",
@@ -4768,7 +4806,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.apps.youtube.music",
@@ -4786,7 +4824,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.apps.youtube.music",
@@ -4804,7 +4842,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.apps.youtube.music",
@@ -4822,7 +4860,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.apps.youtube.music",
@@ -4840,7 +4878,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.apps.youtube.music",
@@ -4858,7 +4896,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.apps.youtube.music",
@@ -4876,7 +4914,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.apps.youtube.music",
@@ -4894,7 +4932,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.apps.youtube.music",
@@ -4925,7 +4963,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.apps.youtube.music",
@@ -4943,7 +4981,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.apps.youtube.music",
@@ -4961,7 +4999,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.apps.youtube.music",
@@ -4979,7 +5017,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.apps.youtube.music",
@@ -4997,7 +5035,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.apps.youtube.music",
@@ -5015,7 +5053,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.apps.youtube.music",
@@ -5033,7 +5071,7 @@
         "bundle": "reseam-patches",
         "sourceName": "reseam-patches",
         "sourceUrl": "https://reseam.app/patches/",
-        "sourceVersion": "0.43.1",
+        "sourceVersion": "0.44.0",
         "apps": [
           {
             "package": "com.google.android.apps.youtube.music",
@@ -5833,9 +5871,9 @@
       "homepage": "https://reseam.app",
       "indexUrl": "https://api.reseam.app/patches.json",
       "addUrl": "https://api.reseam.app/patches.json",
-      "version": "0.43.1",
-      "updatedAt": "2026-10-21T23:19:33.893795999Z",
-      "patchCount": 254,
+      "version": "0.44.0",
+      "updatedAt": "2026-10-22T12:46:58.994545853Z",
+      "patchCount": 256,
       "iconUrl": null,
       "isOfficial": true,
       "metadataStatus": "verified"
@@ -6092,7 +6130,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.discord",
@@ -6111,7 +6149,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.discord",
@@ -6130,7 +6168,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.discord",
@@ -6149,7 +6187,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.discord",
@@ -6168,7 +6206,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.discord",
@@ -6187,7 +6225,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.discord",
@@ -6206,7 +6244,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.discord",
@@ -6225,7 +6263,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.discord",
@@ -6244,7 +6282,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.discord",
@@ -6263,7 +6301,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.discord",
@@ -6282,7 +6320,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.discord",
@@ -6301,7 +6339,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.discord",
@@ -6320,7 +6358,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.discord",
@@ -6339,7 +6377,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.discord",
@@ -6358,7 +6396,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.discord",
@@ -6377,7 +6415,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.discord",
@@ -6396,7 +6434,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.discord",
@@ -6415,7 +6453,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.discord",
@@ -6434,7 +6472,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.discord",
@@ -6453,7 +6491,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.discord",
@@ -6472,7 +6510,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.discord",
@@ -6491,7 +6529,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.discord",
@@ -6510,7 +6548,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.discord",
@@ -6529,7 +6567,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.discord",
@@ -6548,7 +6586,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.discord",
@@ -6567,7 +6605,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.discord",
@@ -6586,7 +6624,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.discord",
@@ -6605,7 +6643,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.discord",
@@ -6624,7 +6662,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.discord",
@@ -6643,7 +6681,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.discord",
@@ -6662,7 +6700,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.discord",
@@ -6681,7 +6719,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.discord",
@@ -6700,7 +6738,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.discord",
@@ -6719,7 +6757,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.discord",
@@ -6738,7 +6776,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.discord",
@@ -6757,7 +6795,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.discord",
@@ -6776,7 +6814,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.discord",
@@ -6795,7 +6833,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.discord",
@@ -6814,7 +6852,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.discord",
@@ -6833,7 +6871,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.discord",
@@ -6852,7 +6890,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.discord",
@@ -6871,7 +6909,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.discord",
@@ -6890,7 +6928,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.discord",
@@ -6909,7 +6947,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.discord",
@@ -6928,7 +6966,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.discord",
@@ -6947,7 +6985,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.discord",
@@ -6966,7 +7004,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.discord",
@@ -7167,7 +7205,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.instagram.android",
@@ -7187,7 +7225,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.instagram.android",
@@ -7207,7 +7245,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.instagram.android",
@@ -7252,7 +7290,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.instagram.android",
@@ -7272,7 +7310,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.instagram.android",
@@ -7292,7 +7330,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.instagram.android",
@@ -7312,7 +7350,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.instagram.android",
@@ -7332,7 +7370,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.instagram.android",
@@ -7352,7 +7390,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.instagram.android",
@@ -7372,7 +7410,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.instagram.android",
@@ -7392,7 +7430,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.instagram.android",
@@ -7412,7 +7450,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.instagram.android",
@@ -7432,7 +7470,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.instagram.android",
@@ -7452,7 +7490,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.instagram.android",
@@ -7472,7 +7510,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.instagram.android",
@@ -7492,7 +7530,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.instagram.android",
@@ -7512,7 +7550,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.instagram.android",
@@ -7532,7 +7570,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.instagram.android",
@@ -7552,7 +7590,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.instagram.android",
@@ -7572,7 +7610,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.instagram.android",
@@ -7592,7 +7630,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.instagram.android",
@@ -7935,7 +7973,7 @@
       "name": "Reddit",
       "iconUrl": "https://play-lh.googleusercontent.com/8FVS0kvM60JwqZWRNzBIlwrZZxJa8vpli8IWaaTo8QXRe1PHmCNJ8UpWoXkGPV3jKEaTY2OVAeYoisOnGJXY",
       "category": "Social",
-      "patchCount": 17,
+      "patchCount": 19,
       "bundleCount": 1,
       "versions": [
         "2026.39.0",
@@ -7949,7 +7987,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.reddit.frontpage",
@@ -7969,7 +8007,27 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
+          "apps": [
+            {
+              "package": "com.reddit.frontpage",
+              "versions": [
+                "2026.39.0",
+                "2026.41.0"
+              ]
+            }
+          ],
+          "options": [],
+          "official": true
+        },
+        {
+          "id": "app.reseam.patches.reddit.comments.colorThreadLines",
+          "name": "Color comment thread lines",
+          "description": "Gives each reply depth its own thread line color.",
+          "bundle": "reseam-patches",
+          "sourceName": "reseam-patches",
+          "sourceUrl": "https://api.reseam.app/patches.json",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.reddit.frontpage",
@@ -7989,7 +8047,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.reddit.frontpage",
@@ -8009,7 +8067,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.reddit.frontpage",
@@ -8029,7 +8087,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.reddit.frontpage",
@@ -8049,7 +8107,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.reddit.frontpage",
@@ -8069,7 +8127,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.reddit.frontpage",
@@ -8089,7 +8147,27 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
+          "apps": [
+            {
+              "package": "com.reddit.frontpage",
+              "versions": [
+                "2026.39.0",
+                "2026.41.0"
+              ]
+            }
+          ],
+          "options": [],
+          "official": true
+        },
+        {
+          "id": "app.reseam.patches.reddit.navigation.hideDrawerItems",
+          "name": "Hide community drawer items",
+          "description": "Removes Popular, News, Latest, Reddit Pro or Resources from the community drawer.",
+          "bundle": "reseam-patches",
+          "sourceName": "reseam-patches",
+          "sourceUrl": "https://api.reseam.app/patches.json",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.reddit.frontpage",
@@ -8109,7 +8187,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.reddit.frontpage",
@@ -8129,7 +8207,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.reddit.frontpage",
@@ -8149,7 +8227,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.reddit.frontpage",
@@ -8169,7 +8247,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.reddit.frontpage",
@@ -8189,7 +8267,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.reddit.frontpage",
@@ -8209,7 +8287,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.reddit.frontpage",
@@ -8229,7 +8307,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.reddit.frontpage",
@@ -8249,7 +8327,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.reddit.frontpage",
@@ -8269,7 +8347,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.reddit.frontpage",
@@ -8330,7 +8408,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "org.telegram.messenger",
@@ -8349,7 +8427,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "org.telegram.messenger",
@@ -8368,7 +8446,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "org.telegram.messenger",
@@ -8387,7 +8465,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "org.telegram.messenger",
@@ -8406,7 +8484,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "org.telegram.messenger",
@@ -8425,7 +8503,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "org.telegram.messenger",
@@ -8444,7 +8522,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "org.telegram.messenger",
@@ -8463,7 +8541,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "org.telegram.messenger",
@@ -8482,7 +8560,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "org.telegram.messenger",
@@ -8501,7 +8579,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "org.telegram.messenger",
@@ -8520,7 +8598,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "org.telegram.messenger",
@@ -8539,7 +8617,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "org.telegram.messenger",
@@ -8571,7 +8649,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.zhiliaoapp.musically",
@@ -8590,7 +8668,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.zhiliaoapp.musically",
@@ -8609,7 +8687,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.zhiliaoapp.musically",
@@ -8628,7 +8706,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.zhiliaoapp.musically",
@@ -8647,7 +8725,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.zhiliaoapp.musically",
@@ -8666,7 +8744,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.zhiliaoapp.musically",
@@ -8685,7 +8763,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.zhiliaoapp.musically",
@@ -8704,7 +8782,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.zhiliaoapp.musically",
@@ -8723,7 +8801,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.zhiliaoapp.musically",
@@ -8742,7 +8820,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.zhiliaoapp.musically",
@@ -8761,7 +8839,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.zhiliaoapp.musically",
@@ -8780,7 +8858,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.zhiliaoapp.musically",
@@ -8799,7 +8877,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.zhiliaoapp.musically",
@@ -8818,7 +8896,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.zhiliaoapp.musically",
@@ -8837,7 +8915,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.zhiliaoapp.musically",
@@ -8856,7 +8934,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.zhiliaoapp.musically",
@@ -8875,7 +8953,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.zhiliaoapp.musically",
@@ -8894,7 +8972,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.zhiliaoapp.musically",
@@ -8913,7 +8991,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.zhiliaoapp.musically",
@@ -8932,7 +9010,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.zhiliaoapp.musically",
@@ -8951,7 +9029,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.zhiliaoapp.musically",
@@ -8970,7 +9048,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.zhiliaoapp.musically",
@@ -8989,7 +9067,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.zhiliaoapp.musically",
@@ -9008,7 +9086,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.zhiliaoapp.musically",
@@ -9027,7 +9105,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.zhiliaoapp.musically",
@@ -9046,7 +9124,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.zhiliaoapp.musically",
@@ -9065,7 +9143,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.zhiliaoapp.musically",
@@ -9084,7 +9162,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.zhiliaoapp.musically",
@@ -9103,7 +9181,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.zhiliaoapp.musically",
@@ -9122,7 +9200,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.zhiliaoapp.musically",
@@ -9187,7 +9265,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.zhiliaoapp.musically",
@@ -9206,7 +9284,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.zhiliaoapp.musically",
@@ -9225,7 +9303,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.zhiliaoapp.musically",
@@ -9244,7 +9322,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.zhiliaoapp.musically",
@@ -9363,7 +9441,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.twitter.android",
@@ -9383,7 +9461,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.twitter.android",
@@ -9403,7 +9481,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.twitter.android",
@@ -9423,7 +9501,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.twitter.android",
@@ -9443,7 +9521,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.twitter.android",
@@ -9463,7 +9541,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.twitter.android",
@@ -9483,7 +9561,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.twitter.android",
@@ -9503,7 +9581,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.twitter.android",
@@ -9523,7 +9601,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.twitter.android",
@@ -9543,7 +9621,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.twitter.android",
@@ -9563,7 +9641,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.twitter.android",
@@ -9583,7 +9661,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.twitter.android",
@@ -9603,7 +9681,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.twitter.android",
@@ -9623,7 +9701,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.twitter.android",
@@ -9685,7 +9763,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -9705,7 +9783,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -9725,7 +9803,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -9745,7 +9823,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -9790,7 +9868,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -9810,7 +9888,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -9830,7 +9908,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -9875,7 +9953,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -9895,7 +9973,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -9915,7 +9993,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -9935,7 +10013,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -9955,7 +10033,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -9975,7 +10053,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -9995,7 +10073,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -10015,7 +10093,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -10035,7 +10113,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -10055,7 +10133,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -10075,7 +10153,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -10095,7 +10173,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -10115,7 +10193,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -10135,7 +10213,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -10155,7 +10233,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -10175,7 +10253,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -10195,7 +10273,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -10215,7 +10293,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -10235,7 +10313,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -10274,7 +10352,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -10294,7 +10372,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -10314,7 +10392,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -10334,7 +10412,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -10354,7 +10432,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -10374,7 +10452,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -10394,7 +10472,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -10414,7 +10492,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -10434,7 +10512,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -10491,7 +10569,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -10511,7 +10589,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -10531,7 +10609,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -10551,7 +10629,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -10571,7 +10649,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -10591,7 +10669,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -10611,7 +10689,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -10631,7 +10709,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -10651,7 +10729,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -10671,7 +10749,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -10691,7 +10769,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -10711,7 +10789,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -10731,7 +10809,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -10751,7 +10829,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -10771,7 +10849,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -10791,7 +10869,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -10811,7 +10889,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -10831,7 +10909,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -10851,7 +10929,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -10871,7 +10949,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -10891,7 +10969,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -10911,7 +10989,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -10931,7 +11009,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -10951,7 +11029,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -10971,7 +11049,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -10991,7 +11069,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -11011,7 +11089,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -11031,7 +11109,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -11051,7 +11129,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -11071,7 +11149,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -11091,7 +11169,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -11111,7 +11189,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -11131,7 +11209,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -11151,7 +11229,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -11171,7 +11249,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -11191,7 +11269,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -11211,7 +11289,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -11231,7 +11309,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -11251,7 +11329,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -11271,7 +11349,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -11291,7 +11369,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.youtube",
@@ -11324,7 +11402,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.apps.youtube.music",
@@ -11343,7 +11421,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.apps.youtube.music",
@@ -11362,7 +11440,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.apps.youtube.music",
@@ -11381,7 +11459,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.apps.youtube.music",
@@ -11425,7 +11503,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.apps.youtube.music",
@@ -11444,7 +11522,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.apps.youtube.music",
@@ -11463,7 +11541,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.apps.youtube.music",
@@ -11501,7 +11579,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.apps.youtube.music",
@@ -11520,7 +11598,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.apps.youtube.music",
@@ -11539,7 +11617,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.apps.youtube.music",
@@ -11558,7 +11636,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.apps.youtube.music",
@@ -11577,7 +11655,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.apps.youtube.music",
@@ -11596,7 +11674,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.apps.youtube.music",
@@ -11615,7 +11693,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.apps.youtube.music",
@@ -11634,7 +11712,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.apps.youtube.music",
@@ -11653,7 +11731,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.apps.youtube.music",
@@ -11672,7 +11750,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.apps.youtube.music",
@@ -11704,7 +11782,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.apps.youtube.music",
@@ -11723,7 +11801,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.apps.youtube.music",
@@ -11742,7 +11820,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.apps.youtube.music",
@@ -11761,7 +11839,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.apps.youtube.music",
@@ -11780,7 +11858,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.apps.youtube.music",
@@ -11799,7 +11877,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.apps.youtube.music",
@@ -11818,7 +11896,7 @@
           "bundle": "reseam-patches",
           "sourceName": "reseam-patches",
           "sourceUrl": "https://api.reseam.app/patches.json",
-          "sourceVersion": "0.43.1",
+          "sourceVersion": "0.44.0",
           "apps": [
             {
               "package": "com.google.android.apps.youtube.music",
@@ -11834,6 +11912,15 @@
     }
   ],
   "whatsNew": [
+    {
+      "version": "0.44.0",
+      "createdAt": "2026-10-22T12:46:58.994545853Z",
+      "description": "- feat(reddit): add Color comment thread lines and Hide community drawer items\n- fix(x): add the Reseam Settings row to the legacy settings screen too\n",
+      "prerelease": false,
+      "sourceName": "reseam-patches",
+      "sourceUrl": "https://api.reseam.app/patches.json",
+      "official": true
+    },
     {
       "version": "0.43.1",
       "createdAt": "2026-10-21T23:19:33.893795999Z",
@@ -12081,15 +12168,6 @@
       "version": "0.27.0",
       "createdAt": "2026-10-12T15:03:20.424730277Z",
       "description": "- feat: brand every app's settings screen as Reseam on the engine's app runtime, with icons\n",
-      "prerelease": false,
-      "sourceName": "reseam-patches",
-      "sourceUrl": "https://api.reseam.app/patches.json",
-      "official": true
-    },
-    {
-      "version": "0.26.1",
-      "createdAt": "2026-10-11T22:08:27.649348334Z",
-      "description": "- fix(youtube): make Unlock queue work on the first launch\n",
       "prerelease": false,
       "sourceName": "reseam-patches",
       "sourceUrl": "https://api.reseam.app/patches.json",
