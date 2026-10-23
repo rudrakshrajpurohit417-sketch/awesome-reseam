@@ -1,0 +1,96 @@
+name: Refresh patch source catalog
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "23 */6 * * *"
+  push:
+    paths:
+      - ".github/workflows/refresh-catalog.yml"
+      - "scripts/update-catalog.mjs"
+      - "package.json"
+      - "package-lock.json"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-patch-catalog
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    name: Fetch and validate latest sources
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Refresh official and community sources
+        run: npm run catalog:update
+
+      - name: Validate refresh completeness
+        run: |
+          node --input-type=module <<'NODE'
+          import { readFileSync } from 'node:fs';
+
+          const catalog = JSON.parse(readFileSync('data/catalog.json', 'utf8'));
+          if (!catalog.registry?.available) {
+            throw new Error('The patch bundle registry was unavailable; refusing to publish a partial refresh.');
+          }
+          if (!catalog.official?.patches?.length) {
+            throw new Error('The official catalog returned no patches; refusing to publish.');
+          }
+          if (catalog.staleSources?.length) {
+            console.error(JSON.stringify(catalog.staleSources, null, 2));
+            throw new Error('One or more sources are stale; keeping the last known-good catalog.');
+          }
+          console.log(`Validated ${catalog.bundles.length} bundles, ${catalog.apps.length} apps, ${catalog.official.patches.length} official patches and ${catalog.community.reduce((n, source) => n + source.patches.length, 0)} community patches.`);
+          NODE
+
+      - name: Avoid timestamp-only commits
+        run: |
+          node --input-type=module <<'NODE'
+          import { readFileSync, writeFileSync } from 'node:fs';
+          import { execFileSync } from 'node:child_process';
+
+          const previous = JSON.parse(execFileSync('git', ['show', 'HEAD:data/catalog.json'], { encoding: 'utf8' }));
+          const current = JSON.parse(readFileSync('data/catalog.json', 'utf8'));
+          const { generatedAt: previousTime, ...previousData } = previous;
+          const { generatedAt: currentTime, ...currentData } = current;
+
+          if (JSON.stringify(previousData) === JSON.stringify(currentData)) {
+            current.generatedAt = previousTime;
+            writeFileSync('data/catalog.json', JSON.stringify(current, null, 2) + '\n');
+            const publicCatalog = JSON.parse(readFileSync('public/catalog.json', 'utf8'));
+            publicCatalog.generatedAt = previousTime;
+            writeFileSync('public/catalog.json', JSON.stringify(publicCatalog, null, 2) + '\n');
+            console.log(`No source data changes since ${previousTime}; preserved the existing generation timestamp.`);
+          } else {
+            console.log(`Source data changed; keeping refreshed timestamp ${currentTime}.`);
+          }
+          NODE
+
+      - name: Commit refreshed catalog
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/catalog.json public/catalog.json
+          if git diff --cached --quiet; then
+            echo "All sources are already current; no catalog commit needed."
+          else
+            git commit -m "chore: refresh patch source catalog"
+            git push
+          fi
