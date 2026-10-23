@@ -60,3 +60,31 @@
     gap: 10px 16px;
   }
 }
+
+
+/* More balanced spacing and larger, easier-to-tap catalog controls. */
+.toolbar-main{column-gap:14px;row-gap:10px}
+.tabs{padding:4px;gap:4px}
+.tabs button,.tabs button+button{min-height:42px;height:42px;padding:0 17px;border:0;border-radius:8px}
+.select-box.sort-select,.category-button{min-height:46px;height:46px;padding:0 14px;gap:11px;border-radius:11px}
+.select-box select{height:100%;padding:0 2px;cursor:pointer}
+.category-button{cursor:pointer;text-align:left}
+.category-menu button{min-height:42px;padding:11px 12px;font-size:12px}
+.search-box{min-height:46px;height:46px}
+.total-count{min-height:36px;display:flex;align-items:center;justify-content:center;padding:8px 13px}
+@media(max-width:1120px){
+  .tabs button,.tabs button+button{padding:0 14px}
+  .select-box.sort-select,.category-button{min-height:44px;height:44px}
+  .search-box{min-height:44px;height:44px}
+}
+@media(max-width:680px){
+  .toolbar-main{column-gap:9px;row-gap:9px}
+  .tabs{padding:4px;gap:3px;min-height:48px}
+  .tabs button,.tabs button+button{height:40px;min-height:40px;flex:1;justify-content:center;padding:0 9px;gap:7px;font-size:12px}
+  .select-box.sort-select,.category-button{height:45px;min-height:45px;padding:0 12px;gap:8px;font-size:11px}
+  .sort-select select{font-size:11px;padding:0}
+  .search-box{height:44px;min-height:44px;padding:0 12px}
+  .total-count{min-height:38px;padding:8px 12px;font-size:11px}
+  .category-menu{top:49px;padding:6px}
+  .category-menu button{min-height:44px;padding:12px;font-size:12px}
+}
