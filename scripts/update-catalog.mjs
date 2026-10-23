@@ -9,6 +9,7 @@ const manualSources = [
     author: 'JoanComasFdz',
     sourceUrl: 'https://github.com/JoanComasFdz/baconreader-reseam-patches',
     indexJsonUrl: 'https://github.com/JoanComasFdz/baconreader-reseam-patches/releases/latest/download/patches.json',
+    iconUrl: 'https://img.utdstc.com/icon/c73/77d/c7377d76316b5d34edfa1171c5e8f144f0ddc954822e7cec720bd5cf2bed4e54',
   },
 ]
 const previous = JSON.parse(await readFile(outputPath, 'utf8'))
@@ -183,7 +184,7 @@ for (const manualSource of manualSources) {
       version: release.version ?? 'unknown',
       updatedAt: release.created_at ?? null,
       patchCount: release.patches.filter((patch) => !patch.hidden).length,
-      iconUrl: index.bundle?.icon_url ?? index.bundle?.iconUrl ?? null,
+      iconUrl: index.bundle?.icon_url ?? index.bundle?.iconUrl ?? manualSource.iconUrl ?? null,
       metadataStatus: 'verified',
       releases: (index.releases ?? []).slice(0, 20).map(({ version, created_at, description, prerelease }) => ({
         version, createdAt: created_at, description: description ?? '', prerelease: Boolean(prerelease),
@@ -216,6 +217,10 @@ for (const source of sources) for (const patch of source.patches) for (const app
 }
 
 const appMetadata = new Map(apiApps.map((app) => [app.package_name, app]))
+const curatedAppMetadata = new Map([
+  ['com.onelouder.baconreader', { name: 'BaconReader', iconUrl: 'https://img.utdstc.com/icon/c73/77d/c7377d76316b5d34edfa1171c5e8f144f0ddc954822e7cec720bd5cf2bed4e54' }],
+  ['com.onelouder.baconreader.premium', { name: 'BaconReader Premium', iconUrl: 'https://img.utdstc.com/icon/c73/77d/c7377d76316b5d34edfa1171c5e8f144f0ddc954822e7cec720bd5cf2bed4e54' }],
+])
 const appCategory = (name, packageName) => {
   const text = `${name} ${packageName}`.toLowerCase()
   if (/youtube|video|tiktok|picsart|vlog|photo/.test(text)) return 'Video & Photography'
@@ -230,10 +235,11 @@ const appCategory = (name, packageName) => {
 }
 const apps = [...patchByApp.entries()].map(([packageName, patches]) => {
   const metadata = appMetadata.get(packageName)
-  const name = metadata?.app_name && metadata.app_name !== packageName ? metadata.app_name : packageName
+  const curatedMetadata = curatedAppMetadata.get(packageName)
+  const name = curatedMetadata?.name ?? (metadata?.app_name && metadata.app_name !== packageName ? metadata.app_name : packageName)
   const uniquePatches = [...new Map(patches.map((patch) => [`${patch.bundle}:${patch.id}`, patch])).values()]
   const versions = [...new Set(patches.flatMap((patch) => patch.apps.find((app) => app.package === packageName)?.versions ?? []))]
-  return { packageName, name, iconUrl: metadata?.icon_url ?? null, category: appCategory(name, packageName), patchCount: uniquePatches.length, bundleCount: new Set(uniquePatches.map((patch) => patch.bundle)).size, versions, patches: uniquePatches }
+  return { packageName, name, iconUrl: curatedMetadata?.iconUrl ?? metadata?.icon_url ?? null, category: appCategory(name, packageName), patchCount: uniquePatches.length, bundleCount: new Set(uniquePatches.map((patch) => patch.bundle)).size, versions, patches: uniquePatches }
 }).sort((a, b) => a.name.localeCompare(b.name))
 
 const whatsNew = sources.flatMap((source) => source.releases.map((release) => ({ ...release, sourceName: source.name, sourceUrl: source.indexUrl, official: source.isOfficial }))).sort((a, b) => new Date(b.createdAt ?? 0) - new Date(a.createdAt ?? 0)).slice(0, 30)
