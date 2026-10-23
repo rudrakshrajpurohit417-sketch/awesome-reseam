@@ -149,11 +149,16 @@ function normalizeSourceUrl(value) {
     const url = new URL(value)
     if (url.hostname.toLowerCase() === 'github.com') {
       const [owner, repo] = url.pathname.split('/').filter(Boolean)
-      if (owner && repo) return `https://github.com/${owner}/${repo.replace(/\\.git$/i, '')}`.toLowerCase()
+      if (owner && repo) {
+        const cleanRepo = repo.toLowerCase().endsWith('.git') ? repo.slice(0, -4) : repo
+        return `https://github.com/${owner}/${cleanRepo}`.toLowerCase()
+      }
     }
-    return url.href.replace(/\\/$/, '').toLowerCase()
+    const normalized = url.href.endsWith('/') ? url.href.slice(0, -1) : url.href
+    return normalized.toLowerCase()
   } catch {
-    return String(value ?? '').replace(/\\/$/, '').toLowerCase()
+    const text = String(value ?? '')
+    return (text.endsWith('/') ? text.slice(0, -1) : text).toLowerCase()
   }
 }
 
