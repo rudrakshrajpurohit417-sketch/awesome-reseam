@@ -31,3 +31,32 @@
 .site-footer>div:last-child{min-width:0;display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:12px 16px}
 .site-footer a{white-space:nowrap}
 @media(max-width:680px){.site-footer{grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;column-gap:12px;row-gap:12px;padding:16px 0}.site-footer .footer-brand{min-width:0}.site-footer>span{grid-column:1/-1;grid-row:2;text-align:left}.site-footer>div:last-child{grid-column:1/-1;grid-row:3;justify-content:flex-start;gap:10px 16px}.site-footer a{white-space:normal}}
+
+
+/* Center footer content on mobile */
+@media (max-width: 620px) {
+  .site-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .site-footer .footer-brand,
+  .site-footer > span,
+  .site-footer > div:last-child {
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .site-footer > div:last-child {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 16px;
+  }
+}
