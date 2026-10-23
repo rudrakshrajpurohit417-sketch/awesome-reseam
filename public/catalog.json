@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T07:11:55.850Z",
+  "generatedAt": "2026-10-23T07:15:38.529Z",
   "registry": {
     "url": "https://patch-bundles.api.jmancentral.com",
     "generation": null,
@@ -5872,7 +5872,7 @@
       "version": "0.1.0",
       "updatedAt": "2026-10-23T06:10:02.768210625Z",
       "patchCount": 29,
-      "iconUrl": null,
+      "iconUrl": "https://img.utdstc.com/icon/c73/77d/c7377d76316b5d34edfa1171c5e8f144f0ddc954822e7cec720bd5cf2bed4e54",
       "metadataStatus": "verified",
       "releases": [
         {
@@ -6658,7 +6658,7 @@
       "version": "0.1.0",
       "updatedAt": "2026-10-23T06:10:02.768210625Z",
       "patchCount": 29,
-      "iconUrl": null,
+      "iconUrl": "https://img.utdstc.com/icon/c73/77d/c7377d76316b5d34edfa1171c5e8f144f0ddc954822e7cec720bd5cf2bed4e54",
       "isOfficial": false,
       "metadataStatus": "verified"
     }
@@ -6749,143 +6749,9 @@
       ]
     },
     {
-      "packageName": "com.adguard.android",
-      "name": "com.adguard.android",
-      "iconUrl": null,
-      "category": "Tools",
-      "patchCount": 2,
-      "bundleCount": 1,
-      "versions": [],
-      "patches": [
-        {
-          "id": "top.madkarma.patches.adguard.lifetime.unlockLifetime",
-          "name": "Unlock Lifetime premium",
-          "description": "Unlocks Premium-only features.",
-          "bundle": "madkarma-patches",
-          "sourceName": "madkarma-patches",
-          "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "v0.36.0",
-          "apps": [
-            {
-              "package": "com.adguard.android",
-              "versions": []
-            }
-          ],
-          "options": [],
-          "official": false
-        },
-        {
-          "id": "top.madkarma.patches.adguard.setup.skipSetup",
-          "name": "Skip setup",
-          "description": "Skips onboarding and applies the selected setup options on first startup. Configure advanced filters in the app settings.",
-          "bundle": "madkarma-patches",
-          "sourceName": "madkarma-patches",
-          "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "v0.36.0",
-          "apps": [
-            {
-              "package": "com.adguard.android",
-              "versions": []
-            }
-          ],
-          "options": [
-            {
-              "key": "blockSearchAds",
-              "title": "Block ads in web search",
-              "description": "Remove ads from your search engine results.",
-              "option_type": "bool",
-              "default_value": {
-                "type": "bool",
-                "value": true
-              },
-              "valid_values": null,
-              "required": false
-            },
-            {
-              "key": "blockSocialWidgets",
-              "title": "Block social media widgets",
-              "description": "Get rid of Like, Share, and other social buttons on websites.",
-              "option_type": "bool",
-              "default_value": {
-                "type": "bool",
-                "value": true
-              },
-              "valid_values": null,
-              "required": false
-            },
-            {
-              "key": "blockAnnoyances",
-              "title": "Block annoyances",
-              "description": "Remove cookie notifications, live chats, and newsletter signups.",
-              "option_type": "bool",
-              "default_value": {
-                "type": "bool",
-                "value": true
-              },
-              "valid_values": null,
-              "required": false
-            },
-            {
-              "key": "privacyLevel",
-              "title": "Protect your privacy",
-              "description": "Protect yourself from online trackers and analytics systems.",
-              "option_type": "string",
-              "default_value": {
-                "type": "string",
-                "value": "Standard"
-              },
-              "valid_values": [
-                "None",
-                "Standard",
-                "High"
-              ],
-              "required": false
-            },
-            {
-              "key": "blockDangerousSites",
-              "title": "Block dangerous websites",
-              "description": "Be alerted before you access phishing and malicious websites.",
-              "option_type": "bool",
-              "default_value": {
-                "type": "bool",
-                "value": true
-              },
-              "valid_values": null,
-              "required": false
-            },
-            {
-              "key": "hideNotificationPrompt",
-              "title": "Hide \"Enable notifications\" prompt",
-              "description": "Disables the \"Enable notifications\" prompt shown post-setup.",
-              "option_type": "bool",
-              "default_value": {
-                "type": "bool",
-                "value": true
-              },
-              "valid_values": null,
-              "required": false
-            },
-            {
-              "key": "skipApprovalPopups",
-              "title": "Skip approval popups",
-              "description": "Treat all annoyance filters as approved to skip consent dialogs when enabling them.",
-              "option_type": "bool",
-              "default_value": {
-                "type": "bool",
-                "value": true
-              },
-              "valid_values": null,
-              "required": false
-            }
-          ],
-          "official": false
-        }
-      ]
-    },
-    {
       "packageName": "com.onelouder.baconreader",
-      "name": "com.onelouder.baconreader",
-      "iconUrl": null,
+      "name": "BaconReader",
+      "iconUrl": "https://img.utdstc.com/icon/c73/77d/c7377d76316b5d34edfa1171c5e8f144f0ddc954822e7cec720bd5cf2bed4e54",
       "category": "Other",
       "patchCount": 29,
       "bundleCount": 1,
@@ -7659,8 +7525,8 @@
     },
     {
       "packageName": "com.onelouder.baconreader.premium",
-      "name": "com.onelouder.baconreader.premium",
-      "iconUrl": null,
+      "name": "BaconReader Premium",
+      "iconUrl": "https://img.utdstc.com/icon/c73/77d/c7377d76316b5d34edfa1171c5e8f144f0ddc954822e7cec720bd5cf2bed4e54",
       "category": "Other",
       "patchCount": 29,
       "bundleCount": 1,
@@ -8428,6 +8294,140 @@
             }
           ],
           "options": [],
+          "official": false
+        }
+      ]
+    },
+    {
+      "packageName": "com.adguard.android",
+      "name": "com.adguard.android",
+      "iconUrl": null,
+      "category": "Tools",
+      "patchCount": 2,
+      "bundleCount": 1,
+      "versions": [],
+      "patches": [
+        {
+          "id": "top.madkarma.patches.adguard.lifetime.unlockLifetime",
+          "name": "Unlock Lifetime premium",
+          "description": "Unlocks Premium-only features.",
+          "bundle": "madkarma-patches",
+          "sourceName": "madkarma-patches",
+          "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
+          "sourceVersion": "v0.36.0",
+          "apps": [
+            {
+              "package": "com.adguard.android",
+              "versions": []
+            }
+          ],
+          "options": [],
+          "official": false
+        },
+        {
+          "id": "top.madkarma.patches.adguard.setup.skipSetup",
+          "name": "Skip setup",
+          "description": "Skips onboarding and applies the selected setup options on first startup. Configure advanced filters in the app settings.",
+          "bundle": "madkarma-patches",
+          "sourceName": "madkarma-patches",
+          "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
+          "sourceVersion": "v0.36.0",
+          "apps": [
+            {
+              "package": "com.adguard.android",
+              "versions": []
+            }
+          ],
+          "options": [
+            {
+              "key": "blockSearchAds",
+              "title": "Block ads in web search",
+              "description": "Remove ads from your search engine results.",
+              "option_type": "bool",
+              "default_value": {
+                "type": "bool",
+                "value": true
+              },
+              "valid_values": null,
+              "required": false
+            },
+            {
+              "key": "blockSocialWidgets",
+              "title": "Block social media widgets",
+              "description": "Get rid of Like, Share, and other social buttons on websites.",
+              "option_type": "bool",
+              "default_value": {
+                "type": "bool",
+                "value": true
+              },
+              "valid_values": null,
+              "required": false
+            },
+            {
+              "key": "blockAnnoyances",
+              "title": "Block annoyances",
+              "description": "Remove cookie notifications, live chats, and newsletter signups.",
+              "option_type": "bool",
+              "default_value": {
+                "type": "bool",
+                "value": true
+              },
+              "valid_values": null,
+              "required": false
+            },
+            {
+              "key": "privacyLevel",
+              "title": "Protect your privacy",
+              "description": "Protect yourself from online trackers and analytics systems.",
+              "option_type": "string",
+              "default_value": {
+                "type": "string",
+                "value": "Standard"
+              },
+              "valid_values": [
+                "None",
+                "Standard",
+                "High"
+              ],
+              "required": false
+            },
+            {
+              "key": "blockDangerousSites",
+              "title": "Block dangerous websites",
+              "description": "Be alerted before you access phishing and malicious websites.",
+              "option_type": "bool",
+              "default_value": {
+                "type": "bool",
+                "value": true
+              },
+              "valid_values": null,
+              "required": false
+            },
+            {
+              "key": "hideNotificationPrompt",
+              "title": "Hide \"Enable notifications\" prompt",
+              "description": "Disables the \"Enable notifications\" prompt shown post-setup.",
+              "option_type": "bool",
+              "default_value": {
+                "type": "bool",
+                "value": true
+              },
+              "valid_values": null,
+              "required": false
+            },
+            {
+              "key": "skipApprovalPopups",
+              "title": "Skip approval popups",
+              "description": "Treat all annoyance filters as approved to skip consent dialogs when enabling them.",
+              "option_type": "bool",
+              "default_value": {
+                "type": "bool",
+                "value": true
+              },
+              "valid_values": null,
+              "required": false
+            }
+          ],
           "official": false
         }
       ]
