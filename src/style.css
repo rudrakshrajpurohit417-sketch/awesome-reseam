@@ -412,3 +412,13 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
   .brand{gap:13px}
   .header-actions{gap:6px}
 }
+
+
+/* Keep Request Bundle visible on mobile without resizing header typography. */
+@media(max-width:620px){
+  .header-actions>a:first-child{
+    font-size:11px;
+    gap:7px;
+    padding:8px 11px;
+  }
+}
