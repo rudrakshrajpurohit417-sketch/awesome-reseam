@@ -179,7 +179,7 @@ function App() {
     return () => observer.disconnect()
   }, [selectedApp, selectedBundle, visiblePatchCount, detailPatches.length])
 
-  if (!catalogData) return <div className="loading-state">{loadError ? 'Catalog data could not be loaded.' : <><span className="loading-dot"/> Loading the Reseam catalog…</>}</div>
+  if (!catalogData) return loadError ? <div className="loading-state">Catalog data could not be loaded. Please refresh the page.</div> : <div className="startup-shell" role="status" aria-label="Loading Awesome Reseam"><div className="startup-header"><span className="startup-logo"></span><span className="startup-brand"><i></i><b></b></span></div><div className="startup-content"><span className="startup-tabs"></span><span className="startup-search"></span><div className="startup-grid">{Array.from({ length: 6 }, (_, index) => <i key={index}/>)}</div></div></div>
 
   return <div className="site-shell">
     <header className="site-header"><a href="#catalog" className="brand"><span className="brand-icon"><img src="/reseam.ico" alt=""/></span><span><strong>Awesome</strong> Reseam<small>Explore community patches for Reseam</small></span></a><div className="header-actions"><a href="https://reseam.app/patches/" target="_blank" rel="noreferrer">Official patches <ExternalLink size={13}/></a><a className="github-button" href="https://github.com/rudrakshrajpurohit417-sketch/awesome-reseam" target="_blank" rel="noreferrer" aria-label="Awesome Reseam on GitHub"><Github size={17}/></a></div></header>
