@@ -337,3 +337,17 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 :where(a, button, [role="button"], [role="tab"]) {
   -webkit-touch-callout: none;
 }
+
+
+/* Animated custom sort picker, matching the category dropdown interaction. */
+.sort-control{position:relative;min-width:0;width:100%}
+.sort-button{width:100%;min-width:0;display:flex;align-items:center;justify-content:flex-start;gap:11px;cursor:pointer;text-align:left}
+.sort-button>svg:first-child{flex:none;color:#9ca29f}
+.sort-button>svg:last-child{flex:none;margin-left:auto;color:#989e9a;transition:transform .18s ease}
+.sort-button[aria-expanded="true"]>svg:last-child{transform:rotate(180deg)}
+.sort-menu{top:calc(100% + 6px);width:100%;min-width:190px;transform-origin:top center}
+.sort-menu button{transition:background-color .16s ease,color .16s ease,transform .16s ease}
+.sort-menu button:active{transform:scale(.985)}
+.sort-menu button.selected{background:#343739;color:var(--mint)}
+@media(max-width:1120px){.sort-control{grid-column:2}}
+@media(max-width:680px){.sort-control{grid-column:1}.sort-button{height:45px;min-height:45px;padding:0 12px;gap:8px;font-size:11px}.sort-menu{min-width:0;top:49px}}
