@@ -152,7 +152,7 @@ function App() {
   }, [catalogData])
   const data = catalogData ?? { generatedAt: '', registry: { url: '', available: false }, official: { name: '', indexUrl: '', patches: [] }, community: [], apps: [], bundles: [], whatsNew: [], staleSources: [] }
   const categories = useMemo(() => [...new Set(data.apps.map((app) => app.category))].sort(), [data.apps])
-  const indexedApps = useMemo(() => data.apps.map((app) => ({ app, searchText: `${app.name} ${app.packageName} ${app.category} ${app.patches.map((patch) => `${patch.name} ${patch.description}`).join(' ')}`.toLowerCase() })), [data.apps])
+  const indexedApps = useMemo(() => data.apps.map((app) => ({ app, searchText: `${app.name} ${app.packageName} ${app.category} ${app.patches.map((patch) => `${patch.name} ${patch.description} ${patch.id} ${patch.sourceName} ${patch.sourceUrl} ${patch.sourceVersion} ${patch.apps.map((target) => `${target.package} ${target.versions.join(' ')}`).join(' ')} ${patch.options.map((option) => `${option.title ?? ''} ${option.key ?? ''} ${option.description ?? ''}`).join(' ')}`).join(' ')}`.toLowerCase() })), [data.apps])
   const indexedBundlePatches = useMemo(() => data.bundles.map((bundle) => {
     const source = bundle.isOfficial ? data.official : data.community.find((item) => item.indexUrl === bundle.indexUrl)
     return { bundle, patches: (source?.patches ?? []).map((sourcePatch) => {
