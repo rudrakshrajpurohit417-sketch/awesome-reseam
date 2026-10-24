@@ -164,7 +164,7 @@ for (const manualSource of manualSources) {
       ?? index?.releases?.find((item) => Array.isArray(item.patches))
     if (!release || !Array.isArray(release.patches)) throw new Error('No release with patch metadata was found')
 
-    const sourceName = index.bundle?.name ?? manualSource.name
+    const sourceName = manualSource.name ?? index.bundle?.name ?? bundle.source.repo ?? 'Community bundle'
     const sourceIndex = community.findIndex((item) => normalizeSourceUrl(item.indexUrl) === normalizeSourceUrl(manualSource.sourceUrl))
     if (sourceIndex >= 0) community.splice(sourceIndex, 1)
 
