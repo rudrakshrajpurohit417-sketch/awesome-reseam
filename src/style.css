@@ -364,13 +364,6 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 }
 
 
-/* Keep category and sort dropdowns inside the mobile viewport. */
-@media (max-width: 680px) {
-  .category-control, .sort-control { position: relative; min-width: 0; }
-  .category-menu { left: auto; right: 0; width: min(280px, calc(100vw - 30px)); max-width: calc(100vw - 30px); }
-  .sort-menu { left: 0; right: auto; width: 100%; max-width: calc(100vw - 30px); }
-}
-
 .app-version{display:block;margin-top:1px;color:#a9adaa;font:10px/1.5 var(--mono);overflow-wrap:anywhere}
 
 /* Reseam-inspired header branding */
