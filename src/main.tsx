@@ -1,6 +1,6 @@
 import React, { useDeferredValue, useEffect, useMemo, useRef, useState } from 'react'
 import { createRoot } from 'react-dom/client'
-import { ArrowLeft, ArrowUpRight, ChevronDown, ExternalLink, Github, Grid2X2, Layers3, ListFilter, PackageOpen, Search, Sparkles, Copy, Bug, RefreshCw, X } from 'lucide-react'
+import { ArrowLeft, ArrowUpRight, ChevronDown, ExternalLink, Github, Grid2X2, Layers3, ListFilter, PackageOpen, Search, Sparkles, Copy, Bug, RefreshCw } from 'lucide-react'
 import { AppCard } from './AppCard'
 import { AddToReseam } from './AddToReseam'
 import './style.css'
@@ -95,11 +95,9 @@ function App() {
   const [visibleAppCount, setVisibleAppCount] = useState(24)
   const [visiblePatchCount, setVisiblePatchCount] = useState(24)
   const [expandedAppBundles, setExpandedAppBundles] = useState<Set<string>>(() => new Set())
-  const [toast, setToast] = useState('')
   const loadMoreRef = useRef<HTMLDivElement>(null)
   const detailLoadMoreRef = useRef<HTMLDivElement>(null)
   const deferredQuery = useDeferredValue(query.trim().toLowerCase())
-  const copyText = async (value: string, label: string) => { try { await navigator.clipboard.writeText(value); setToast(label + ' copied') } catch { window.prompt('Copy ' + label + ':', value) } }
   const writeRoute = (nextTab: TabKey, params: Record<string, string> = {}, detail = false, replace = false) => {
     const url = new URL(window.location.href)
     url.search = new URLSearchParams(params).toString()
@@ -246,7 +244,6 @@ function App() {
       {tab === 'bundles' && selectedBundle && <section className="detail-view"><button className="back-button" onClick={() => backFromDetail('bundles')}><ArrowLeft size={15}/> All bundles</button><div className="app-detail-head"><AppIcon src={bundleIcon(selectedBundle)} name={selectedBundle.name}/><div><h1>{selectedBundle.name}</h1><code>by {selectedBundle.author}</code><p>{detailPatches.length} patches · version {selectedBundle.version} · {selectedBundle.isOfficial ? 'Official' : 'Community'} source</p></div><div className="detail-actions"><AddToReseam url={selectedBundle.isOfficial ? selectedBundle.indexUrl : selectedBundle.homepage}/><a className="action-button" href={selectedBundle.homepage} target="_blank" rel="noreferrer">Open source <ArrowUpRight size={14}/></a></div></div><div className="detail-toolbar"><h2>Bundle patches</h2></div>{detailPatches.length ? <><div className="patch-list">{detailPatches.slice(0, visiblePatchCount).map((patch) => <PatchCard patch={patch} key={`${patch.bundle}:${patch.id}`}/>)}</div>{visiblePatchCount < detailPatches.length && <div ref={detailLoadMoreRef} className="load-more-sentinel" aria-label="Loading more patches"/>}</> : <Empty message="No patches are available for this bundle."/>}</section>}
 
       {tab === 'news' && <section className="catalog-results"><div className="result-context"><span>RECENT RELEASES</span><span>Official and community bundle updates</span></div>{visibleUpdates.length ? <div className="updates-list">{visibleUpdates.map((item, index) => <article className="update-card" key={`${item.sourceUrl}:${item.version}:${index}`}><div className="update-date">{formatDate(item.createdAt)}</div><div className="update-main"><div className="update-meta"><span className={item.official ? 'bundle-tag official-tag' : 'bundle-tag'}>{item.official ? 'OFFICIAL' : 'COMMUNITY'}</span><span>{item.sourceName}</span>{item.prerelease && <span className="pre-tag">PRE-RELEASE</span>}</div><h2>Version {item.version}</h2><ul>{releaseSummary(item.description).map((line, lineIndex) => <li key={lineIndex}>{line}</li>)}</ul></div><a href={item.sourceUrl} target="_blank" rel="noreferrer" className="patch-link" aria-label="Open release source"><ArrowUpRight size={16}/></a></article>)}</div> : <Empty message="No release notes match your search."/>}</section>}
-      {toast && <div className="site-toast" role="status">{toast}<button aria-label="Dismiss notification" onClick={() => setToast("")}><X size={14}/></button></div>}
       <footer className="site-footer"><div className="footer-brand"><span className="brand-icon"><img src="/reseam.ico" alt=""/></span> Awesome Reseam</div><span>Community maintained · Not affiliated with Reseam</span><div><a href="https://patch-bundles.jmancentral.com/" target="_blank" rel="noreferrer">Catalog data <ArrowUpRight size={12}/></a><a href="https://reseam.app/docs/authoring/publishing/" target="_blank" rel="noreferrer">Publish a bundle <ArrowUpRight size={12}/></a><a href="https://github.com/rudrakshrajpurohit417-sketch/awesome-reseam" target="_blank" rel="noreferrer">GitHub <ArrowUpRight size={12}/></a></div></footer>
     </main>
   </div>
