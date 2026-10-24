@@ -203,6 +203,11 @@ function App() {
   useEffect(() => { setVisibleAppCount(24) }, [category, deferredQuery, sort, tab])
   useEffect(() => { setVisiblePatchCount(24) }, [selectedApp, selectedBundle, deferredQuery])
   useEffect(() => {
+    if (!selectedApp && !selectedBundle) return
+    // Detail views should always open at the page header, not retain the catalog's scroll position.
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' as ScrollBehavior })
+  }, [selectedApp, selectedBundle])
+  useEffect(() => {
     const sentinel = loadMoreRef.current
     if (!sentinel || tab !== 'apps' || selectedApp || visibleAppCount >= visibleApps.length) return
     const observer = new IntersectionObserver((entries) => {
