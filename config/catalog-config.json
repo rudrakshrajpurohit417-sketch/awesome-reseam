@@ -11,6 +11,13 @@
       "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
       "indexJsonUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches/releases/latest/download/patches.json",
       "iconUrl": "https://avatars.githubusercontent.com/u/1288587?v=4"
+    },
+    {
+      "name": "RJ Reseam Patches",
+      "author": "RJ",
+      "sourceUrl": "https://github.com/rudrakshrajpurohit417-sketch/RJ-reseam-patches",
+      "indexJsonUrl": "https://github.com/rudrakshrajpurohit417-sketch/RJ-reseam-patches/releases/latest/download/patches.json",
+      "iconUrl": "https://avatars.githubusercontent.com/u/300715600?v=4"
     }
   ],
   "curatedAppMetadata": {
