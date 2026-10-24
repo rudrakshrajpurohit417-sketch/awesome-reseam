@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T17:18:34.516Z",
+  "generatedAt": "2026-10-24T04:49:17.593Z",
   "registry": {
     "url": "https://patch-bundles.api.jmancentral.com",
     "generation": null,
@@ -5166,12 +5166,36 @@
       "homepage": "https://github.com/madkarmaa/reseam-patches",
       "indexUrl": "https://github.com/madkarmaa/reseam-patches",
       "addUrl": "https://github.com/madkarmaa/reseam-patches/releases/latest/download/patches.json",
-      "version": "v0.36.0",
-      "updatedAt": "2026-10-21T09:16:25Z",
-      "patchCount": 32,
+      "version": "v0.37.0",
+      "updatedAt": "2026-10-23T19:41:19Z",
+      "patchCount": 34,
       "iconUrl": "https://avatars.githubusercontent.com/u/100418457?v=4",
       "metadataStatus": "verified",
       "releases": [
+        {
+          "version": "0.37.0",
+          "createdAt": "2026-10-23T19:41:31.528968126Z",
+          "description": "# [0.37.0](https://github.com/madkarmaa/reseam-patches/compare/v0.36.0...v0.37.0) (2026-10-23)\n\n\n### Features\n\n* bump to reseam 0.29.0 ([af0edce](https://github.com/madkarmaa/reseam-patches/commit/af0edce48f7f98ebc7c51570a38762f9f3a49960))\n* **universal:** strip native libs patch (closes [#58](https://github.com/madkarmaa/reseam-patches/issues/58)) ([583cdc3](https://github.com/madkarmaa/reseam-patches/commit/583cdc3019cf9fdf78439377477744a1cd5b265a))\n* **xplayer:** unlock premium patch (closes [#57](https://github.com/madkarmaa/reseam-patches/issues/57)) ([ed3e02c](https://github.com/madkarmaa/reseam-patches/commit/ed3e02cb9ebb31cf3e9d2ed7cefa6f8b57ffc75d))\n",
+          "prerelease": false
+        },
+        {
+          "version": "0.37.0-dev.3",
+          "createdAt": "2026-10-23T19:41:26.652135013Z",
+          "description": "# [0.37.0-dev.3](https://github.com/madkarmaa/reseam-patches/compare/v0.37.0-dev.2...v0.37.0-dev.3) (2026-10-23)\n\n\n### Features\n\n* **universal:** strip native libs patch (closes [#58](https://github.com/madkarmaa/reseam-patches/issues/58)) ([583cdc3](https://github.com/madkarmaa/reseam-patches/commit/583cdc3019cf9fdf78439377477744a1cd5b265a))\n",
+          "prerelease": true
+        },
+        {
+          "version": "0.37.0-dev.2",
+          "createdAt": "2026-10-23T19:25:26.092140063Z",
+          "description": "# [0.37.0-dev.2](https://github.com/madkarmaa/reseam-patches/compare/v0.37.0-dev.1...v0.37.0-dev.2) (2026-10-23)\n\n\n### Features\n\n* bump to reseam 0.29.0 ([af0edce](https://github.com/madkarmaa/reseam-patches/commit/af0edce48f7f98ebc7c51570a38762f9f3a49960))\n",
+          "prerelease": true
+        },
+        {
+          "version": "0.37.0-dev.1",
+          "createdAt": "2026-10-23T19:11:09.349382825Z",
+          "description": "# [0.37.0-dev.1](https://github.com/madkarmaa/reseam-patches/compare/v0.36.0...v0.37.0-dev.1) (2026-10-23)\n\n\n### Features\n\n* **xplayer:** unlock premium patch (closes [#57](https://github.com/madkarmaa/reseam-patches/issues/57)) ([ed3e02c](https://github.com/madkarmaa/reseam-patches/commit/ed3e02cb9ebb31cf3e9d2ed7cefa6f8b57ffc75d))\n",
+          "prerelease": true
+        },
         {
           "version": "0.36.0",
           "createdAt": "2026-10-21T09:16:41.185814837Z",
@@ -5235,7 +5259,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "0.36.0",
+          "sourceVersion": "0.37.0",
           "apps": [],
           "options": [
             {
@@ -5256,7 +5280,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "0.36.0",
+          "sourceVersion": "0.37.0",
           "apps": [
             {
               "package": "com.accuweather.android",
@@ -5272,7 +5296,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "0.36.0",
+          "sourceVersion": "0.37.0",
           "apps": [
             {
               "package": "com.adguard.android",
@@ -5288,7 +5312,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "0.36.0",
+          "sourceVersion": "0.37.0",
           "apps": [
             {
               "package": "com.adguard.android",
@@ -5393,7 +5417,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "0.36.0",
+          "sourceVersion": "0.37.0",
           "apps": [
             {
               "package": "com.alltrails.alltrails",
@@ -5409,7 +5433,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "0.36.0",
+          "sourceVersion": "0.37.0",
           "apps": [
             {
               "package": "com.cloudflare.onedotonedotonedotone",
@@ -5425,7 +5449,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "0.36.0",
+          "sourceVersion": "0.37.0",
           "apps": [
             {
               "package": "com.shahzaman.pricetracker",
@@ -5450,7 +5474,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "0.36.0",
+          "sourceVersion": "0.37.0",
           "apps": [
             {
               "package": "com.shahzaman.pricetracker",
@@ -5475,7 +5499,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "0.36.0",
+          "sourceVersion": "0.37.0",
           "apps": [
             {
               "package": "com.shahzaman.pricetracker",
@@ -5500,7 +5524,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "0.36.0",
+          "sourceVersion": "0.37.0",
           "apps": [
             {
               "package": "com.google.android.apps.photos",
@@ -5541,7 +5565,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "0.36.0",
+          "sourceVersion": "0.37.0",
           "apps": [
             {
               "package": "com.google.android.apps.photos",
@@ -5557,7 +5581,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "0.36.0",
+          "sourceVersion": "0.37.0",
           "apps": [
             {
               "package": "org.kustom.widget",
@@ -5573,7 +5597,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "0.36.0",
+          "sourceVersion": "0.37.0",
           "apps": [
             {
               "package": "org.kustom.widget",
@@ -5589,7 +5613,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "0.36.0",
+          "sourceVersion": "0.37.0",
           "apps": [
             {
               "package": "com.gymbros.app",
@@ -5605,7 +5629,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "0.36.0",
+          "sourceVersion": "0.37.0",
           "apps": [
             {
               "package": "cz.seznam.mapy",
@@ -5621,7 +5645,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "0.36.0",
+          "sourceVersion": "0.37.0",
           "apps": [
             {
               "package": "bitpit.launcher",
@@ -5637,7 +5661,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "0.36.0",
+          "sourceVersion": "0.37.0",
           "apps": [
             {
               "package": "bitpit.launcher",
@@ -5653,7 +5677,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "0.36.0",
+          "sourceVersion": "0.37.0",
           "apps": [
             {
               "package": "bitpit.launcher",
@@ -5694,7 +5718,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "0.36.0",
+          "sourceVersion": "0.37.0",
           "apps": [
             {
               "package": "bitpit.launcher",
@@ -5710,7 +5734,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "0.36.0",
+          "sourceVersion": "0.37.0",
           "apps": [
             {
               "package": "bitpit.launcher",
@@ -5726,7 +5750,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "0.36.0",
+          "sourceVersion": "0.37.0",
           "apps": [
             {
               "package": "com.paypal.android.p2pmobile",
@@ -5742,7 +5766,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "0.36.0",
+          "sourceVersion": "0.37.0",
           "apps": [
             {
               "package": "com.picsart.studio",
@@ -5758,7 +5782,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "0.36.0",
+          "sourceVersion": "0.37.0",
           "apps": [
             {
               "package": "com.picsart.studio",
@@ -5774,7 +5798,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "0.36.0",
+          "sourceVersion": "0.37.0",
           "apps": [
             {
               "package": "com.arn.scrobble",
@@ -5790,7 +5814,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "0.36.0",
+          "sourceVersion": "0.37.0",
           "apps": [
             {
               "package": "ginlemon.flowerfree",
@@ -5806,7 +5830,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "0.36.0",
+          "sourceVersion": "0.37.0",
           "apps": [
             {
               "package": "pe.tumicro.android",
@@ -5835,7 +5859,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "0.36.0",
+          "sourceVersion": "0.37.0",
           "apps": [
             {
               "package": "pe.tumicro.android",
@@ -5851,9 +5875,38 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "0.36.0",
+          "sourceVersion": "0.37.0",
           "apps": [],
           "options": []
+        },
+        {
+          "id": "top.madkarma.patches.universal.nativelibs.removeUnusedNativeLibs",
+          "name": "Remove unused native libraries",
+          "description": "Removes native libraries for every CPU architecture except the selected one to shrink the APK.",
+          "bundle": "madkarma-patches",
+          "sourceName": "madkarma-patches",
+          "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
+          "sourceVersion": "0.37.0",
+          "apps": [],
+          "options": [
+            {
+              "key": "architecture",
+              "title": "Keep architecture",
+              "description": "Native libraries for other architectures under lib/ are deleted, including from split APKs.",
+              "option_type": "string",
+              "default_value": {
+                "type": "string",
+                "value": "arm64-v8a"
+              },
+              "valid_values": [
+                "arm64-v8a",
+                "armeabi-v7a",
+                "x86",
+                "x86_64"
+              ],
+              "required": true
+            }
+          ]
         },
         {
           "id": "top.madkarma.patches.universal.signature.signatureKiller",
@@ -5862,7 +5915,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "0.36.0",
+          "sourceVersion": "0.37.0",
           "apps": [],
           "options": [
             {
@@ -5898,7 +5951,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "0.36.0",
+          "sourceVersion": "0.37.0",
           "apps": [],
           "options": []
         },
@@ -5909,10 +5962,26 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "0.36.0",
+          "sourceVersion": "0.37.0",
           "apps": [
             {
               "package": "com.frontrow.vlog",
+              "versions": []
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "top.madkarma.patches.xplayer.premium.unlockPremium",
+          "name": "Unlock premium",
+          "description": "Unlocks Premium-only features.",
+          "bundle": "madkarma-patches",
+          "sourceName": "madkarma-patches",
+          "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
+          "sourceVersion": "0.37.0",
+          "apps": [
+            {
+              "package": "video.player.videoplayer",
               "versions": []
             }
           ],
@@ -5925,7 +5994,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "0.36.0",
+          "sourceVersion": "0.37.0",
           "apps": [
             {
               "package": "com.yazio.android",
@@ -5943,12 +6012,18 @@
       "homepage": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
       "indexUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
       "addUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-      "version": "0.1.1",
-      "updatedAt": "2026-10-23T09:54:12.098088435Z",
+      "version": "0.1.2",
+      "updatedAt": "2026-10-23T18:28:05.935599927Z",
       "patchCount": 29,
       "iconUrl": "https://avatars.githubusercontent.com/u/1288587?v=4",
       "metadataStatus": "verified",
       "releases": [
+        {
+          "version": "0.1.2",
+          "createdAt": "2026-10-23T18:28:05.935599927Z",
+          "description": "- chore: build with Reseam 0.29.0, so Reseam Manager 0.29.0 loads the bundle\n- test: model the phone in e2e tests: Phone.Launcher for Android, Phone.BaconReader for the app\n- docs: say where the e2e tests and their Appium server are in Directory.Packages.props\n- test: drive the emulator with an Appium next to the tests, and give it time to install its helpers\n- test: stop waiting for an idle app before each Appium command, and drop the recording's end hold\n- test: add end-to-end tests on an emulator, posted as videos on PRs, starting with Spoof client\n- docs: point AGENTS.md at the clean base APK, and allow stacked PRs on request\n- docs: add test APK, pull request and release rules to AGENTS.md\n",
+          "prerelease": false
+        },
         {
           "version": "0.1.1",
           "createdAt": "2026-10-23T09:54:12.098088435Z",
@@ -5970,7 +6045,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6031,7 +6106,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6055,7 +6130,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6079,7 +6154,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6103,7 +6178,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6127,7 +6202,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6151,7 +6226,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6175,7 +6250,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6199,7 +6274,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6223,7 +6298,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6247,7 +6322,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6271,7 +6346,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6295,7 +6370,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6319,7 +6394,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6343,7 +6418,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6367,7 +6442,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6391,7 +6466,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6415,7 +6490,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6439,7 +6514,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6463,7 +6538,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6487,7 +6562,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6511,7 +6586,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6535,7 +6610,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6559,7 +6634,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6583,7 +6658,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6607,7 +6682,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6631,7 +6706,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6655,7 +6730,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6679,7 +6754,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6721,9 +6796,9 @@
       "homepage": "https://github.com/madkarmaa/reseam-patches",
       "indexUrl": "https://github.com/madkarmaa/reseam-patches",
       "addUrl": "https://github.com/madkarmaa/reseam-patches/releases/latest/download/patches.json",
-      "version": "v0.36.0",
-      "updatedAt": "2026-10-21T09:16:25Z",
-      "patchCount": 32,
+      "version": "v0.37.0",
+      "updatedAt": "2026-10-23T19:41:19Z",
+      "patchCount": 34,
       "iconUrl": "https://avatars.githubusercontent.com/u/100418457?v=4",
       "isOfficial": false,
       "metadataStatus": "verified"
@@ -6735,8 +6810,8 @@
       "homepage": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
       "indexUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
       "addUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-      "version": "0.1.1",
-      "updatedAt": "2026-10-23T09:54:12.098088435Z",
+      "version": "0.1.2",
+      "updatedAt": "2026-10-23T18:28:05.935599927Z",
       "patchCount": 29,
       "iconUrl": "https://avatars.githubusercontent.com/u/1288587?v=4",
       "isOfficial": false,
@@ -6768,7 +6843,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "v0.36.0",
+          "sourceVersion": "v0.37.0",
           "apps": [
             {
               "package": "com.cloudflare.onedotonedotonedotone",
@@ -6804,7 +6879,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "v0.36.0",
+          "sourceVersion": "v0.37.0",
           "apps": [
             {
               "package": "com.accuweather.android",
@@ -6840,7 +6915,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "v0.36.0",
+          "sourceVersion": "v0.37.0",
           "apps": [
             {
               "package": "com.alltrails.alltrails",
@@ -6858,7 +6933,7 @@
       "iconUrl": "https://img.utdstc.com/icon/c73/77d/c7377d76316b5d34edfa1171c5e8f144f0ddc954822e7cec720bd5cf2bed4e54",
       "googlePlayStatus": "unavailable",
       "googlePlayStatusSource": "manual",
-      "googlePlayCheckedAt": "2026-10-23T17:18:34.508Z",
+      "googlePlayCheckedAt": "2026-10-24T04:49:17.252Z",
       "googlePlayEvidenceUrl": "https://www.appbrain.com/app/baconreader-for-reddit/com.onelouder.baconreader",
       "googlePlayMarketsChecked": [
         "US",
@@ -6878,7 +6953,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6940,7 +7015,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6965,7 +7040,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -6990,7 +7065,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7015,7 +7090,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7040,7 +7115,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7065,7 +7140,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7090,7 +7165,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7115,7 +7190,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7140,7 +7215,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7165,7 +7240,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7190,7 +7265,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7215,7 +7290,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7240,7 +7315,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7265,7 +7340,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7290,7 +7365,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7315,7 +7390,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7340,7 +7415,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7365,7 +7440,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7390,7 +7465,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7415,7 +7490,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7440,7 +7515,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7465,7 +7540,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7490,7 +7565,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7515,7 +7590,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7540,7 +7615,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7565,7 +7640,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7590,7 +7665,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7615,7 +7690,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7641,7 +7716,7 @@
       "iconUrl": "https://img.utdstc.com/icon/c73/77d/c7377d76316b5d34edfa1171c5e8f144f0ddc954822e7cec720bd5cf2bed4e54",
       "googlePlayStatus": "unavailable",
       "googlePlayStatusSource": "manual",
-      "googlePlayCheckedAt": "2026-10-23T17:18:34.508Z",
+      "googlePlayCheckedAt": "2026-10-24T04:49:17.252Z",
       "googlePlayEvidenceUrl": "https://www.appbrain.com/app/baconreader-premium-for-reddit/com.onelouder.baconreader.premium",
       "googlePlayMarketsChecked": [
         "US",
@@ -7661,7 +7736,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7723,7 +7798,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7748,7 +7823,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7773,7 +7848,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7798,7 +7873,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7823,7 +7898,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7848,7 +7923,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7873,7 +7948,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7898,7 +7973,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7923,7 +7998,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7948,7 +8023,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7973,7 +8048,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -7998,7 +8073,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -8023,7 +8098,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -8048,7 +8123,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -8073,7 +8148,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -8098,7 +8173,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -8123,7 +8198,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -8148,7 +8223,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -8173,7 +8248,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -8198,7 +8273,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -8223,7 +8298,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -8248,7 +8323,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -8273,7 +8348,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -8298,7 +8373,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -8323,7 +8398,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -8348,7 +8423,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -8373,7 +8448,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -8398,7 +8473,7 @@
           "bundle": "baconreader-patches",
           "sourceName": "baconreader-patches",
           "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
-          "sourceVersion": "0.1.1",
+          "sourceVersion": "0.1.2",
           "apps": [
             {
               "package": "com.onelouder.baconreader",
@@ -8442,7 +8517,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "v0.36.0",
+          "sourceVersion": "v0.37.0",
           "apps": [
             {
               "package": "com.adguard.android",
@@ -8459,7 +8534,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "v0.36.0",
+          "sourceVersion": "v0.37.0",
           "apps": [
             {
               "package": "com.adguard.android",
@@ -9507,7 +9582,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "v0.36.0",
+          "sourceVersion": "v0.37.0",
           "apps": [
             {
               "package": "com.shahzaman.pricetracker",
@@ -9533,7 +9608,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "v0.36.0",
+          "sourceVersion": "v0.37.0",
           "apps": [
             {
               "package": "com.shahzaman.pricetracker",
@@ -9559,7 +9634,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "v0.36.0",
+          "sourceVersion": "v0.37.0",
           "apps": [
             {
               "package": "com.shahzaman.pricetracker",
@@ -9604,7 +9679,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "v0.36.0",
+          "sourceVersion": "v0.37.0",
           "apps": [
             {
               "package": "com.google.android.apps.photos",
@@ -9646,7 +9721,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "v0.36.0",
+          "sourceVersion": "v0.37.0",
           "apps": [
             {
               "package": "com.google.android.apps.photos",
@@ -10149,7 +10224,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "v0.36.0",
+          "sourceVersion": "v0.37.0",
           "apps": [
             {
               "package": "org.kustom.widget",
@@ -10166,7 +10241,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "v0.36.0",
+          "sourceVersion": "v0.37.0",
           "apps": [
             {
               "package": "org.kustom.widget",
@@ -10202,7 +10277,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "v0.36.0",
+          "sourceVersion": "v0.37.0",
           "apps": [
             {
               "package": "com.gymbros.app",
@@ -10238,7 +10313,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "v0.36.0",
+          "sourceVersion": "v0.37.0",
           "apps": [
             {
               "package": "cz.seznam.mapy",
@@ -10274,7 +10349,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "v0.36.0",
+          "sourceVersion": "v0.37.0",
           "apps": [
             {
               "package": "bitpit.launcher",
@@ -10291,7 +10366,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "v0.36.0",
+          "sourceVersion": "v0.37.0",
           "apps": [
             {
               "package": "bitpit.launcher",
@@ -10308,7 +10383,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "v0.36.0",
+          "sourceVersion": "v0.37.0",
           "apps": [
             {
               "package": "bitpit.launcher",
@@ -10350,7 +10425,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "v0.36.0",
+          "sourceVersion": "v0.37.0",
           "apps": [
             {
               "package": "bitpit.launcher",
@@ -10367,7 +10442,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "v0.36.0",
+          "sourceVersion": "v0.37.0",
           "apps": [
             {
               "package": "bitpit.launcher",
@@ -10403,7 +10478,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "v0.36.0",
+          "sourceVersion": "v0.37.0",
           "apps": [
             {
               "package": "com.arn.scrobble",
@@ -10439,7 +10514,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "v0.36.0",
+          "sourceVersion": "v0.37.0",
           "apps": [
             {
               "package": "com.paypal.android.p2pmobile",
@@ -10475,7 +10550,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "v0.36.0",
+          "sourceVersion": "v0.37.0",
           "apps": [
             {
               "package": "com.picsart.studio",
@@ -10492,7 +10567,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "v0.36.0",
+          "sourceVersion": "v0.37.0",
           "apps": [
             {
               "package": "com.picsart.studio",
@@ -10930,7 +11005,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "v0.36.0",
+          "sourceVersion": "v0.37.0",
           "apps": [
             {
               "package": "ginlemon.flowerfree",
@@ -11928,7 +12003,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "v0.36.0",
+          "sourceVersion": "v0.37.0",
           "apps": [
             {
               "package": "pe.tumicro.android",
@@ -11958,10 +12033,46 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "v0.36.0",
+          "sourceVersion": "v0.37.0",
           "apps": [
             {
               "package": "pe.tumicro.android",
+              "versions": []
+            }
+          ],
+          "options": [],
+          "official": false
+        }
+      ]
+    },
+    {
+      "packageName": "video.player.videoplayer",
+      "name": "Video Player All Format",
+      "iconUrl": "https://play-lh.googleusercontent.com/uI_ZfaVBari9cQx3IbtJET5JN8uwxnMSSO8Y8wzWdg7p3gWrEYig5-DlSPiW6IBfBxjelgqATitc5xJ0EdhCWg",
+      "googlePlayStatus": "available",
+      "googlePlayStatusSource": "google-play",
+      "googlePlayCheckedAt": "2026-10-24T04:49:17.252Z",
+      "googlePlayEvidenceUrl": null,
+      "googlePlayMarketsChecked": [
+        "US",
+        "IN"
+      ],
+      "category": "Video & Photography",
+      "patchCount": 1,
+      "bundleCount": 1,
+      "versions": [],
+      "patches": [
+        {
+          "id": "top.madkarma.patches.xplayer.premium.unlockPremium",
+          "name": "Unlock premium",
+          "description": "Unlocks Premium-only features.",
+          "bundle": "madkarma-patches",
+          "sourceName": "madkarma-patches",
+          "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
+          "sourceVersion": "v0.37.0",
+          "apps": [
+            {
+              "package": "video.player.videoplayer",
               "versions": []
             }
           ],
@@ -11994,7 +12105,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "v0.36.0",
+          "sourceVersion": "v0.37.0",
           "apps": [
             {
               "package": "com.frontrow.vlog",
@@ -12332,7 +12443,7 @@
           "bundle": "madkarma-patches",
           "sourceName": "madkarma-patches",
           "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
-          "sourceVersion": "v0.36.0",
+          "sourceVersion": "v0.37.0",
           "apps": [
             {
               "package": "com.yazio.android",
@@ -14607,6 +14718,51 @@
   ],
   "whatsNew": [
     {
+      "version": "0.37.0",
+      "createdAt": "2026-10-23T19:41:31.528968126Z",
+      "description": "# [0.37.0](https://github.com/madkarmaa/reseam-patches/compare/v0.36.0...v0.37.0) (2026-10-23)\n\n\n### Features\n\n* bump to reseam 0.29.0 ([af0edce](https://github.com/madkarmaa/reseam-patches/commit/af0edce48f7f98ebc7c51570a38762f9f3a49960))\n* **universal:** strip native libs patch (closes [#58](https://github.com/madkarmaa/reseam-patches/issues/58)) ([583cdc3](https://github.com/madkarmaa/reseam-patches/commit/583cdc3019cf9fdf78439377477744a1cd5b265a))\n* **xplayer:** unlock premium patch (closes [#57](https://github.com/madkarmaa/reseam-patches/issues/57)) ([ed3e02c](https://github.com/madkarmaa/reseam-patches/commit/ed3e02cb9ebb31cf3e9d2ed7cefa6f8b57ffc75d))\n",
+      "prerelease": false,
+      "sourceName": "madkarma-patches",
+      "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
+      "official": false
+    },
+    {
+      "version": "0.37.0-dev.3",
+      "createdAt": "2026-10-23T19:41:26.652135013Z",
+      "description": "# [0.37.0-dev.3](https://github.com/madkarmaa/reseam-patches/compare/v0.37.0-dev.2...v0.37.0-dev.3) (2026-10-23)\n\n\n### Features\n\n* **universal:** strip native libs patch (closes [#58](https://github.com/madkarmaa/reseam-patches/issues/58)) ([583cdc3](https://github.com/madkarmaa/reseam-patches/commit/583cdc3019cf9fdf78439377477744a1cd5b265a))\n",
+      "prerelease": true,
+      "sourceName": "madkarma-patches",
+      "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
+      "official": false
+    },
+    {
+      "version": "0.37.0-dev.2",
+      "createdAt": "2026-10-23T19:25:26.092140063Z",
+      "description": "# [0.37.0-dev.2](https://github.com/madkarmaa/reseam-patches/compare/v0.37.0-dev.1...v0.37.0-dev.2) (2026-10-23)\n\n\n### Features\n\n* bump to reseam 0.29.0 ([af0edce](https://github.com/madkarmaa/reseam-patches/commit/af0edce48f7f98ebc7c51570a38762f9f3a49960))\n",
+      "prerelease": true,
+      "sourceName": "madkarma-patches",
+      "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
+      "official": false
+    },
+    {
+      "version": "0.37.0-dev.1",
+      "createdAt": "2026-10-23T19:11:09.349382825Z",
+      "description": "# [0.37.0-dev.1](https://github.com/madkarmaa/reseam-patches/compare/v0.36.0...v0.37.0-dev.1) (2026-10-23)\n\n\n### Features\n\n* **xplayer:** unlock premium patch (closes [#57](https://github.com/madkarmaa/reseam-patches/issues/57)) ([ed3e02c](https://github.com/madkarmaa/reseam-patches/commit/ed3e02cb9ebb31cf3e9d2ed7cefa6f8b57ffc75d))\n",
+      "prerelease": true,
+      "sourceName": "madkarma-patches",
+      "sourceUrl": "https://github.com/madkarmaa/reseam-patches",
+      "official": false
+    },
+    {
+      "version": "0.1.2",
+      "createdAt": "2026-10-23T18:28:05.935599927Z",
+      "description": "- chore: build with Reseam 0.29.0, so Reseam Manager 0.29.0 loads the bundle\n- test: model the phone in e2e tests: Phone.Launcher for Android, Phone.BaconReader for the app\n- docs: say where the e2e tests and their Appium server are in Directory.Packages.props\n- test: drive the emulator with an Appium next to the tests, and give it time to install its helpers\n- test: stop waiting for an idle app before each Appium command, and drop the recording's end hold\n- test: add end-to-end tests on an emulator, posted as videos on PRs, starting with Spoof client\n- docs: point AGENTS.md at the clean base APK, and allow stacked PRs on request\n- docs: add test APK, pull request and release rules to AGENTS.md\n",
+      "prerelease": false,
+      "sourceName": "baconreader-patches",
+      "sourceUrl": "https://github.com/JoanComasFdz/baconreader-reseam-patches",
+      "official": false
+    },
+    {
       "version": "0.45.0",
       "createdAt": "2026-10-23T17:03:25.314319569Z",
       "description": "- build: require engine 0.29.0\n- style: remove comments that restate the code in the download extensions\n- perf: save downloads to device by writing their streams directly instead of remuxing them\n- feat(youtube): add Download Shorts, a native Download item in the Shorts player menu\n- feat(youtube): add Save to device for downloaded videos, with optional saving of every new download\n- feat(youtube-music): add Save to device for downloaded songs and playlists, with optional saving of every new download\n- feat(youtube-music): add Unlock downloads for songs, playlists and offline playback on free accounts\n",
@@ -14826,51 +14982,6 @@
       "version": "0.34.0",
       "createdAt": "2026-10-14T17:54:23.919012893Z",
       "description": "- build: require engine 0.24.0\n- feat(discord): write extensions in TypeScript with before and after hooks and Discord module imports, and add Add source cards\n",
-      "prerelease": false,
-      "sourceName": "reseam-patches",
-      "sourceUrl": "https://api.reseam.app/patches.json",
-      "official": true
-    },
-    {
-      "version": "0.33.0",
-      "createdAt": "2026-10-13T20:35:12.780530354Z",
-      "description": "- fix: adjust default patches and in-app settings for launch\n",
-      "prerelease": false,
-      "sourceName": "reseam-patches",
-      "sourceUrl": "https://api.reseam.app/patches.json",
-      "official": true
-    },
-    {
-      "version": "0.32.0",
-      "createdAt": "2026-10-13T17:43:32.749175396Z",
-      "description": "- build: require engine 0.23.0\n- refactor: port all extensions to Kotlin with @Export bindings, settings modules and string tables, and drop the ReVanced header from files that no longer hold its code\n",
-      "prerelease": false,
-      "sourceName": "reseam-patches",
-      "sourceUrl": "https://api.reseam.app/patches.json",
-      "official": true
-    },
-    {
-      "version": "0.31.0",
-      "createdAt": "2026-10-12T23:21:46.749644635Z",
-      "description": "- feat(discord): add Custom themes, which creates, edits, previews and shares full themes, with a Reseam theme\n",
-      "prerelease": false,
-      "sourceName": "reseam-patches",
-      "sourceUrl": "https://api.reseam.app/patches.json",
-      "official": true
-    },
-    {
-      "version": "0.30.0",
-      "createdAt": "2026-10-12T20:24:17.590790164Z",
-      "description": "- feat(telegram): choose which chats Recover deleted messages covers from the chat menu\n- fix(telegram): show recovered messages only inside the range Telegram loaded, so a deleted latest message shows again\n",
-      "prerelease": false,
-      "sourceName": "reseam-patches",
-      "sourceUrl": "https://api.reseam.app/patches.json",
-      "official": true
-    },
-    {
-      "version": "0.29.0",
-      "createdAt": "2026-10-12T19:14:28.084087687Z",
-      "description": "- fix(telegram): make Recover deleted messages opt-in\n- fix(telegram): show recovered messages only inside the loaded page, so newer messages stop disappearing\n- docs(discord): describe how extensions reach Discord's modules\n- feat(discord): add Server details to a server's options: owner, creation date, members, boosts and more\n- feat(discord): add Draft preview, which shows a message only you see when you long press send\n- feat(discord): add Jump to first message, a button above Jump to present\n- feat(discord): add Colored names, which colors members in mentions, typing, voice and member list headers\n- feat(discord): add Moderator badges, which tag the owner, admins, managers and moderators in chat\n- feat(discord): add Better stream quality, which streams at the qualities Nitro unlocks\n- build: require engine 0.22.0\n",
       "prerelease": false,
       "sourceName": "reseam-patches",
       "sourceUrl": "https://api.reseam.app/patches.json",
