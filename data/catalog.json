@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T17:03:06.232Z",
+  "generatedAt": "2026-10-24T17:06:28.247Z",
   "registry": {
     "url": "https://patch-bundles.api.jmancentral.com",
     "generation": null,
@@ -6977,6 +6977,46 @@
       ]
     },
     {
+      "packageName": "com.dv.adm",
+      "name": "Advanced Download Manager",
+      "iconUrl": "https://img.utdstc.com/icon/965/fa8/965fa8da7fc5018960cb7cd0ef78fd8ff88eff6ad41b661cb352f34650a95644%3A600",
+      "googlePlayStatus": "available",
+      "googlePlayStatusSource": "google-play",
+      "googlePlayCheckedAt": "2026-10-24T17:02:01.526Z",
+      "googlePlayEvidenceUrl": null,
+      "googlePlayMarketsChecked": [
+        "US",
+        "IN"
+      ],
+      "category": "Other",
+      "patchCount": 1,
+      "bundleCount": 1,
+      "versions": [
+        "7.6"
+      ],
+      "patches": [
+        {
+          "id": "app.rj.adm.patches.removeAds",
+          "name": "Remove ads",
+          "description": "Disables ADM 7.6 banner and interstitial ad entry points for AdMob, Admax, and AppBrain.",
+          "bundle": "RJ Reseam Patches",
+          "sourceName": "RJ Reseam Patches",
+          "sourceUrl": "https://github.com/rudrakshrajpurohit417-sketch/RJ-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.dv.adm",
+              "versions": [
+                "7.6"
+              ]
+            }
+          ],
+          "options": [],
+          "official": false
+        }
+      ]
+    },
+    {
       "packageName": "com.alltrails.alltrails",
       "name": "AllTrails: Hike, Bike & Run",
       "iconUrl": "https://play-lh.googleusercontent.com/VGEJRpXhcohBLp64CcZkufSHI97tfN1LQBJsvcNojlHZZTy6bQRFxr6xogqlEv-f5RwkLIcvVLiBAEfkZqrXqA",
@@ -7018,7 +7058,7 @@
       "iconUrl": "https://img.utdstc.com/icon/c73/77d/c7377d76316b5d34edfa1171c5e8f144f0ddc954822e7cec720bd5cf2bed4e54",
       "googlePlayStatus": "unavailable",
       "googlePlayStatusSource": "manual",
-      "googlePlayCheckedAt": "2026-10-24T17:03:06.226Z",
+      "googlePlayCheckedAt": "2026-10-24T17:06:28.239Z",
       "googlePlayEvidenceUrl": "https://www.appbrain.com/app/baconreader-for-reddit/com.onelouder.baconreader",
       "googlePlayMarketsChecked": [
         "US",
@@ -7826,7 +7866,7 @@
       "iconUrl": "https://img.utdstc.com/icon/c73/77d/c7377d76316b5d34edfa1171c5e8f144f0ddc954822e7cec720bd5cf2bed4e54",
       "googlePlayStatus": "unavailable",
       "googlePlayStatusSource": "manual",
-      "googlePlayCheckedAt": "2026-10-24T17:03:06.226Z",
+      "googlePlayCheckedAt": "2026-10-24T17:06:28.239Z",
       "googlePlayEvidenceUrl": "https://www.appbrain.com/app/baconreader-premium-for-reddit/com.onelouder.baconreader.premium",
       "googlePlayMarketsChecked": [
         "US",
@@ -8766,46 +8806,6 @@
               "required": false
             }
           ],
-          "official": false
-        }
-      ]
-    },
-    {
-      "packageName": "com.dv.adm",
-      "name": "com.dv.adm",
-      "iconUrl": null,
-      "googlePlayStatus": "available",
-      "googlePlayStatusSource": "google-play",
-      "googlePlayCheckedAt": "2026-10-24T17:02:01.526Z",
-      "googlePlayEvidenceUrl": null,
-      "googlePlayMarketsChecked": [
-        "US",
-        "IN"
-      ],
-      "category": "Other",
-      "patchCount": 1,
-      "bundleCount": 1,
-      "versions": [
-        "7.6"
-      ],
-      "patches": [
-        {
-          "id": "app.rj.adm.patches.removeAds",
-          "name": "Remove ads",
-          "description": "Disables ADM 7.6 banner and interstitial ad entry points for AdMob, Admax, and AppBrain.",
-          "bundle": "RJ Reseam Patches",
-          "sourceName": "RJ Reseam Patches",
-          "sourceUrl": "https://github.com/rudrakshrajpurohit417-sketch/RJ-reseam-patches",
-          "sourceVersion": "0.1.0",
-          "apps": [
-            {
-              "package": "com.dv.adm",
-              "versions": [
-                "7.6"
-              ]
-            }
-          ],
-          "options": [],
           "official": false
         }
       ]
