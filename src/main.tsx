@@ -246,7 +246,7 @@ function App() {
       </section>
 
       {data.staleSources.length > 0 && <div className="stale-banner"><RefreshCw size={15}/> Some catalog sources could not refresh. Showing the last saved data. <details><summary>Details</summary>{data.staleSources.map((issue) => <span key={issue.url}>{issue.name}: {issue.error}</span>)}</details></div>}
-      {data.staleSources.length === 0 && <div className="health-note"><Check size={14}/> Last catalog refresh completed without reported source failures. This does not verify every patch’s compatibility.</div>
+      {data.staleSources.length === 0 && <div className="health-note"><Check size={14}/> Last catalog refresh completed without reported source failures. This does not verify every patch’s compatibility.</div>}
 
       {tab === 'apps' && !selectedApp && <section className="catalog-results"><div className="result-context"><span>PATCHABLE APPS</span><span>{data.apps.length} apps · {totalPatches} patches in latest bundles</span></div>{visibleApps.length ? <><div className="app-grid">{visibleApps.slice(0, visibleAppCount).map((app) => <AppCard app={app} key={app.packageName} onOpen={() => openApp(app)}/>)}</div>{visibleAppCount < visibleApps.length && <div ref={loadMoreRef} className="load-more-sentinel" aria-label="Loading more apps"/>}</> : <Empty message="No apps match your search."/>}</section>}
 
