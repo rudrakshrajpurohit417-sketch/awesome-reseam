@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T16:05:50.976Z",
+  "generatedAt": "2026-10-24T17:02:01.734Z",
   "registry": {
     "url": "https://patch-bundles.api.jmancentral.com",
     "generation": null,
@@ -6802,6 +6802,47 @@
           "options": []
         }
       ]
+    },
+    {
+      "name": "rj-reseam-patches",
+      "author": "RJ",
+      "description": "Community patches for Android apps, starting with Advanced Download Manager (ADM)",
+      "homepage": "https://github.com/rudrakshrajpurohit417-sketch/RJ-reseam-patches",
+      "indexUrl": "https://github.com/rudrakshrajpurohit417-sketch/RJ-reseam-patches",
+      "addUrl": "https://github.com/rudrakshrajpurohit417-sketch/RJ-reseam-patches",
+      "version": "0.1.0",
+      "updatedAt": "2026-10-24T16:35:01.602242499Z",
+      "patchCount": 1,
+      "iconUrl": "https://avatars.githubusercontent.com/u/300715600?v=4",
+      "metadataStatus": "verified",
+      "releases": [
+        {
+          "version": "0.1.0",
+          "createdAt": "2026-10-24T16:35:01.602242499Z",
+          "description": "- Align repository with Reseam bundle conventions\n- Use workspace-local temporary signing key path in CI\n- Generate temporary bundle key for CI validation builds\n- Fix Reseam target imports and ADM compatibility declaration\n- Record verified ADM source analysis and patch target rationale\n- Document ADM patch targets and current validation status\n- Make Reseam CLI version detection robust\n- Install matching Reseam CLI before building bundle\n- Skip legacy Android SDK setup for source-only patch bundle build\n- Fix Android SDK setup in bundle validation workflow\n- Add CI build validation for Reseam patch bundle\n- Add ADM 7.6 remove-ads Reseam patch\n- Document ADM target analysis status\n- Ignore generated Reseam build outputs and local secrets\n- Configure Reseam workspace plugin\n- Add Reseam bundle manifest\n- Initialize RJ Reseam patch bundle workspace\n",
+          "prerelease": false
+        }
+      ],
+      "patches": [
+        {
+          "id": "app.rj.adm.patches.removeAds",
+          "name": "Remove ads",
+          "description": "Disables ADM 7.6 banner and interstitial ad entry points for AdMob, Admax, and AppBrain.",
+          "bundle": "rj-reseam-patches",
+          "sourceName": "rj-reseam-patches",
+          "sourceUrl": "https://github.com/rudrakshrajpurohit417-sketch/RJ-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.dv.adm",
+              "versions": [
+                "7.6"
+              ]
+            }
+          ],
+          "options": []
+        }
+      ]
     }
   ],
   "bundles": [
@@ -6844,6 +6885,20 @@
       "updatedAt": "2026-10-24T08:10:18.701185565Z",
       "patchCount": 30,
       "iconUrl": "https://avatars.githubusercontent.com/u/1288587?v=4",
+      "isOfficial": false,
+      "metadataStatus": "verified"
+    },
+    {
+      "name": "rj-reseam-patches",
+      "author": "RJ",
+      "description": "Community patches for Android apps, starting with Advanced Download Manager (ADM)",
+      "homepage": "https://github.com/rudrakshrajpurohit417-sketch/RJ-reseam-patches",
+      "indexUrl": "https://github.com/rudrakshrajpurohit417-sketch/RJ-reseam-patches",
+      "addUrl": "https://github.com/rudrakshrajpurohit417-sketch/RJ-reseam-patches",
+      "version": "0.1.0",
+      "updatedAt": "2026-10-24T16:35:01.602242499Z",
+      "patchCount": 1,
+      "iconUrl": "https://avatars.githubusercontent.com/u/300715600?v=4",
       "isOfficial": false,
       "metadataStatus": "verified"
     }
@@ -6963,7 +7018,7 @@
       "iconUrl": "https://img.utdstc.com/icon/c73/77d/c7377d76316b5d34edfa1171c5e8f144f0ddc954822e7cec720bd5cf2bed4e54",
       "googlePlayStatus": "unavailable",
       "googlePlayStatusSource": "manual",
-      "googlePlayCheckedAt": "2026-10-24T16:05:50.967Z",
+      "googlePlayCheckedAt": "2026-10-24T17:02:01.526Z",
       "googlePlayEvidenceUrl": "https://www.appbrain.com/app/baconreader-for-reddit/com.onelouder.baconreader",
       "googlePlayMarketsChecked": [
         "US",
@@ -7771,7 +7826,7 @@
       "iconUrl": "https://img.utdstc.com/icon/c73/77d/c7377d76316b5d34edfa1171c5e8f144f0ddc954822e7cec720bd5cf2bed4e54",
       "googlePlayStatus": "unavailable",
       "googlePlayStatusSource": "manual",
-      "googlePlayCheckedAt": "2026-10-24T16:05:50.967Z",
+      "googlePlayCheckedAt": "2026-10-24T17:02:01.526Z",
       "googlePlayEvidenceUrl": "https://www.appbrain.com/app/baconreader-premium-for-reddit/com.onelouder.baconreader.premium",
       "googlePlayMarketsChecked": [
         "US",
@@ -8711,6 +8766,46 @@
               "required": false
             }
           ],
+          "official": false
+        }
+      ]
+    },
+    {
+      "packageName": "com.dv.adm",
+      "name": "com.dv.adm",
+      "iconUrl": null,
+      "googlePlayStatus": "available",
+      "googlePlayStatusSource": "google-play",
+      "googlePlayCheckedAt": "2026-10-24T17:02:01.526Z",
+      "googlePlayEvidenceUrl": null,
+      "googlePlayMarketsChecked": [
+        "US",
+        "IN"
+      ],
+      "category": "Other",
+      "patchCount": 1,
+      "bundleCount": 1,
+      "versions": [
+        "7.6"
+      ],
+      "patches": [
+        {
+          "id": "app.rj.adm.patches.removeAds",
+          "name": "Remove ads",
+          "description": "Disables ADM 7.6 banner and interstitial ad entry points for AdMob, Admax, and AppBrain.",
+          "bundle": "rj-reseam-patches",
+          "sourceName": "rj-reseam-patches",
+          "sourceUrl": "https://github.com/rudrakshrajpurohit417-sketch/RJ-reseam-patches",
+          "sourceVersion": "0.1.0",
+          "apps": [
+            {
+              "package": "com.dv.adm",
+              "versions": [
+                "7.6"
+              ]
+            }
+          ],
+          "options": [],
           "official": false
         }
       ]
@@ -14798,6 +14893,15 @@
   ],
   "whatsNew": [
     {
+      "version": "0.1.0",
+      "createdAt": "2026-10-24T16:35:01.602242499Z",
+      "description": "- Align repository with Reseam bundle conventions\n- Use workspace-local temporary signing key path in CI\n- Generate temporary bundle key for CI validation builds\n- Fix Reseam target imports and ADM compatibility declaration\n- Record verified ADM source analysis and patch target rationale\n- Document ADM patch targets and current validation status\n- Make Reseam CLI version detection robust\n- Install matching Reseam CLI before building bundle\n- Skip legacy Android SDK setup for source-only patch bundle build\n- Fix Android SDK setup in bundle validation workflow\n- Add CI build validation for Reseam patch bundle\n- Add ADM 7.6 remove-ads Reseam patch\n- Document ADM target analysis status\n- Ignore generated Reseam build outputs and local secrets\n- Configure Reseam workspace plugin\n- Add Reseam bundle manifest\n- Initialize RJ Reseam patch bundle workspace\n",
+      "prerelease": false,
+      "sourceName": "rj-reseam-patches",
+      "sourceUrl": "https://github.com/rudrakshrajpurohit417-sketch/RJ-reseam-patches",
+      "official": false
+    },
+    {
       "version": "0.1.3",
       "createdAt": "2026-10-24T08:10:18.701185565Z",
       "description": "- feat(baconreader): show a preview with a play button instead of loading videos when autoplay in detail view is off\n- docs: point the Reseam update workflow at patcher-specific-release.md, since docs/DEVELOPMENT.md was split up\n- feat(baconreader): add Video autoplay in detail view, a setting to make videos in a post wait for a tap\n- docs: split the docs into shared and patcher-specific files\n- ci: rebuild and release the bundle when a new Reseam comes out, once every patch applies with it\n",
@@ -15053,15 +15157,6 @@
       "version": "0.36.0",
       "createdAt": "2026-10-16T20:57:38.780213779Z",
       "description": "- build: require engine 0.26.0\n- feat(youtube): add Search inside channels and Live rings open the channel\n- feat(youtube): add Play Shorts as regular videos and Turn off Shorts, which covers every Shorts hiding setting\n- fix(youtube): open YouTube links in the patched app when another YouTube is installed\n- fix: ship the GmsCore texts so its startup warnings show instead of crashing YouTube and YouTube Music\n",
-      "prerelease": false,
-      "sourceName": "reseam-patches",
-      "sourceUrl": "https://api.reseam.app/patches.json",
-      "official": true
-    },
-    {
-      "version": "0.35.0",
-      "createdAt": "2026-10-15T16:37:35.508006516Z",
-      "description": "- build: require engine 0.25.0\n- feat(youtube): add Material You to Theme and color the surfaces current YouTube uses\n- feat(youtube): add Keep navigation bar visible, which stops the bottom bar hiding on scroll\n- fix(youtube): hide the floating microphone on the search screens\n- feat: support YouTube 21.40.166, X 12.34.0, Instagram 451.0.0.53.80 and Reddit 2026.41.0\n- feat: list Reseam Settings first in every app's settings\n- chore: add funding links\n",
       "prerelease": false,
       "sourceName": "reseam-patches",
       "sourceUrl": "https://api.reseam.app/patches.json",
