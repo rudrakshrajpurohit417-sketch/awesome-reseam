@@ -1,0 +1,17 @@
+{
+  "name": "Awesome Reseam",
+  "short_name": "Reseam",
+  "description": "Community directory of Reseam patches, bundles and release updates.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#0a0a0a",
+  "icons": [
+    {
+      "src": "/reseam.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ]
+}
