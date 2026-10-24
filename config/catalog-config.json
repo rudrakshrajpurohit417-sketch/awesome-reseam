@@ -34,6 +34,13 @@
       "googlePlayStatus": "unavailable",
       "googlePlayStatusSource": "manual",
       "googlePlayEvidenceUrl": "https://www.appbrain.com/app/baconreader-premium-for-reddit/com.onelouder.baconreader.premium"
+    },
+    "com.dv.adm": {
+      "name": "Advanced Download Manager",
+      "iconUrl": "https://img.utdstc.com/icon/965/fa8/965fa8da7fc5018960cb7cd0ef78fd8ff88eff6ad41b661cb352f34650a95644%3A600",
+      "metadataReason": "The patch source uses the package ID as its compatibility identifier; use the app's public name and icon so users can find it by name.",
+      "metadataEvidenceUrl": "https://play.google.com/store/apps/details?id=com.dv.adm",
+      "iconEvidenceUrl": "https://advanced-download-manager.en.uptodown.com/android"
     }
   }
 }
