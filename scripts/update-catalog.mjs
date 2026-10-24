@@ -164,7 +164,7 @@ for (const manualSource of manualSources) {
       ?? index?.releases?.find((item) => Array.isArray(item.patches))
     if (!release || !Array.isArray(release.patches)) throw new Error('No release with patch metadata was found')
 
-    const sourceName = manualSource.name ?? index.bundle?.name ?? bundle.source.repo ?? 'Community bundle'
+    const sourceName = manualSource.name ?? index.bundle?.name ?? 'Community bundle'
     const sourceIndex = community.findIndex((item) => normalizeSourceUrl(item.indexUrl) === normalizeSourceUrl(manualSource.sourceUrl))
     if (sourceIndex >= 0) community.splice(sourceIndex, 1)
 
@@ -321,7 +321,7 @@ const appCategory = (name, packageName) => {
   if (/music|scrobble/.test(text)) return 'Music & Audio'
   if (/weather|accu/.test(text)) return 'Weather'
   if (/gym|yazio|health|fitness/.test(text)) return 'Health & Fitness'
-  if (/launcher|widget|adguard|cloudflare|warp|browser/.test(text)) return 'Tools'
+  if (/launcher|widget|adguard|cloudflare|warp|browser|download(?:er| manager)?/.test(text)) return 'Tools'
   if (/pay|price|tracker/.test(text)) return 'Finance & Shopping'
   return 'Other'
 }
