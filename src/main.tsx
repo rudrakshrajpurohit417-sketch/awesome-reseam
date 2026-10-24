@@ -197,7 +197,6 @@ function App() {
   }, [appBundleGroups, detailPatches])
   const activeCount = tab === 'apps' ? (selectedApp ? detailPatches.length : visibleApps.length) : tab === 'bundles' ? (selectedBundle ? detailPatches.length : visibleBundles.length) : visibleUpdates.length
   const totalPatches = data.bundles.reduce((sum, bundle) => sum + bundle.patchCount, 0)
-  const catalogAgeHours = data.generatedAt ? Math.max(0, Math.floor((Date.now() - new Date(data.generatedAt).getTime()) / 3600000)) : null
   const countLabel = selectedApp || selectedBundle ? 'Patches' : tab === 'apps' ? 'Apps' : tab === 'bundles' ? 'Bundles' : 'Updates'
   const searchPlaceholder = tab === 'apps' ? selectedApp ? 'Filter this app’s patches…' : 'Search apps or patches…' : tab === 'bundles' ? selectedBundle ? 'Filter this bundle’s patches…' : 'Search bundles…' : 'Search release notes…'
 
