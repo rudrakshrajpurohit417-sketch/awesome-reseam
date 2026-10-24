@@ -39,6 +39,14 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Record source versions before refresh
+        run: |
+          node --input-type=module <<'NODE'
+          import { readFileSync } from 'node:fs';
+          const catalog = JSON.parse(readFileSync('data/catalog.json', 'utf8'));
+          console.log(JSON.stringify({ generatedAt: catalog.generatedAt, registryAvailable: catalog.registry?.available, sources: [{ name: catalog.official?.name, version: catalog.official?.version, patches: catalog.official?.patches?.length }, ...(catalog.community ?? []).map(source => ({ name: source.name, version: source.version, patches: source.patches?.length }))] }, null, 2));
+          NODE
+
       - name: Refresh official and community sources
         run: npm run catalog:update
 
